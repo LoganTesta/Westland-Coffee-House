@@ -1,8 +1,8 @@
-@import "experimental-styles.css";
+
 
 $mainStyleColor: #6f4e37;  /* coffee brown */
 $secondaryStyleColor: #4f7942; /* green */
-$thirdStyleColor: #ffe9cc; /* 
+$thirdStyleColor: #ffe9cc; /* white orange */
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -136,7 +136,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: #2d41ff;
+    color: #ffffff;
 }
 
 h2 {
@@ -205,19 +205,36 @@ input:focus, textarea:focus {
     background-color: #ffffff;
 }
 
-/* Beginning of site-specific styles */
+/******************************************************* Beginning of site-specific styles */
 
 
-#mainTitle a { font-size: 24px; color: $mainStyleColor; }
-nav { background-color: $mainStyleColor; }
+#mainTitle {
+    a { font-size: 24px; color: $mainStyleColor; }
+}
+
+
+
+
+
+nav { 
+    padding: 15px;
+    background-color: $mainStyleColor; 
+    li { font-size: 18px; }
+    a:link, nav a:visited { color: #ffeeee; }   
+}
+
+
+
+
+
 h2 { color: $secondaryStyleColor; }
 header { background-color: $thirdStyleColor; }
-nav a:link, nav a:visited { color: #ffeeee; }
+
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 
-nav { padding: 15px; }
-nav li { font-size: 18px; }
+
+
 
 
 
