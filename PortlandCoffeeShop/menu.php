@@ -18,6 +18,7 @@ require_once 'connect.php';
     <body>
         <div id="bodyWrapper">
             <header>
+                <?php include 'assets/include/logo.php'; ?>
                 <?php include 'assets/include/header-content.php'; ?>
                 <h2 id="subTitle">Peruse Our Delicious Food and Beverages Menu</h2>
             </header>

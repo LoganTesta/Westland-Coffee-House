@@ -208,30 +208,33 @@ input:focus, textarea:focus {
 /******************************************************* Beginning of site-specific styles */
 
 
-#mainTitle {
+h2 { color: $secondaryStyleColor; }
+
+.title-container {
     a { font-size: 24px; color: $mainStyleColor; }
 }
 
 
+#logo { position: absolute; top: 20px; left: 20px; }
 
-
-
+#mobileNav { display: block; }
+#desktopNav { display: none; }
 nav { 
     padding: 15px;
-    background-color: $mainStyleColor; 
+    color: $mainStyleColor; 
     li { font-size: 18px; }
     a:link, nav a:visited { color: #ffeeee; }   
 }
 
+#content {
+    min-height: 400px;
+}
 
 
 
+header { }
 
-h2 { color: $secondaryStyleColor; }
-header { background-color: $thirdStyleColor; }
 
-#mobileNav { display: block; }
-#desktopNav { display: none; }
 
 
 
@@ -283,7 +286,7 @@ header { background-color: $thirdStyleColor; }
         margin-right: auto;
     }
     #mobileNav { display: none; }
-    #desktopNav { display: block; }
+    #desktopNav { display: block; position: absolute; top: 0; right: 0; }
     
     #mainTitle a { font-size: 48px; }
     

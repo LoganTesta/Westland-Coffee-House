@@ -7,8 +7,8 @@
                 gtag('config', 'UA-114894181-1');
         </script>
 
-<div id="logo">
-    <a href="index.php"><img src="assets/images/logo.png" alt=""></a>
-</div>
 
-        <h1 id="mainTitle"><a href="index.php">Portland Coffee Shop</a></h1>
+<div class="title-container">
+    <h1 id="mainTitle"><a href="index.php">Portland Coffee Shop</a></h1>
+</div>
+        
