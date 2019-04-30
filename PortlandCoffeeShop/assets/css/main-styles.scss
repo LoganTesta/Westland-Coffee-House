@@ -1,0 +1,285 @@
+@import "experimental-styles.css";
+
+$mainStyleColor: #6f4e37;  /* coffee brown */
+$secondaryStyleColor: #4f7942; /* green */
+$thirdStyleColor: #ffe9cc; /* 
+
+/* Reset the styles */
+html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+/*For ease of development and maintainability, combine an element's width, padding, margin, and border into a final value, and enable this on all elements. */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Grid Column layout available.  Desktop and mobile settings.  Automatically make columns full width below a certain width. */
+.col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12,
+.col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12{
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Switch to 12 columns at 700px for small columns and 1200px for large columns. */
+@media only screen and (min-width: 700px){
+    .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12 {
+        float: left;
+        padding: 5px;
+    }
+
+    .col-sma-1 { width: 8.333333%; }
+    .col-sma-2 { width: 16.666667%; }
+    .col-sma-3 { width: 25%; }
+    .col-sma-4 { width: 33.333333%; }
+    .col-sma-5 { width: 41.666667%; }
+    .col-sma-6 { width: 50%; }
+    .col-sma-7 { width: 58.33333%; }
+    .col-sma-8 { width: 66.666667%; }
+    .col-sma-9 { width: 75%; }
+    .col-sma-10 { width: 83.333333%; }
+    .col-sma-11 { width: 91.666667%; }
+    .col-sma-12 { width: 100%; }
+}
+
+@media only screen and (min-width: 1200px){
+    .col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12 {
+        float: left;
+        padding: 5px;
+    }
+
+    .col-lar-1 { width: 8.333333%; }
+    .col-lar-2 { width: 16.666667%; }
+    .col-lar-3 { width: 25%; }
+    .col-lar-4 { width: 33.333333%; }
+    .col-lar-5 { width: 41.666667%; }
+    .col-lar-6 { width: 50%; }
+    .col-lar-7 { width: 58.33333%; }
+    .col-lar-8 { width: 66.666667%; }
+    .col-lar-9 { width: 75%; }
+    .col-lar-10 { width: 83.333333%; }
+    .col-lar-11 { width: 91.666667%; }
+    .col-lar-12 { width: 100%; }
+}
+
+#content {
+    width: 100%;
+    padding: 10px 10px 5px 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.content-row {
+    width: 100%; 
+}
+
+.justify-content > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Other General Resuable Classes */
+.clear-both {
+    clear: both;
+}
+
+.sr-only {
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;   
+}
+
+.width-100-percent {
+    width: 100%;
+}
+
+
+/*** Beginning of style sheet. ***/
+
+body {
+    background-color: #f6f6f6;
+}
+
+p, #ufoList {
+    line-height: 22.4px;
+}
+
+p {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    font-size: 0px;
+    max-width: 100%;
+    /*Don't allow images to go offscreen horizontally */
+}
+
+a:link, a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #2d41ff;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+h3 {
+    font-size: 18px;
+    padding: 5px 0 10px 0;
+    font-weight: bold; 
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input, textarea {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+input::placeholder, textarea::placeholder {
+    color: #0066cc;
+    opacity: 1; /* For Firefox */
+}
+
+/*For IE 10-11 */
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color: #0066cc;
+}
+
+/*Edge */
+::-ms-input-placeholder {
+     color: #0066cc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0px 0px 3px 3px rgba(25, 174, 255, 0.6);
+    transition: 0.2s;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#bodyWrapper {
+    position: relative;
+    width: 100%;
+    border: 0;
+    min-width: 300px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+/* Beginning of site-specific styles */
+
+
+#mainTitle a { font-size: 24px; color: $mainStyleColor; }
+nav { background-color: $mainStyleColor; }
+h2 { color: $secondaryStyleColor; }
+header { background-color: $thirdStyleColor; }
+nav a:link, nav a:visited { color: #ffeeee; }
+#mobileNav { display: block; }
+#desktopNav { display: none; }
+
+nav { padding: 15px; }
+nav li { font-size: 18px; }
+
+
+
+/* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
+@media only screen and (min-width: 500px){
+    /* The main border around the entire document */
+    #bodyWrapper {
+        width: 90%;
+    }
+      
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 700px){
+ 
+    h2 {
+        font-size: 26px;
+    } 
+    
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /* The main border around the entire document */
+    /* *** Beginning of Major divs *** */
+    #bodyWrapper {
+        position: relative;
+        width: 1200px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mobileNav { display: none; }
+    #desktopNav { display: block; }
+    
+    #mainTitle a { font-size: 48px; }
+    
+    nav li { display: inline-block; padding-right: 40px; font-size: 20px; }
+
+    
+}
+
+
+
+@media only screen and (min-width: 1600px){
+    #bodyWrapper {
+        width: 1540px;
+    }
+    
+}
