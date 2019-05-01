@@ -17,8 +17,8 @@ require_once 'connect.php';
 
     <body>
         <div id="bodyWrapper">
+            <?php include 'assets/include/logo.php'; ?>
             <header>
-                <?php include 'assets/include/logo.php'; ?>
                 <?php include 'assets/include/header-content.php'; ?>
                 <h2 id="subTitle">Portland Coffee Shop</h2>
             </header>

@@ -213,6 +213,10 @@ input:focus, textarea:focus {
 h2 {
   color: #4f7942; }
 
+header {
+  margin-left: 170px;
+  width: 350px; }
+
 .title-container a {
   font-size: 24px;
   color: #6f4e37; }
