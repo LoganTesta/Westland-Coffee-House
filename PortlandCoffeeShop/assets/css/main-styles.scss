@@ -238,9 +238,18 @@ nav {
 }
 
 #content {
-    min-height: 400px;
- 
-
+    width: 90%;
+    min-height: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-color: rgba(255,255,255, 0.8);
+    .content-body {
+        p {
+            font-size: 18px;
+        }
+     
+    }
 }
 
 
@@ -308,7 +317,9 @@ nav {
     }
 
     
-    nav li { display: inline-block; padding-right: 40px; font-size: 20px; }
+    nav {
+        li { display: inline-block; padding-right: 40px; font-size: 20px; }
+    }
 
     
 }

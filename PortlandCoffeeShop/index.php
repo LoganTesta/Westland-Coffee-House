@@ -27,8 +27,10 @@ require_once 'connect.php';
 
             <div id="content">
                 <div class="content-row justify-content">
-                    <div class="col-sma-6">
-                        Welcome to our website!
+                    <div class="content-body col-sma-12">
+                        <p>Welcome to our Portland Coffee Shop.  We have the finest coffee and are reputed to be one of the best places in Portland 
+                            to grab coffee and hangout.</p>
+                        <p>But don't take our word for it, come on by and see for yourself!</p>
                     </div>
 
                     <div class="col-sma-6">
