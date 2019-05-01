@@ -217,18 +217,17 @@ h2 {
   color: #4f7942; }
 
 header {
-  margin-left: 170px;
-  width: 350px; }
+  margin-left: 10px;
+  width: 100%; }
 
 .title-container #mainTitle a {
   font-size: 24px;
   font-weight: bold;
-  color: #6f4e37; }
+  color: #ffffff; }
 
 #logo {
-  position: absolute;
-  top: 20px;
-  left: 20px; }
+  position: static;
+  width: 50px; }
 
 #mobileNav {
   display: block; }
@@ -239,10 +238,10 @@ header {
 nav {
   padding: 15px;
   color: #6f4e37; }
-  nav li {
-    font-size: 18px; }
-  nav a:link, nav nav a:visited {
-    color: #ffeeee; }
+  nav a, nav a:link, nav a:visited {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; }
 
 #content {
   width: 90%;
@@ -281,6 +280,16 @@ nav {
     margin-left: auto;
     margin-right: auto; }
 
+  header {
+    margin-left: 170px;
+    width: 350px; }
+
+  #logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%; }
+
   #mobileNav {
     display: none; }
 
@@ -295,8 +304,9 @@ nav {
 
   nav li {
     display: inline-block;
-    padding-right: 40px;
-    font-size: 20px; } }
+    padding-right: 40px; }
+    nav li a, nav li a:link, nav li a:visited {
+      font-size: 22px; } }
 @media only screen and (min-width: 1600px) {
   #bodyWrapper {
     width: 1540px; } }

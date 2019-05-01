@@ -205,6 +205,8 @@ input:focus, textarea:focus {
     background-color: #ffffff;
 }
 
+
+
 /******************************************************* Beginning of site-specific styles */
 #bodyWrapper.index {
        background: url('../images/coffee-shop-exterior.jpg') 50% 50%/cover no-repeat;
@@ -212,7 +214,7 @@ input:focus, textarea:focus {
 
 h2 { color: $secondaryStyleColor; }
 
-header { margin-left: 170px; width: 350px; }
+header { margin-left: 10px; width: 100%; }
 
 .title-container {
     
@@ -220,22 +222,24 @@ header { margin-left: 170px; width: 350px; }
         a {
             font-size: 24px; 
             font-weight: bold;
-            color: $mainStyleColor;  
+            color: #ffffff;  
         }
     } 
 }
 
+#logo { position: static; width: 50px; }
 
-#logo { position: absolute; top: 20px; left: 20px; }
 
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 nav { 
     padding: 15px;
     color: $mainStyleColor; 
-    li { font-size: 18px; }
-    a:link, nav a:visited { color: #ffeeee; }   
+   
+    a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #ffffff; }   
 }
+
+
 
 #content {
     width: 90%;
@@ -307,6 +311,9 @@ nav {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    header { margin-left: 170px; width: 350px; }
+    #logo { position: absolute; top: 20px; left: 20px; width: 100%; }
     #mobileNav { display: none; }
     #desktopNav { display: block; position: absolute; top: 0; right: 0; }
     
@@ -318,7 +325,10 @@ nav {
 
     
     nav {
-        li { display: inline-block; padding-right: 40px; font-size: 20px; }
+        li { 
+            display: inline-block; padding-right: 40px;
+            a, a:link, a:visited { font-size: 22px; }
+        }
     }
 
     
