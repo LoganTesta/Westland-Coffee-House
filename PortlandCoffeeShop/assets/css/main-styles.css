@@ -210,6 +210,9 @@ input:focus, textarea:focus {
   background-color: #ffffff; }
 
 /******************************************************* Beginning of site-specific styles */
+#bodyWrapper.index {
+  background: url("../images/coffee-shop-exterior.jpg") 50% 50%/cover no-repeat; }
+
 h2 {
   color: #4f7942; }
 
@@ -217,8 +220,9 @@ header {
   margin-left: 170px;
   width: 350px; }
 
-.title-container a {
+.title-container #mainTitle a {
   font-size: 24px;
+  font-weight: bold;
   color: #6f4e37; }
 
 #logo {
@@ -279,7 +283,7 @@ nav {
     top: 0;
     right: 0; }
 
-  #mainTitle a {
+  .title-container #mainTitle a {
     font-size: 48px; }
 
   nav li {

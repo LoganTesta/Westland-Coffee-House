@@ -16,7 +16,7 @@ require_once 'connect.php';
     </head>
 
     <body>
-        <div id="bodyWrapper">
+        <div id="bodyWrapper" class="index">
             <?php include 'assets/include/logo.php'; ?>
             <header>
                 <?php include 'assets/include/header-content.php'; ?>
