@@ -2,7 +2,8 @@
 
 $mainStyleColor: #6f4e37;  /* coffee brown */
 $secondaryStyleColor: #4f7942; /* green */
-$thirdStyleColor: #ffe9cc; /* white orange */
+$thirdStyleColor: ffe9cc; /* white orange ffe9cc */
+$thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -216,6 +217,7 @@ h2 { color: $secondaryStyleColor; }
 
 header { margin-left: 10px; width: 100%; }
 
+
 .title-container {
     
     #mainTitle {
@@ -227,7 +229,7 @@ header { margin-left: 10px; width: 100%; }
     } 
 }
 
-#logo { position: static; width: 50px; }
+#logo { position: static; width: 50px; padding-left: 20px; }
 
 
 #mobileNav { display: block; }
@@ -236,7 +238,7 @@ nav {
     padding: 15px;
     color: $mainStyleColor; 
    
-    a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #ffffff; }   
+    a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #ccc; }   
 }
 
 
@@ -256,6 +258,14 @@ nav {
     }
 }
 
+footer {
+    padding: 15px;
+    color: #333;
+    background-color: $thirdStyleColorRGBA;
+    .footer-copyright {
+        text-align: center;
+    }
+}
 
 
 
@@ -313,7 +323,7 @@ nav {
     }
     
     header { margin-left: 170px; width: 350px; }
-    #logo { position: absolute; top: 20px; left: 20px; width: 100%; }
+    #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
     #mobileNav { display: none; }
     #desktopNav { display: block; position: absolute; top: 0; right: 0; }
     

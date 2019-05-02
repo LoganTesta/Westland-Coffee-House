@@ -1,6 +1,7 @@
 /* coffee brown */
 /* green */
-/* white orange */
+/* white orange ffe9cc */
+/* white orange semi-transparents */
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
   margin: 0px;
@@ -227,7 +228,8 @@ header {
 
 #logo {
   position: static;
-  width: 50px; }
+  width: 50px;
+  padding-left: 20px; }
 
 #mobileNav {
   display: block; }
@@ -241,7 +243,7 @@ nav {
   nav a, nav a:link, nav a:visited {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff; }
+    color: #ccc; }
 
 #content {
   width: 90%;
@@ -252,6 +254,13 @@ nav {
   background-color: rgba(255, 255, 255, 0.8); }
   #content .content-body p {
     font-size: 18px; }
+
+footer {
+  padding: 15px;
+  color: #333;
+  background-color: rgba(255, 233, 204, 0.9); }
+  footer .footer-copyright {
+    text-align: center; }
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
@@ -288,7 +297,8 @@ nav {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 100%; }
+    width: 100%;
+    padding-left: 0; }
 
   #mobileNav {
     display: none; }
