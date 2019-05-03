@@ -26,7 +26,7 @@ require_once 'connect.php';
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row justify-content">
+                <div class="content-row">
                     <div class="col-sma-6">
                         We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!
                     </div>

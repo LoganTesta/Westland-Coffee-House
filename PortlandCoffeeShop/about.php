@@ -26,7 +26,7 @@ require_once 'connect.php';
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row justify-content">
+                <div class="content-row">
                     <div class="col-sma-6">
                         Read more about our coffee shop.
                     </div>

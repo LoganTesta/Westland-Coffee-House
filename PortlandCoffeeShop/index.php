@@ -26,8 +26,9 @@ require_once 'connect.php';
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row justify-content">
+                <div class="content-row">
                     <div class="content-body col-sma-12">
+                        <h3>The Place to Grab Coffee and Meet up!</h3>
                         <p>Welcome to our Portland Coffee Shop.  We have the finest coffee and are reputed to be one of the best places in Portland 
                             to grab coffee and hangout.</p>
                         <p>But don't take our word for it, come on by and see for yourself!</p>
@@ -40,6 +41,7 @@ require_once 'connect.php';
             </div>
 
             <?php include 'assets/include/footer-content.php'; ?>
+
             <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
             <script type="text/javascript" src="assets/javascript/slideshow.js"></script>
             <script>

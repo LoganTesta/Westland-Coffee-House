@@ -211,11 +211,20 @@ input:focus, textarea:focus {
   background-color: #ffffff; }
 
 /******************************************************* Beginning of site-specific styles */
-#bodyWrapper.index {
+#bodyWrapper {
   background: url("../images/coffee-shop-exterior.jpg") 50% 50%/cover no-repeat; }
 
+.body-background {
+  /*    background: url('../images/coffee-shop-exterior.jpg') 50% 50%/cover no-repeat;*/
+  /*position: absolute;
+  top: 0;
+  
+  width: 100%;
+  height: auto;*/ }
+
 h2 {
-  color: #4f7942; }
+  color: #f9f9f9;
+  font-weight: bold; }
 
 header {
   margin-left: 10px;
@@ -243,15 +252,17 @@ nav {
   nav a, nav a:link, nav a:visited {
     font-size: 18px;
     font-weight: bold;
-    color: #ccc; }
+    color: #f9f9f9; }
 
 #content {
   width: 90%;
-  min-height: 100px;
+  min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.8); }
+  #content .content-body h3 {
+    color: #6f4e37; }
   #content .content-body p {
     font-size: 18px; }
 

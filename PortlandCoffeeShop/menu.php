@@ -20,13 +20,13 @@ require_once 'connect.php';
             <header>
                 <?php include 'assets/include/logo.php'; ?>
                 <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Peruse Our Delicious Food and Beverages Menu</h2>
+                <h2 id="subTitle">Our Menu</h2>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row justify-content">
+                <div class="content-row">
                     <div class="col-sma-6">
                         Menu items.
                     </div>
