@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        We frequently host fun community events.  Check back often to see what's coming up.
+                        <h3>Events</h3>
+                        <p>We frequently host fun community events.  Check back often to see what's coming up.</p>
                     </div>
 
                     <div class="col-sma-6">

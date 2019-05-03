@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        Locations.  Hours.
+                        <h3>Location and Hours</h3>
+                        <p>Locations.  Hours.</p>
                     </div>
 
                     <div class="col-sma-6">

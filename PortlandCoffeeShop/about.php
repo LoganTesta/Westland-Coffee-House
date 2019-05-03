@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        Read more about our coffee shop.
+                        <h3>About Portland Coffee Shop</h3>
+                        <p>Read more about our coffee shop.</p>
                     </div>
 
                     <div class="col-sma-6">

@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!
+                        <h3>404 Error</h3>
+                        <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
                     </div>
 
                     <div class="col-sma-6">

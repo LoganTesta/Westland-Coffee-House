@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        Menu items.
+                        <h3>Peruse Our Delicious Food and Beverages Menu</h3>
+                        <p>Menu items.</p>
                     </div>
 
                     <div class="col-sma-6">

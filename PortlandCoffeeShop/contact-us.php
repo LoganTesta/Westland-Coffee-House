@@ -28,7 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        Contact us with questions, event requests, or to learn more about our coffee shop.
+                        <h3>Contact Us!  You might even get a Free Coffee!</h3>
+                        <p>Contact us with questions, event requests, or to learn more about our coffee shop.</p>
                     </div>
 
                     <div class="col-sma-6">

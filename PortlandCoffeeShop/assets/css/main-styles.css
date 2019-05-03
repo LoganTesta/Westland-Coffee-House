@@ -255,16 +255,17 @@ nav {
     color: #f9f9f9; }
 
 #content {
-  width: 90%;
+  width: 100%;
   min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.8); }
-  #content .content-body h3 {
+  #content h3 {
     color: #6f4e37; }
-  #content .content-body p {
-    font-size: 18px; }
+  #content p {
+    font-size: 18px;
+    margin-bottom: 18px; }
 
 footer {
   padding: 15px;
@@ -327,7 +328,10 @@ footer {
     display: inline-block;
     padding-right: 40px; }
     nav li a, nav li a:link, nav li a:visited {
-      font-size: 22px; } }
+      font-size: 22px; }
+
+  #content h3 {
+    padding-left: 20px; } }
 @media only screen and (min-width: 1600px) {
   #bodyWrapper {
     width: 1540px; } }
