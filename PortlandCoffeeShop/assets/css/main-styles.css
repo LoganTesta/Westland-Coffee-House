@@ -109,7 +109,7 @@ html {
     width: 100%; } }
 #content {
   width: 100%;
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -212,15 +212,7 @@ input:focus, textarea:focus {
 
 /******************************************************* Beginning of site-specific styles */
 #bodyWrapper {
-  background: url("../images/coffee-shop-exterior.jpg") 50% 50%/cover no-repeat; }
-
-.body-background {
-  /*    background: url('../images/coffee-shop-exterior.jpg') 50% 50%/cover no-repeat;*/
-  /*position: absolute;
-  top: 0;
-  
-  width: 100%;
-  height: auto;*/ }
+  background: url("../images/coffee-shop-exterior.jpg") 50% 0%/cover no-repeat; }
 
 h2 {
   color: #f9f9f9;
@@ -271,7 +263,7 @@ nav {
     margin-bottom: 18px; }
 
 footer {
-  padding: 15px;
+  padding: 20px;
   color: #333;
   background-color: rgba(255, 233, 204, 0.9); }
   footer .footer-copyright {
@@ -333,8 +325,10 @@ footer {
     nav li a, nav li a:link, nav li a:visited {
       font-size: 22px; }
 
-  #content h3 {
-    padding-left: 20px; } }
+  #content {
+    padding: 20px; }
+    #content h3 {
+      padding-left: 20px; } }
 @media only screen and (min-width: 1600px) {
   #bodyWrapper {
     width: 1540px; } }
