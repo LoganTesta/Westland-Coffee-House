@@ -1,6 +1,6 @@
 
 
-$mainStyleColor: #6f4e37;  /* coffee brown */
+$firstStyleColor: #6f4e37;  /* coffee brown */
 $secondaryStyleColor: #4f7942; /* green */
 $thirdStyleColor: ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
@@ -238,7 +238,7 @@ header { margin-left: 10px; width: 100%; }
 #desktopNav { display: none; }
 nav { 
     padding: 15px;
-    color: $mainStyleColor; 
+    color: $firstStyleColor; 
    
     a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #f9f9f9; }   
 }
@@ -254,11 +254,27 @@ nav {
     background-color: rgba(255,255,255, 0.9);
 
     h3 {
-        color: $mainStyleColor;
+        color: $firstStyleColor;
     }
     p {
         font-size: 18px;
         margin-bottom: 18px;
+    }
+    table {
+        border-collapse: collapse; 
+        tr {
+            border-bottom: 2px solid $firstStyleColor;
+        }
+        th, td {
+            padding: 10px 5px;   
+        }
+        .photos {
+            width: 200px;
+        }
+        img {
+            width: auto;
+            height: 100px;
+        }
     }
 
 
