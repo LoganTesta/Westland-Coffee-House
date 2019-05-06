@@ -31,48 +31,47 @@ require_once 'connect.php';
                         <h3>Coffee Shop Hours</h3>
                         <table>
                             <thead>
-                            <td>Day</td>
-                            <td>Hours</td>
+                            <th><strong>Day</strong></th>
+                            <th><strong>Hours</strong></th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Monday</td>
-                                    <td>6AM-Midnight</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Tuesday</td>
-                                    <td>6AM-Midnight</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Wednesday</td>
-                                    <td>6AM-Midnight</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Thursday</td>
-                                    <td>6AM-Midnight</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Friday</td>
-                                    <td>6AM-1PM</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Saturday</td>
-                                    <td>6AM-1PM</td>
+                                    <td>6:00AM-Midnight</td>
                                 </tr>
                                 <tr>
                                     <td>Sunday</td>
-                                    <td>8AM-Midnight</td>
+                                    <td>8:00AM-Midnight</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+
+                    <div class="col-sma-6">
                         <div>
                             <h3>Location</h3>
                             <p>33322 SW 11th Avenue Portland, Oregon 97205</p>
                         </div>
-                    </div>
-
-                    <div class="col-sma-6">
-
                     </div>
                 </div>
             </div>
