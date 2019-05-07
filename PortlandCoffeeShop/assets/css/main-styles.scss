@@ -1,8 +1,8 @@
 
 
 $firstStyleColor: #6f4e37;  /* coffee brown */
-$secondaryStyleColor: #4f7942; /* green */
-$thirdStyleColor: ffe9cc; /* white orange ffe9cc */
+$secondStyleColor: #4f7942; /* green */
+$thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
 
 /* Reset the styles */
@@ -168,18 +168,18 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: #0066cc;
+    color: $secondStyleColor;
     opacity: 1; /* For Firefox */
 }
 
 /*For IE 10-11 */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
-    color: #0066cc;
+    color: $secondStyleColor;
 }
 
 /*Edge */
 ::-ms-input-placeholder {
-    color: #0066cc;
+    color: $secondStyleColor;
 }
 
 textarea {

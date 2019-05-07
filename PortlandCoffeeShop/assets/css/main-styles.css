@@ -178,17 +178,17 @@ input, textarea {
   padding: 10px 10px 10px 10px; }
 
 input::placeholder, textarea::placeholder {
-  color: #0066cc;
+  color: #4f7942;
   opacity: 1;
   /* For Firefox */ }
 
 /*For IE 10-11 */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #0066cc; }
+  color: #4f7942; }
 
 /*Edge */
 ::-ms-input-placeholder {
-  color: #0066cc; }
+  color: #4f7942; }
 
 textarea {
   resize: vertical; }
