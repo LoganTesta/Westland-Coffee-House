@@ -212,7 +212,7 @@ input:focus, textarea:focus {
 
 /******************************************************* Beginning of site-specific styles */
 #bodyWrapper {
-  background: url("../images/coffee-shop-exterior.jpg") 50% 0%/cover no-repeat; }
+  background: url("../images/coffee-shop-exterior.jpg") 50% 0%/100% auto no-repeat; }
 
 h2 {
   color: #f9f9f9;
@@ -262,13 +262,20 @@ nav {
     font-size: 18px;
     margin-bottom: 18px; }
   #content table {
+    width: 100%;
     border-collapse: collapse; }
     #content table tr {
       border-bottom: 2px solid #6f4e37; }
     #content table th, #content table td {
       padding: 10px 5px; }
+    #content table .item-name {
+      width: 30%; }
     #content table .photos {
-      width: 200px; }
+      width: 20%; }
+    #content table .item-cost {
+      width: 20%; }
+    #content table .description {
+      width: 30%; }
     #content table img {
       width: auto;
       height: 100px; }
