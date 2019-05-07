@@ -268,17 +268,27 @@ nav {
       border-bottom: 2px solid #6f4e37; }
     #content table th, #content table td {
       padding: 10px 5px; }
-    #content table .item-name {
-      width: 30%; }
-    #content table .photos {
-      width: 20%; }
-    #content table .item-cost {
-      width: 20%; }
-    #content table .description {
-      width: 30%; }
+    #content table thead th {
+      font-weight: bold; }
     #content table img {
       width: auto;
       height: 100px; }
+  #content .menu-table .item-name {
+    width: 30%; }
+  #content .menu-table .photos {
+    width: 20%; }
+  #content .menu-table .item-cost {
+    width: 20%; }
+  #content .menu-table .description {
+    width: 30%; }
+  #content .events-table .event-name {
+    width: 30%; }
+  #content .events-table .date-time {
+    width: 30%; }
+  #content .events-table .event-info {
+    width: 40%; }
+  #content .events-table tr td:nth-of-type(1) {
+    font-weight: bold; }
 
 footer {
   padding: 20px;

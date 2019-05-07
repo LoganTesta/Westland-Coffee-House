@@ -30,12 +30,14 @@ require_once 'connect.php';
                     <div class="col-sma-12">
                         <h3>Peruse Our Delicious Food and Beverages Menu</h3>
                         <p>Menu items.</p>
-                        <table>
+                        <table class="menu-table">
                             <thead>
-                            <th class="item-name"><strong>Item</strong></th>
-                            <td class="photos"><strong>Photo</strong></td>
-                            <th class="item-cost"><strong>Description</strong></th>
-                            <th><strong>Price</strong></th>
+                                <tr>
+                                    <th class="item-name">Item</th>
+                                    <th class="photos">Photo</th>
+                                    <th class="item-cost">Price</th>
+                                    <th class="description">Description</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -59,7 +61,7 @@ require_once 'connect.php';
                                 <tr>
                                     <td>Hot Chocolate</td>
                                     <td></td>
-                                    <td>$2.75, $3.50</td>
+                                    <td>$2.75, $3.25, $3.75</td>
                                     <td>Always a good treat on a chilly day!</td>
                                 </tr>
                                 <tr>
@@ -85,6 +87,12 @@ require_once 'connect.php';
                                     <td><img src="assets/images/menu/green-tea-latte.jpg" alt="Green Tea Latte." /></td>
                                     <td>$3.50, $4.00, $4.50</td>
                                     <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Iced Coffee</td>
+                                    <td></td>
+                                    <td>$2.25, $2.75, $3.25</td>
+                                    <td>Cool and refreshing, with milk and sweetner to taste</td>
                                 </tr>
                                 <tr>
                                     <td>Milkshake (no-coffee)</td>
@@ -153,16 +161,10 @@ require_once 'connect.php';
                                     <td>Vanilla, Chocolate, Strawberry, Cherry, Chocolate Fudge, and more!</td>
                                 </tr>
                                 <tr>
+                                    <td>House made slice of pie!</td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>$3.00</td>
+                                    <td>Seasonal: Blueberry, pumpkin, pecan, banana cream</td>
                                 </tr>
                                 <tr>
                                     <td></td>

@@ -119,7 +119,7 @@ p, #ufoList {
 }
 
 p {
-    
+
 }
 
 a {
@@ -179,7 +179,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*Edge */
 ::-ms-input-placeholder {
-     color: #0066cc;
+    color: #0066cc;
 }
 
 textarea {
@@ -210,7 +210,7 @@ input:focus, textarea:focus {
 
 /******************************************************* Beginning of site-specific styles */
 #bodyWrapper {
-      background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
 }
 
 h2 { color: #f9f9f9; font-weight: bold; }
@@ -239,7 +239,7 @@ header { margin-left: 10px; width: 100%; }
 nav { 
     padding: 15px;
     color: $firstStyleColor; 
-   
+
     a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #f9f9f9; }   
 }
 
@@ -269,6 +269,16 @@ nav {
         th, td {
             padding: 10px 5px;   
         }
+        thead th {
+            font-weight: bold; 
+        }
+        img {
+            width: auto;
+            height: 100px;
+        }
+    }
+
+    .menu-table {
         .item-name {
             width: 30%;
         }
@@ -281,10 +291,17 @@ nav {
         .description {
             width: 30%;
         }
-        img {
-            width: auto;
-            height: 100px;
-        }
+    }
+
+    .events-table {
+
+        .event-name { width: 30%; }
+        .date-time { width: 30%; }
+        .event-info { width: 40%; }
+
+        tr {
+            td:nth-of-type(1) { font-weight: bold; }
+        } 
     }
 
 
@@ -315,7 +332,7 @@ footer {
     #bodyWrapper {
         width: 90%;
     }
-      
+
     h2 {
         font-size: 20px;
     }
@@ -329,11 +346,11 @@ footer {
 
 
 @media only screen and (min-width: 700px){
- 
+
     h2 {
         font-size: 26px;
     } 
-    
+
 }
 
 
@@ -353,19 +370,19 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header { margin-left: 170px; width: 350px; }
     #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
     #mobileNav { display: none; }
     #desktopNav { display: block; position: absolute; top: 0; right: 0; }
-    
+
     .title-container {
         #mainTitle {
-              a { font-size: 48px; }
+            a { font-size: 48px; }
         }
     }
 
-    
+
     nav {
         li { 
             display: inline-block; padding-right: 40px;
@@ -379,7 +396,7 @@ footer {
             padding-left: 20px;
         }
     }
-    
+
 }
 
 
@@ -388,5 +405,5 @@ footer {
     #bodyWrapper {
         width: 1540px;
     }
-    
+
 }
