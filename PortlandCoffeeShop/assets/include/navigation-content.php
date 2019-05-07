@@ -5,7 +5,7 @@
         <li><a href="menu.php" class="navLink">Menu</a></li>
         <li><a href="events.php" class="navLink">Events</a></li>
         <li><a href="contact-us.php" class="navLink">Contact Us</a></li>
-        <li><a href="contact-us.php" class="navLink">Careers</a></li>
+        <li><a href="careers.php" class="navLink">Careers</a></li>
     </ul>
 </nav>
 <nav id="mobileNav">
@@ -15,6 +15,6 @@
         <li><a href="menu.php">Menu</a></li>
         <li><a href="events.php">Events</a></li>
         <li><a href="contact-us.php">Contact Us</a></li>
-        <li><a href="contact-us.php" class="navLink">Careers</a></li>
+        <li><a href="careers.php" class="navLink">Careers</a></li>
     </ul>
 </nav>
