@@ -273,22 +273,6 @@ nav {
     #content table img {
       width: auto;
       height: 100px; }
-  #content .menu-table .item-name {
-    width: 30%; }
-  #content .menu-table .photos {
-    width: 20%; }
-  #content .menu-table .item-cost {
-    width: 20%; }
-  #content .menu-table .description {
-    width: 30%; }
-  #content .events-table .event-name {
-    width: 30%; }
-  #content .events-table .date-time {
-    width: 30%; }
-  #content .events-table .event-info {
-    width: 40%; }
-  #content .events-table tr td:nth-of-type(1) {
-    font-weight: bold; }
 
 footer {
   padding: 20px;
@@ -296,6 +280,18 @@ footer {
   background-color: rgba(255, 233, 204, 0.9); }
   footer .footer-copyright {
     text-align: center; }
+
+.menu-table th, .menu-table td, .events-table th, .events-table td {
+  display: block; }
+
+.events-table .event-name {
+  width: 30%; }
+.events-table .date-time {
+  width: 30%; }
+.events-table .event-info {
+  width: 40%; }
+.events-table tr td:nth-of-type(1) {
+  font-weight: bold; }
 
 .input-container {
   padding: 15px;
@@ -374,7 +370,19 @@ footer {
   #content {
     padding: 20px; }
     #content h3 {
-      padding-left: 20px; } }
+      padding-left: 20px; }
+
+  .menu-table th, .menu-table td, .events-table th, .events-table td {
+    display: table-cell; }
+
+  .menu-table .item-name {
+    width: 30%; }
+  .menu-table .photos {
+    width: 20%; }
+  .menu-table .item-cost {
+    width: 20%; }
+  .menu-table .description {
+    width: 30%; } }
 @media only screen and (min-width: 1600px) {
   #bodyWrapper {
     width: 1540px; } }
