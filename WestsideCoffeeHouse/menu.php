@@ -167,16 +167,16 @@ require_once 'connect.php';
                                     <td>Seasonal: Blueberry, pumpkin, pecan, banana cream</td>
                                 </tr>
                                 <tr>
+                                    <td>House made banana bread slice</td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>$2.25/slice or $12.00 loaf</td>
+                                    <td>Made with half whole grain, flaxseed, and oats.  Delicious!</td>
                                 </tr>
                                 <tr>
+                                    <td>Soup Bowl</td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>$2.75-$4.75</td>
+                                    <td>Tomato, Minestrone, Soup of the Day.  Comes with your choice crackers.</td>
                                 </tr>
                             </tbody>
                         </table>
