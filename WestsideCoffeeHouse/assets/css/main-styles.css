@@ -297,6 +297,24 @@ footer {
   footer .footer-copyright {
     text-align: center; }
 
+.input-container {
+  padding: 15px;
+  color: #6f4e37; }
+  .input-container label {
+    float: left;
+    width: 25%; }
+  .input-container input, .input-container textarea {
+    float: left;
+    width: 75%; }
+
+.contact-us-container {
+  color: #6f4e37; }
+
+#contactButton {
+  padding: 10px 15px;
+  background-color: #ffe9cc;
+  border-radius: 15px; }
+
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
   /* The main border around the entire document */

@@ -28,29 +28,33 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        <h3>Contact Us!  You might even get a Free Coffee!</h3>
+                        <h3>Write Us!  You might even get a Free Coffee!</h3>
                         <p>Contact us with questions, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
                             and suggestions from our community!</p>
                     </div>
 
-                    <div class="col-sma-6">
+                    <div class="col-sma-6 contact-us-container">
                         <h4>Contact Westside Coffee House</h4>
                         <form id="contact-our-coffee-shop-form">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>
-                                    <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">                              
+                                <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
+                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userEmail"><strong>Email **</strong></label>
-                                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Here" required="required">                              
+                                <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Here" required="required"> 
+                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
-                                    <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">                              
+                                    <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">    
+                                    <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userMessage"><strong>Message **</strong></label>
                                 <textarea id="userMessage" name="userMessage" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
+                                 <div class="clear-both"></div>
                             </div>                           
                             <div class="input-container">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          

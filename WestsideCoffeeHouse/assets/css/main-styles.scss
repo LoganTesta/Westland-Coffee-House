@@ -316,8 +316,30 @@ footer {
     }
 }
 
+.input-container {
+    padding: 15px; 
+    color: $firstStyleColor;
+    label { 
+        float: left;
+        width: 25%;
+    }
+    input, textarea {
+        float: left;
+        width: 75%;
+          
+    }
+    
+}
 
+.contact-us-container {
+    color: $firstStyleColor;
+}
 
+#contactButton { 
+    padding: 10px 15px;
+    background-color: $thirdStyleColor; 
+    border-radius: 15px;
+}
 
 
 
