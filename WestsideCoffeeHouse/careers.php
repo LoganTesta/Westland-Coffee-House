@@ -27,11 +27,16 @@ require_once 'connect.php';
 
             <div id="content">
                 <div class="content-row">
-                    <div class="col-sma-12">
+                    <div class="col-sma-8">
                         <h3>Careers</h3>
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
                         <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westside Coffee House THE best 
                             coffee store in the Portland area.  Come on in an pick an application!</p>
+                    </div>
+                    <div class="col-sma-4">
+                        <h4>It's Westside Time!</h4>
+                        <div class="barista one">
+                        </div>
                     </div>
                 </div>
             </div>
