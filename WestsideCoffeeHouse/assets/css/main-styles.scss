@@ -232,14 +232,11 @@ header { margin-left: 10px; width: 100%; }
 }
 
 #logo { position: static; width: 50px; padding-left: 20px; }
-
-
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 nav { 
     padding: 15px;
     color: $firstStyleColor; 
-
     a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #f9f9f9; }   
 }
 
@@ -379,7 +376,6 @@ footer {
     h3 {
         font-size: 20px;
     }
-
 }
 
 
@@ -439,7 +435,6 @@ footer {
 
 
     .input-container {
-
         label { 
             width: 25%;
         }
