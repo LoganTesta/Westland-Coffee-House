@@ -11,7 +11,7 @@ require_once 'connect.php';
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Portland Coffee Shop</title>	
+        <title>Westside Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -20,20 +20,18 @@ require_once 'connect.php';
             <header>
                 <?php include 'assets/include/logo.php'; ?>
                 <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">500</h2>
+                <h2 id="subTitle">Events</h2>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
                 <div class="content-row">
-                    <div class="col-sma-6">
-                        <h3>Server Error</h3>
-                        <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
-                    </div>
-
-                    <div class="col-sma-6">
-                       
+                    <div class="col-sma-12">
+                        <h3>Careers</h3>
+                        <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
+                        <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westside Coffee House THE best 
+                            coffee store in the Portland area.  Come on in an pick an application!</p>
                     </div>
                 </div>
             </div>

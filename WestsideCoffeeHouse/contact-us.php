@@ -11,7 +11,7 @@ require_once 'connect.php';
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Portland Coffee Shop</title>	
+        <title>Westside Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -34,7 +34,7 @@ require_once 'connect.php';
                     </div>
 
                     <div class="col-sma-6">
-                        <h4>Contact Portland Coffee Shop</h4>
+                        <h4>Contact Westside Coffee House</h4>
                         <form id="contact-our-coffee-shop-form">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>

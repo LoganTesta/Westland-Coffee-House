@@ -9,6 +9,6 @@
 
 
 <div class="title-container">
-    <h1 id="mainTitle"><a href="index.php">Portland Coffee Shop</a></h1>
+    <h1 id="mainTitle"><a href="index.php">Westside Coffee House</a></h1>
 </div>
         

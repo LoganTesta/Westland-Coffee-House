@@ -11,7 +11,7 @@ require_once 'connect.php';
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Portland Coffee Shop</title>	
+        <title>Westside Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -20,7 +20,7 @@ require_once 'connect.php';
             <?php include 'assets/include/logo.php'; ?>
             <header>
                 <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Portland Coffee Shop</h2>
+                <h2 id="subTitle">Westside Coffee House</h2>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
@@ -29,7 +29,7 @@ require_once 'connect.php';
                 <div class="content-row">
                     <div class="content-body col-sma-12">
                         <h3>The Place to Grab Coffee and Meet up!</h3>
-                        <p>Welcome to our Portland Coffee Shop.  We have the finest coffee and are reputed to be one of the best places in Portland 
+                        <p>Welcome to our Westside Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
                             to grab coffee and hangout.</p>
                         <p>But don't take our word for it, come on by and see for yourself!</p>
                     </div>

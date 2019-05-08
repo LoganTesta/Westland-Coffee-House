@@ -11,7 +11,7 @@ require_once 'connect.php';
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Portland Coffee Shop</title>	
+        <title>Westside Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -20,7 +20,7 @@ require_once 'connect.php';
             <header>
                 <?php include 'assets/include/logo.php'; ?>
                 <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">About Portland Coffee Shop</h2>
+                <h2 id="subTitle">500</h2>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
@@ -28,8 +28,8 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        <h3>About Portland Coffee Shop</h3>
-                        <p>Read more about our coffee shop.</p>
+                        <h3>Server Error</h3>
+                        <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
                     </div>
 
                     <div class="col-sma-6">
