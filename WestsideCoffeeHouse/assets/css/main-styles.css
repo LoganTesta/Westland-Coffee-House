@@ -281,6 +281,17 @@ footer {
   footer .footer-copyright {
     text-align: center; }
 
+.visitors-bg-image {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px; }
+
+.visitors-bg-image.one {
+  background: url("../images/two-women-visitors.jpg") 50% 0%/cover no-repeat; }
+
+.visitors-bg-image.two {
+  background: url("../images/two-visitors-at-a-table.jpg") 50% 0%/cover no-repeat; }
+
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }
 

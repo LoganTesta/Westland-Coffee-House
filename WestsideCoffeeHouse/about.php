@@ -29,11 +29,20 @@ require_once 'connect.php';
                 <div class="content-row">
                     <div class="col-sma-6">
                         <h3>About Westside Coffee House</h3>
-                        <p>Read more about our coffee shop.</p>
+                        <p>We are friendly and locally owned!</p>
+                        <h4>Our Coffee Shop's Story</h4>
+                        <p>We were founded in 2002 with the goal of being the best place to hang out and grab quality coffee, beverages, and food
+                            with friends and family.</p>
+                        <p>Since the third year our customer visits have grown dramatically and we are now a popular coffee and fine food destination.  
+                            People come in from everything from morning coffee to studying or holding meetings to social events and gatherings.  We also
+                            regularly host community events like game nights, mini background concerts, and art shows, and work with local charities as 
+                            well.</p>
+                        <p>Come pay us a visit and we'll make sure you have a good beverage and a good time!</p>
                     </div>
 
                     <div class="col-sma-6">
-                       
+                        <div class="visitors-bg-image one"></div>
+                        <div class="visitors-bg-image two"></div>
                     </div>
                 </div>
             </div>
