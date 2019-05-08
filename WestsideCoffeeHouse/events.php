@@ -55,19 +55,20 @@ require_once 'connect.php';
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Local Indie Band</td>
-                                    <td>Thursday April 25, 7-9 PM</td>
-                                    <td>Free local concert!</td>
+                                    <td>Food Drive</td>
+                                    <td>March 1st-31st</td>
+                                    <td>Bring in fresh canned and boxed food to help locals in need through the Oregon Food Bank.  We proudly support 
+                                    local charities in our community!</td>
                                 </tr>
                                 <tr>
-                                    <td>Violin Concerto with Local Musician</td>
+                                    <td>Piano Hour with Local Musician</td>
                                     <td>Thursday May 15, 8-9 PM</td>
                                     <td>Free local concert!</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>Local Indie Band</td>
+                                    <td>Thursday April 25, 7-9 PM</td>
+                                    <td>Free local concert!</td>
                                 </tr>
                             </tbody>
 
