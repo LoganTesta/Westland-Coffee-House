@@ -254,7 +254,7 @@ nav {
   min-height: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.9); }
   #content h3 {
     color: #6f4e37; }
@@ -286,10 +286,12 @@ footer {
   color: #6f4e37; }
   .input-container label {
     float: left;
-    width: 25%; }
-  .input-container input, .input-container textarea {
+    width: 35%; }
+  .input-container input {
     float: left;
-    width: 75%; }
+    width: 65%; }
+  .input-container textarea {
+    width: 100%; }
 
 /*About page*/
 .visitors-bg-image {
@@ -392,9 +394,16 @@ footer {
       font-size: 22px; }
 
   #content {
-    padding: 20px; }
+    padding: 20px;
+    margin-top: 200px; }
     #content h3 {
       padding-left: 20px; }
+
+  .input-container label {
+    width: 25%; }
+  .input-container input, .input-container textarea {
+    float: left;
+    width: 75%; }
 
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
