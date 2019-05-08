@@ -213,8 +213,12 @@ input:focus, textarea:focus {
     background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
 }
 
-h2 { color: #f9f9f9; font-weight: bold; }
+h2 { font-size: 24px; color: #f9f9f9; font-weight: bold; }
 
+
+h3 {
+    font-size: 20px;
+}
 header { margin-left: 10px; width: 100%; }
 
 
@@ -223,8 +227,7 @@ header { margin-left: 10px; width: 100%; }
         a {
             position: relative;
             display: inline-block;
-            width: 283px;
-            font-size: 24px; 
+            font-size: 28px; 
             font-weight: bold;
             color: #ffffff;  
         }
@@ -266,7 +269,7 @@ nav {
         th, td {
             padding: 10px 5px;   
         }
-        thead th {
+        th {
             font-weight: bold; 
         }
         img {
@@ -341,12 +344,6 @@ footer {
 
 
 /*Events page*/
-.events-table {
-    .event-name { width: 30%; }
-    .date-time { width: 30%; }
-    .event-info { width: 40%; }
-}
-
 
 
 /*Contact Us page*/
@@ -378,19 +375,18 @@ footer {
     #bodyWrapper {
         width: 90%;
     }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
 }
 
 
 
 @media only screen and (min-width: 700px){
+    .title-container {
+        #mainTitle {
+            a { 
+                font-size: 36px; 
+            }
+        }
+    }
 
     h2 {
         font-size: 26px;
@@ -423,7 +419,10 @@ footer {
 
     .title-container {
         #mainTitle {
-            a { font-size: 48px; }
+            a { 
+                width: 283px;
+                font-size: 48px; 
+            }
         }
     }
 
@@ -486,6 +485,12 @@ footer {
         .description {
             width: 30%;
         }
+    }
+
+    .events-table {
+        .event-name { width: 30%; }
+        .date-time { width: 30%; }
+        .event-info { width: 40%; }
     }
 
 }
