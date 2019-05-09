@@ -33,8 +33,8 @@ require_once 'connect.php';
                         <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westside Coffee House THE best 
                             coffee store in the Portland area.  Come on in an pick an application!</p>
                     </div>
-                    <div class="col-sma-4">
-                        <h4>It's Westside Time!</h4>
+                    <div class="col-sma-4 careers-featured">
+                        <h4>"It's Westside Time!"</h4>
                         <div class="barista one">
                         </div>
                     </div>

@@ -217,7 +217,8 @@ input:focus, textarea:focus {
 h2 {
   font-size: 24px;
   color: #f9f9f9;
-  font-weight: bold; }
+  font-weight: bold;
+  color: rgba(127, 177, 112, 0.9); }
 
 h3 {
   font-size: 20px; }
@@ -312,13 +313,17 @@ footer {
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }
 .menu-table th, .events-table th {
-  color: #4f7942; }
+  color: #4f7942;
+  font-size: 19px; }
 .menu-table tr td:nth-of-type(1), .events-table tr td:nth-of-type(1) {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   color: #6f4e37; }
 .menu-table tr td:nth-of-type(3), .events-table tr td:nth-of-type(3) {
+  text-align: center; }
+
+.events-table tr td:nth-of-type(2) {
   text-align: center; }
 
 /*Events page*/
@@ -332,6 +337,10 @@ footer {
   border-radius: 15px; }
 
 /*Careers page */
+.careers-featured h4 {
+  padding-bottom: 15px;
+  text-align: center; }
+
 .barista {
   width: 100%;
   height: 300px;
@@ -353,7 +362,10 @@ footer {
     font-size: 26px; } }
 @media only screen and (min-width: 1200px) {
   h3 {
-    font-size: 24px; }
+    font-size: 26px; }
+
+  h4 {
+    font-size: 22px; }
 
   /* The main border around the entire document */
   /* *** Beginning of Major divs *** */
@@ -411,6 +423,9 @@ footer {
 
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
+  .menu-table th, .events-table th {
+    text-align: left;
+    font-size: 20px; }
   .menu-table tr td:nth-of-type(1), .menu-table tr td:nth-of-type(3), .events-table tr td:nth-of-type(1), .events-table tr td:nth-of-type(3) {
     text-align: left; }
 
@@ -428,7 +443,9 @@ footer {
   .events-table .date-time {
     width: 30%; }
   .events-table .event-info {
-    width: 40%; } }
+    width: 40%; }
+  .events-table tr td:nth-of-type(2) {
+    text-align: left; } }
 @media only screen and (min-width: 1600px) {
   #bodyWrapper {
     width: 1540px; } }
