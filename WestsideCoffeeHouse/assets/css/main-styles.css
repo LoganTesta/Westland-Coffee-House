@@ -309,6 +309,10 @@ footer {
 .visitors-bg-image.two {
   background: url("../images/two-visitors-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
+/*Location page**/
+#content h3.location-header {
+  color: #459747; }
+
 /* Menu page */
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }

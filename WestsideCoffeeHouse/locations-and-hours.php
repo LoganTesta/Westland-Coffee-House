@@ -69,7 +69,7 @@ require_once 'connect.php';
 
                     <div class="col-sma-6">
                         <div>
-                            <h3>Location</h3>
+                            <h3 class="location-header">Location</h3>
                             <p>33322 SW 11th Avenue Portland, Oregon 97205</p>
                         </div>
                     </div>

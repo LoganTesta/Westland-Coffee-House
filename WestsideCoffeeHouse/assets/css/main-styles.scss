@@ -5,7 +5,8 @@ $secondStyleColor: #4f7942; /* green */
 $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
 
-$secondStyleColorAdjusted: adjust-color(#4f7942, $lightness: +20%, $alpha: -0.1);
+$secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $alpha: -0.1);
+$secondStyleColorGreenTint: adjust-color($secondStyleColor, $red: -10, $green: 30, $blue: 5);
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -325,6 +326,14 @@ footer {
 .visitors-bg-image.two { 
     background: url('../images/two-visitors-at-a-table.jpg') 50% 0%/cover no-repeat;
 }
+
+/*Location page**/
+#content {
+    h3.location-header {
+        color: $secondStyleColorGreenTint;
+    }
+}
+
 
 
 /* Menu page */
