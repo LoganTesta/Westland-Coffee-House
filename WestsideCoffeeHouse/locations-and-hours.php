@@ -70,7 +70,10 @@ require_once 'connect.php';
                     <div class="col-sma-6">
                         <div>
                             <h3 class="location-header">Location</h3>
-                            <p>33322 SW 11th Avenue Portland, Oregon 97205</p>
+                            <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
+                            <img src="assets/images/westside-coffee-house-location.png" alt="Westside Coffee House Location" />
+                        
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>

@@ -344,12 +344,15 @@ footer {
 #contactButton {
   padding: 10px 15px;
   background-color: #ffe9cc;
-  border-radius: 15px; }
+  border: 2px solid #333333;
+  border-radius: 15px;
+  cursor: pointer; }
 
 /*Careers page */
 .careers-featured h4 {
   padding-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  color: #4f7942; }
 
 .barista {
   width: 100%;

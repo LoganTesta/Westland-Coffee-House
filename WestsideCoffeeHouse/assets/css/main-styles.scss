@@ -390,7 +390,9 @@ footer {
 #contactButton { 
     padding: 10px 15px;
     background-color: $thirdStyleColor; 
+    border: 2px solid #333333;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -399,6 +401,7 @@ footer {
     h4 {
         padding-bottom: 15px;
         text-align: center;
+        color: $secondStyleColor;
     }
 }
 
