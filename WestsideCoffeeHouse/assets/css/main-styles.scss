@@ -305,6 +305,17 @@ footer {
     .footer-copyright {
         text-align: center;
     }
+    .social-container {
+        padding-top: 20px;
+        .social-logo {
+            padding: 0 20px;
+            .social-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
 }
 
 
@@ -343,7 +354,7 @@ footer {
 
 /*Location page**/
 #content {
-      h3.coffee-shop-hours-header {
+    h3.coffee-shop-hours-header {
         color: $firstStyleColorDarken;
     }
     h3.location-header {

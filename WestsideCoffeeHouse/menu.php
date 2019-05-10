@@ -107,6 +107,12 @@ require_once 'connect.php';
                                     <td>Vanilla, chocolate, or strawberry.</td>
                                 </tr>
                                 <tr>
+                                    <td>Cold or Hot Tea</td>
+                                    <td></td>
+                                    <td>$1.95, $2.20, $2.45</td>
+                                    <td>Assortment of teas, including mint, green, chai, and more.</td>
+                                </tr>
+                                <tr>
                                     <td><h4>Food</h4></td>
                                     <td></td>
                                     <td></td>
