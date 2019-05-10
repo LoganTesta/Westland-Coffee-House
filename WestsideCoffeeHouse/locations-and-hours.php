@@ -28,7 +28,7 @@ require_once 'connect.php';
             <div id="content">
                 <div class="content-row">
                     <div class="col-sma-6">
-                        <h3>Coffee Shop Hours</h3>
+                        <h3 class="coffee-shop-hours-header">Coffee Shop Hours</h3>
                         <table>
                             <thead>
                             <th><strong>Day</strong></th>

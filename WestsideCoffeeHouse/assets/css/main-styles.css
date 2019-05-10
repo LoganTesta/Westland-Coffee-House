@@ -248,10 +248,14 @@ header {
 nav {
   padding: 15px;
   color: #6f4e37; }
-  nav a, nav a:link, nav a:visited {
+  nav a {
     font-size: 18px;
     font-weight: bold;
     color: #f9f9f9; }
+    nav a:link, nav a:visited {
+      color: #f9f9f9; }
+    nav a:hover {
+      color: #ffe9cc; }
 
 #content {
   width: 100%;
@@ -310,8 +314,10 @@ footer {
   background: url("../images/two-visitors-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
 /*Location page**/
+#content h3.coffee-shop-hours-header {
+  color: #593e2c; }
 #content h3.location-header {
-  color: #459747; }
+  color: #457e60; }
 
 /* Menu page */
 .menu-table th, .menu-table td, .events-table th, .events-table td {

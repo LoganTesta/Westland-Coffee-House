@@ -6,7 +6,10 @@ $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
 
 $secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $alpha: -0.1);
-$secondStyleColorGreenTint: adjust-color($secondStyleColor, $red: -10, $green: 30, $blue: 5);
+$secondStyleColorBlueTint: adjust-color($secondStyleColor, $red: -10, $green: 5, $blue: 30);
+
+$firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -20%);
+$secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 20%);
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -212,6 +215,7 @@ input:focus, textarea:focus {
 
 
 /******************************************************* Beginning of site-specific styles */
+
 #bodyWrapper {
     background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
 }
@@ -243,7 +247,17 @@ header { margin-left: 10px; width: 100%; }
 nav { 
     padding: 15px;
     color: $firstStyleColor; 
-    a, a:link, a:visited { font-size: 18px; font-weight: bold; color: #f9f9f9; }   
+    a {
+        font-size: 18px; 
+        font-weight: bold; 
+        color: #f9f9f9; 
+        &:link, &:visited { 
+            color: #f9f9f9; 
+        }
+        &:hover { 
+            color: $thirdStyleColor;
+        }
+    }   
 }
 
 
@@ -329,8 +343,11 @@ footer {
 
 /*Location page**/
 #content {
+      h3.coffee-shop-hours-header {
+        color: $firstStyleColorDarken;
+    }
     h3.location-header {
-        color: $secondStyleColorGreenTint;
+        color: $secondStyleColorBlueTint;
     }
 }
 
