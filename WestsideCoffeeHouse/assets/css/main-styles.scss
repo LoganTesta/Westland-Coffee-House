@@ -220,7 +220,7 @@ input:focus, textarea:focus {
     background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
 }
 
-h2 { font-size: 24px; color: #f9f9f9; font-weight: bold; color: $secondStyleColorAdjusted; }
+h2 { font-size: 24px; color: #f9f9f9; font-weight: bold; color: $secondStyleColor; }
 
 
 h3 {
@@ -348,6 +348,9 @@ footer {
     }
     h3.location-header {
         color: $secondStyleColorBlueTint;
+    }
+    .hours-table {
+        th { color: $secondStyleColorAdjusted; }
     }
 }
 

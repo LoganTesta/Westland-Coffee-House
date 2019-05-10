@@ -218,7 +218,7 @@ h2 {
   font-size: 24px;
   color: #f9f9f9;
   font-weight: bold;
-  color: rgba(127, 177, 112, 0.9); }
+  color: #4f7942; }
 
 h3 {
   font-size: 20px; }
@@ -318,6 +318,8 @@ footer {
   color: #593e2c; }
 #content h3.location-header {
   color: #457e60; }
+#content .hours-table th {
+  color: rgba(127, 177, 112, 0.9); }
 
 /* Menu page */
 .menu-table th, .menu-table td, .events-table th, .events-table td {
