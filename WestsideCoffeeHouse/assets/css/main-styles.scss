@@ -212,6 +212,14 @@ input:focus, textarea:focus {
     background-color: #ffffff;
 }
 
+/* Use .inner-wrapper for layouts where you want to have backgrounds go out of the site 'border' provided by #bodyWrapper '*/
+.inner-wrapper {
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 /******************************************************* Beginning of site-specific styles */
@@ -436,7 +444,7 @@ footer {
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px){
     /* The main border around the entire document */
-    #bodyWrapper {
+    .inner-wrapper {
         width: 90%;
     }
 }
@@ -472,17 +480,22 @@ footer {
     /* The main border around the entire document */
     /* *** Beginning of Major divs *** */
     #bodyWrapper {
-        position: relative;
-        width: 1200px;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
+        .inner-wrapper {
+            width: 1200px;
+
+        }
     }
 
-    header { margin-left: 170px; width: 350px; }
-    #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
+
+    #bodyWrapper{
+        header { }
+        .title-container { margin-left: 170px; width: 350px; }
+         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
+         #subTitle { margin-left: 170px; }
+    } 
+  
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: 0; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -192px; right: 0; }
 
     .title-container {
         #mainTitle {
@@ -572,7 +585,7 @@ footer {
 
 
 @media only screen and (min-width: 1600px){
-    #bodyWrapper {
+    .inner-wrapper {
         width: 1540px;
     }
 

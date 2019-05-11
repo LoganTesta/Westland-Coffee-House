@@ -210,6 +210,13 @@ input:focus, textarea:focus {
   margin-right: auto;
   background-color: #ffffff; }
 
+/* Use .inner-wrapper for layouts where you want to have backgrounds go out of the site 'border' provided by #bodyWrapper '*/
+.inner-wrapper {
+  position: relative;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
 /******************************************************* Beginning of site-specific styles */
 #bodyWrapper {
   background: url("../images/coffee-shop-exterior.jpg") 50% 0%/100% auto no-repeat; }
@@ -377,7 +384,7 @@ footer {
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
   /* The main border around the entire document */
-  #bodyWrapper {
+  .inner-wrapper {
     width: 90%; } }
 @media only screen and (min-width: 700px) {
   .title-container #mainTitle a {
@@ -394,23 +401,20 @@ footer {
 
   /* The main border around the entire document */
   /* *** Beginning of Major divs *** */
-  #bodyWrapper {
-    position: relative;
-    width: 1200px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto; }
+  #bodyWrapper .inner-wrapper {
+    width: 1200px; }
 
-  header {
+  #bodyWrapper .title-container {
     margin-left: 170px;
     width: 350px; }
-
-  #logo {
+  #bodyWrapper #logo {
     position: absolute;
     top: 20px;
     left: 20px;
     width: 100%;
     padding-left: 0; }
+  #bodyWrapper #subTitle {
+    margin-left: 170px; }
 
   #mobileNav {
     display: none; }
@@ -418,7 +422,7 @@ footer {
   #desktopNav {
     display: block;
     position: absolute;
-    top: 0;
+    top: -192px;
     right: 0; }
 
   .title-container #mainTitle a {
@@ -472,5 +476,5 @@ footer {
   .events-table tr td:nth-of-type(2) {
     text-align: left; } }
 @media only screen and (min-width: 1600px) {
-  #bodyWrapper {
+  .inner-wrapper {
     width: 1540px; } }

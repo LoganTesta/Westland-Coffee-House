@@ -19,14 +19,16 @@ require_once 'connect.php';
         <div id="bodyWrapper" class="index">
             <?php include 'assets/include/logo.php'; ?>
             <header>
-                <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Westside Coffee House</h2>
+                <div class="inner-wrapper">
+                    <?php include 'assets/include/header-content.php'; ?>
+                    <h2 id="subTitle">Westside Coffee House</h2>
+                </div>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row">
+                <div class="content-row inner-wrapper">
                     <div class="content-body col-sma-12">
                         <h3>The Place to Grab Coffee and Meet up!</h3>
                         <p>Welcome to our Westside Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
