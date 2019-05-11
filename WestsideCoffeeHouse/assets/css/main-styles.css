@@ -291,10 +291,12 @@ footer {
   footer .social-container {
     padding-top: 20px; }
     footer .social-container .social-logo {
-      padding: 0 20px; }
+      display: inline-block;
+      padding: 0 15px; }
       footer .social-container .social-logo .social-icon {
-        width: 40px;
-        height: 40px; }
+        transition: 0.4s all; }
+      footer .social-container .social-logo .social-icon:hover {
+        transition: 0.4s all; }
 
 .input-container {
   padding: 15px;
