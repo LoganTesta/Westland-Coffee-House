@@ -299,7 +299,7 @@ nav {
 
 
 footer {
-    padding: 20px;
+    padding: 30px 20px;
     color: #333;
     background-color: $thirdStyleColorRGBA;
     .footer-copyright {
@@ -307,6 +307,7 @@ footer {
     }
     .social-container {
         padding-top: 20px;
+        padding-bottom: 20px;
         .social-logo {
             display: inline-block;
             padding: 0 15px;

@@ -13,4 +13,8 @@
                 <a href=""><i class="fab fa-twitter fa-2x social-icon"></i></a>
             </div>
         </div>
+    <div class="location-footer">
+         <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
+         <p>503-823-2222</p>
+    </div>
 </footer>

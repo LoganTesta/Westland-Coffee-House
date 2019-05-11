@@ -283,13 +283,14 @@ nav {
       height: auto; }
 
 footer {
-  padding: 20px;
+  padding: 30px 20px;
   color: #333;
   background-color: rgba(255, 233, 204, 0.9); }
   footer .footer-copyright {
     text-align: center; }
   footer .social-container {
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
     footer .social-container .social-logo {
       display: inline-block;
       padding: 0 15px; }
