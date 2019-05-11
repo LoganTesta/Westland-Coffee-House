@@ -253,7 +253,7 @@ header {
   display: none; }
 
 nav {
-  padding: 15px;
+  padding: 0 15px;
   color: #6f4e37; }
   nav a {
     font-size: 18px;
@@ -429,11 +429,13 @@ footer {
     width: 283px;
     font-size: 48px; }
 
-  nav li {
-    display: inline-block;
-    padding-right: 40px; }
-    nav li a, nav li a:link, nav li a:visited {
-      font-size: 22px; }
+  nav {
+    padding: 15px 15px; }
+    nav li {
+      display: inline-block;
+      padding-right: 40px; }
+      nav li a, nav li a:link, nav li a:visited {
+        font-size: 22px; }
 
   #content {
     padding: 20px;

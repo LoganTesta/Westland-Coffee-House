@@ -18,15 +18,17 @@ require_once 'connect.php';
     <body>
         <div id="bodyWrapper">
             <header>
-                <?php include 'assets/include/logo.php'; ?>
-                <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Location</h2>
+                <div class="inner-wrapper">
+                    <?php include 'assets/include/logo.php'; ?>
+                    <?php include 'assets/include/header-content.php'; ?>
+                    <h2 id="subTitle">Location</h2>
+                </div>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row">
+                <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
                         <h3 class="coffee-shop-hours-header">Coffee Shop Hours</h3>
                         <table class="hours-table">
@@ -72,7 +74,7 @@ require_once 'connect.php';
                             <h3 class="location-header">Location</h3>
                             <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
                             <img src="assets/images/westside-coffee-house-location.png" alt="Westside Coffee House Location" />
-                        
+
                             <div id="map"></div>
                         </div>
                     </div>

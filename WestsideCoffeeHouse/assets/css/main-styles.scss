@@ -253,8 +253,9 @@ header { margin-left: 10px; width: 100%; }
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 nav { 
-    padding: 15px;
+    padding: 0 15px;
     color: $firstStyleColor; 
+    li { }
     a {
         font-size: 18px; 
         font-weight: bold; 
@@ -508,6 +509,7 @@ footer {
 
 
     nav {
+        padding: 15px 15px;
         li { 
             display: inline-block; padding-right: 40px;
             a, a:link, a:visited { font-size: 22px; }

@@ -18,15 +18,17 @@ require_once 'connect.php';
     <body>
         <div id="bodyWrapper">
             <header>
-                <?php include 'assets/include/logo.php'; ?>
-                <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Our Menu</h2>
+                <div class="inner-wrapper">
+                    <?php include 'assets/include/logo.php'; ?>
+                    <?php include 'assets/include/header-content.php'; ?>
+                    <h2 id="subTitle">Our Menu</h2>
+                </div>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row">
+                <div class="content-row inner-wrapper">
                     <div class="col-sma-12">
                         <h3>Peruse Our Delicious Food and Beverages Menu</h3>
                         <p>Menu items.</p>

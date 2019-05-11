@@ -18,15 +18,17 @@ require_once 'connect.php';
     <body>
         <div id="bodyWrapper">
             <header>
-                <?php include 'assets/include/logo.php'; ?>
-                <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Contact Us</h2>
+                <div class="inner-wrapper">
+                    <?php include 'assets/include/logo.php'; ?>
+                    <?php include 'assets/include/header-content.php'; ?>
+                    <h2 id="subTitle">Contact Us</h2>
+                </div>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row">
+                <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
                         <h3>Write Us!  You might even get a Free Coffee!</h3>
                         <p>Contact us with questions, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
@@ -48,13 +50,13 @@ require_once 'connect.php';
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
-                                    <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">    
-                                    <div class="clear-both"></div>
+                                <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">    
+                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userMessage"><strong>Message **</strong></label>
                                 <textarea id="userMessage" name="userMessage" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
-                                 <div class="clear-both"></div>
+                                <div class="clear-both"></div>
                             </div>                           
                             <div class="input-container">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          

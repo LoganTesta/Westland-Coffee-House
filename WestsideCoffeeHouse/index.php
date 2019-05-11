@@ -17,9 +17,10 @@ require_once 'connect.php';
 
     <body>
         <div id="bodyWrapper" class="index">
-            <?php include 'assets/include/logo.php'; ?>
+            
             <header>
                 <div class="inner-wrapper">
+                    <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
                     <h2 id="subTitle">Westside Coffee House</h2>
                 </div>

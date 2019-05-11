@@ -18,15 +18,17 @@ require_once 'connect.php';
     <body>
         <div id="bodyWrapper">
             <header>
-                <?php include 'assets/include/logo.php'; ?>
-                <?php include 'assets/include/header-content.php'; ?>
-                <h2 id="subTitle">Events</h2>
+                <div class="inner-wrapper">
+                    <?php include 'assets/include/logo.php'; ?>
+                    <?php include 'assets/include/header-content.php'; ?>
+                    <h2 id="subTitle">Events</h2>
+                </div>
             </header>
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
             <div id="content">
-                <div class="content-row">
+                <div class="content-row inner-wrapper">
                     <div class="col-sma-12">
                         <h3>Events</h3>
                         <p>We frequently host fun community events.  Check back often to see what's coming up.</p>
@@ -58,7 +60,7 @@ require_once 'connect.php';
                                     <td>Food Drive</td>
                                     <td>March 1st-31st</td>
                                     <td>Bring in fresh canned and boxed food to help locals in need through the Oregon Food Bank.  We proudly support 
-                                    local charities in our community!</td>
+                                        local charities in our community!</td>
                                 </tr>
                                 <tr>
                                     <td>Piano Hour with Local Musician</td>
