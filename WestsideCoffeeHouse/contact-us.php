@@ -33,7 +33,7 @@
 
                     <div class="col-sma-6 contact-us-container">
                         <h4>Contact Westside Coffee House</h4>
-                        <form id="contactOurCoffeeShop" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
+                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>
                                 <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
@@ -50,8 +50,8 @@
                                 <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
-                                <label for="userMessage"><strong>Message **</strong></label>
-                                <textarea id="userMessage" name="userMessage" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
+                                <label for="userComments"><strong>Message **</strong></label>
+                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
                                 <div class="clear-both"></div>
                             </div>                           
                             <div class="input-container">
