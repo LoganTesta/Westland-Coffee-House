@@ -10,8 +10,9 @@
         </ul>
     </nav>
 </div>
-<div class="inner-wrapper">
-    <nav id="mobileNav">
+<nav id="mobileNav">
+    <div id="dropdownButton"></div>
+    <div id="dropdownContent">
         <ul>
             <li><a href="about.php">About</a></li>
             <li><a href="locations-and-hours.php">Location</a></li>
@@ -20,5 +21,5 @@
             <li><a href="contact-us.php">Contact Us</a></li>
             <li><a href="careers.php" class="navLink">Careers</a></li>
         </ul>
-    </nav>
-</div>
+    </div>
+</nav>
