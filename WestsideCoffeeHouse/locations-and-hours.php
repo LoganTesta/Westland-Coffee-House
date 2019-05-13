@@ -1,8 +1,3 @@
-<?php
-ob_start();
-session_start();
-require_once 'connect.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,5 +87,3 @@ require_once 'connect.php';
     </body>
 
 </html>
-
-<?php ob_end_flush(); ?>

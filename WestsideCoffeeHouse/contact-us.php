@@ -1,8 +1,4 @@
-<?php
-ob_start();
-session_start();
-require_once 'connect.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +33,7 @@ require_once 'connect.php';
 
                     <div class="col-sma-6 contact-us-container">
                         <h4>Contact Westside Coffee House</h4>
-                        <form id="contact-our-coffee-shop-form">
+                        <form id="contactOurCoffeeShop" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>
                                 <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
@@ -77,5 +73,3 @@ require_once 'connect.php';
     </body>
 
 </html>
-
-<?php ob_end_flush(); ?>
