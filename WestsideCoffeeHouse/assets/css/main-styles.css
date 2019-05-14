@@ -322,9 +322,13 @@ nav {
 footer {
   padding: 30px 20px;
   color: #333;
-  background-color: rgba(255, 233, 204, 0.9); }
+  background-color: rgba(255, 233, 204, 0.9);
+  text-align: center; }
+  footer .footer-to-top {
+    padding-bottom: 0px; }
   footer .footer-copyright {
-    text-align: center; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
   footer .social-container {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -335,6 +339,18 @@ footer {
         transition: 0.4s all; }
       footer .social-container .social-logo .social-icon:hover {
         transition: 0.4s all; }
+  footer .footer-hours {
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    footer .footer-hours .day-hours {
+      padding-bottom: 10px; }
+    footer .footer-hours .day, footer .footer-hours .hours {
+      width: 150px;
+      display: inline-block; }
+    footer .footer-hours .hours {
+      padding-left: 20px; }
+  footer .location-footer {
+    padding-top: 20px; }
 
 .input-container {
   padding: 15px;

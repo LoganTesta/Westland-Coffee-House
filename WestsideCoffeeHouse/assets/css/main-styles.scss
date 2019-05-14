@@ -346,8 +346,13 @@ footer {
     padding: 30px 20px;
     color: #333;
     background-color: $thirdStyleColorRGBA;
+    text-align: center;
+    .footer-to-top {
+        padding-bottom: 0px;
+    }
     .footer-copyright {
-        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .social-container {
         padding-top: 20px;
@@ -362,6 +367,22 @@ footer {
                 transition: 0.4s all;
             }
         }
+    }
+    
+    .footer-hours {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        .day-hours { padding-bottom: 10px; }
+        .day, .hours {
+            width: 150px;
+            display: inline-block;
+        }
+        .hours {
+            padding-left: 20px;
+        }
+    }
+    .location-footer {
+        padding-top: 20px;
     }
 
 }
