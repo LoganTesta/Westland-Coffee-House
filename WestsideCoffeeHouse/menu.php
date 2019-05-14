@@ -37,7 +37,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="table-subheader">
                                     <td><h4>Beverages/Coffee</h4></td>
                                     <td></td>
                                     <td></td>
@@ -110,7 +110,7 @@
                                     <td>Assortment of teas, including mint, green, chai, and more.</td>
                                 </tr>
                                 <tr>
-                                    <td><h4>Food</h4></td>
+                                    <td class="table-subheader"><h4>Food</h4></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>

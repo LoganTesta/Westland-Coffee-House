@@ -306,18 +306,6 @@ nav {
   #content p {
     font-size: 18px;
     margin-bottom: 18px; }
-  #content table {
-    width: 100%;
-    border-collapse: collapse; }
-    #content table tr {
-      border-bottom: 2px solid #6f4e37; }
-    #content table th, #content table td {
-      padding: 10px 5px; }
-    #content table th {
-      font-weight: bold; }
-    #content table img {
-      width: 100%;
-      height: auto; }
 
 footer {
   padding: 30px 20px;
@@ -364,6 +352,19 @@ footer {
   .input-container textarea {
     width: 100%; }
 
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table tr {
+    border-bottom: 2px solid #6f4e37; }
+  table th, table td {
+    padding: 10px 5px; }
+  table th {
+    font-weight: bold; }
+  table img {
+    width: 100%;
+    height: auto; }
+
 /*About page*/
 .visitors-bg-image {
   width: 100%;
@@ -388,8 +389,12 @@ footer {
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }
 .menu-table th, .events-table th {
-  color: #4f7942;
-  font-size: 19px; }
+  font-size: 20px;
+  color: #4f7942; }
+.menu-table .table-subheader td, .events-table .table-subheader td {
+  padding: 0; }
+.menu-table .table-subheader td:nth-of-type(1), .events-table .table-subheader td:nth-of-type(1) {
+  padding: 25px 5px; }
 .menu-table tr td:nth-of-type(1), .events-table tr td:nth-of-type(1) {
   text-align: center;
   font-size: 18px;
