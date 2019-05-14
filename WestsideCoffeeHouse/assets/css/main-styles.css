@@ -274,10 +274,20 @@ nav {
   cursor: pointer; }
 
 #dropdownContent {
-  display: none; }
+  padding: 15px;
+  background-color: rgba(55, 55, 55, 0.9); }
+  #dropdownContent li {
+    display: block;
+    height: 0;
+    padding-bottom: 0px;
+    opacity: 0;
+    transition: 0.8s all; }
 
-#dropdownContent.show {
-  display: block; }
+#dropdownContent.show li {
+  height: 21px;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: 0.8s all; }
 
 #content {
   width: 100%;

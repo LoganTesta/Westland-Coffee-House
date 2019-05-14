@@ -280,11 +280,24 @@ nav {
 }
 
 #dropdownContent {
-    display: none;
+    padding: 15px; 
+    background-color: rgba(55,55,55,0.9);
+    li {
+        display: block;
+        height: 0;
+        padding-bottom: 0px;
+        opacity: 0;
+        transition: 0.8s all;
+    }
 }
 
 #dropdownContent.show {
-    display: block;
+    li {
+        height: 21px;
+        margin-bottom: 10px;
+        opacity: 1;
+        transition: 0.8s all;
+    }
 }
 
 
