@@ -109,7 +109,7 @@ html {
     width: 100%; } }
 #content {
   width: 100%;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -223,7 +223,6 @@ input:focus, textarea:focus {
 
 h2 {
   font-size: 24px;
-  color: #f9f9f9;
   font-weight: bold;
   color: #4f7942; }
 
@@ -231,15 +230,16 @@ h3 {
   font-size: 20px; }
 
 header {
-  margin-left: 10px;
   width: 100%; }
 
-.title-container #mainTitle a {
-  position: relative;
-  display: inline-block;
-  font-size: 28px;
-  font-weight: bold;
-  color: #ffffff; }
+.title-container {
+  text-align: center; }
+  .title-container #mainTitle a {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; }
 
 #logo {
   position: static;
@@ -274,20 +274,25 @@ nav {
   cursor: pointer; }
 
 #dropdownContent {
-  padding: 15px;
-  background-color: rgba(55, 55, 55, 0.9); }
+  padding: 0;
+  background-color: none;
+  transition: 0.8s all ease-in; }
   #dropdownContent li {
     display: block;
     height: 0;
     padding-bottom: 0px;
     opacity: 0;
-    transition: 0.8s all; }
+    transition: 0.8s all ease-in; }
 
-#dropdownContent.show li {
-  height: 21px;
-  margin-bottom: 10px;
-  opacity: 1;
-  transition: 0.8s all; }
+#dropdownContent.show {
+  padding: 15px;
+  background-color: rgba(55, 55, 55, 0.9);
+  transition: 0.8s all ease-in; }
+  #dropdownContent.show li {
+    height: 21px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: 0.8s all ease-in; }
 
 #content {
   width: 100%;
@@ -412,8 +417,10 @@ footer {
   .inner-wrapper {
     width: 90%; } }
 @media only screen and (min-width: 700px) {
-  .title-container #mainTitle a {
-    font-size: 36px; }
+  .title-container {
+    text-align: left; }
+    .title-container #mainTitle a {
+      font-size: 36px; }
 
   h2 {
     font-size: 26px; } }
