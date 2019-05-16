@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Westside Coffee Shop</title>	
+        <title>Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -16,7 +16,7 @@
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
-                    <h2 id="subTitle">404</h2>
+                    <h2 id="subTitle">500</h2>
                 </div>
             </header>
 
@@ -25,7 +25,7 @@
             <div id="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
-                        <h3>404 Error</h3>
+                        <h3>Server Error</h3>
                         <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
                     </div>
 

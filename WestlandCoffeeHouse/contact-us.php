@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Westside Coffee House</title>	
+        <title>Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="col-sma-6 contact-us-container">
-                        <h4>Contact Westside Coffee House</h4>
+                        <h4>Contact Westland Coffee House</h4>
                         <form id="contactOurCoffeeShop" method="post" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>

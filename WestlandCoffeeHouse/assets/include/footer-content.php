@@ -4,7 +4,7 @@
             <a href="#logo">To Top</a>
         </div>
         <div class="footer-copyright">
-            &copy; <?php echo date("Y"); ?> Westside Coffee House. All Rights Reserved.</p>
+            &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>
         </div>
         <div class="social-container">
             <div class="social-logo facebook">

@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Westside Coffee House</title>	
+        <title>Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -27,11 +27,11 @@
                     <div class="col-sma-8">
                         <h3>Careers</h3>
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
-                        <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westside Coffee House THE best 
+                        <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westland Coffee House THE best 
                             coffee store in the Portland area.  Come on in an pick an application!</p>
                     </div>
                     <div class="col-sma-4 careers-featured">
-                        <h4>"It's Westside Time!"</h4>
+                        <h4>"It's Westland Time!"</h4>
                         <div class="barista one">
                         </div>
                     </div>

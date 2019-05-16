@@ -6,7 +6,7 @@ $UserName;
 $UserEmail;
 $UserComments;
 $SendEmailTo = "logan.testa@outlook.com";
-$Subject = "Questions/Comments About Westside Coffee House";
+$Subject = "Questions/Comments About Westland Coffee House";
 $UserName = trim($_POST['userName']);
 $UserName = strip_tags($UserName);
 $UserName = htmlspecialchars($UserName);

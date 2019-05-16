@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Westside Coffee House</title>	
+        <title>Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
@@ -68,7 +68,7 @@
                         <div>
                             <h3 class="location-header">Location</h3>
                             <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
-                            <img src="assets/images/westside-coffee-house-location.png" alt="Westside Coffee House Location" />
+                            <img src="assets/images/westland-coffee-house-location.png" alt="Westland Coffee House Location" />
 
                             <div id="map"></div>
                         </div>
