@@ -17,7 +17,7 @@
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
-                    <h2 id="subTitle">Westland Coffee House</h2>
+                    <h2 id="subTitle">Portland's best coffee shop</h2>
                 </div>
             </header>
 

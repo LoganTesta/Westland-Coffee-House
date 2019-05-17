@@ -1,7 +1,7 @@
 <footer>
     <div class="inner-wrapper">
         <div class="footer-to-top">
-            <a href="#logo">To Top</a>
+            <a href="#logo">To TOP</a>
         </div>
         <div class="footer-copyright">
             &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>

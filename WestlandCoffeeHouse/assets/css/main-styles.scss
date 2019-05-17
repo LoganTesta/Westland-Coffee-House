@@ -1,7 +1,7 @@
 
 
 $firstStyleColor: #6f4e37;  /* coffee brown */
-$secondStyleColor: #4f7942; /* green */
+$secondStyleColor: #33dd66; /* green */
 $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
 
@@ -9,6 +9,7 @@ $secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $al
 $secondStyleColorBlueTint: adjust-color($secondStyleColor, $red: -10, $green: 5, $blue: 30);
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -20%);
+$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 10%);
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 20%);
 
 /* Reset the styles */
@@ -488,6 +489,13 @@ table {
     border: 2px solid #333333;
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.8s;
+}
+
+#contactButton:hover {
+    color: $thirdStyleColor;
+    background-color: $firstStyleColorLighten;
+    transition: 0.8s;
 }
 
 
