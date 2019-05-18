@@ -577,8 +577,9 @@ table {
 
     .title-container {
         #mainTitle {
+            width: 100%;
+            max-width: 210px;
             a { 
-                width: 283px;
                 font-size: 48px; 
             }
         }
