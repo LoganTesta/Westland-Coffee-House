@@ -12,7 +12,7 @@
 
     <body>
         <div id="bodyWrapper" class="index">
-            
+
             <header>
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
@@ -25,15 +25,15 @@
 
             <div id="content">
                 <div class="content-row inner-wrapper">
-                    <div class="content-body col-sma-12">
-                        <h3>The Place to Grab Coffee and Meet up!</h3>
-                        <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
-                            to grab coffee and hangout.</p>
-                        <p>But don't take our word for it, come on by and see for yourself!</p>
-                    </div>
-
-                    <div class="col-sma-6">
-                       
+                    <div class="content-body">
+                        <div class="col-sma-2">&nbsp;</div>
+                        <div class="col-sma-8">
+                            <h3>The Place to Grab Coffee and Meet up!</h3>
+                            <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
+                                to grab coffee and hangout.</p>
+                            <p>But don't take our word for it, come on by and see for yourself!</p>
+                        </div>
+                        <div class="col-sma-2">&nbsp;</div>
                     </div>
                 </div>
             </div>
