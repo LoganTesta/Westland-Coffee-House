@@ -3,14 +3,20 @@
 $firstStyleColor: #6f4e37;  /* coffee brown */
 $secondStyleColor: #33dd66; /* green */
 $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
-$thirdStyleColorRGBA: rgba(255, 233, 204, 0.9); /* white orange semi-transparents */
+$thirdStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
 
-$secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $alpha: -0.1);
-$secondStyleColorBlueTint: adjust-color($secondStyleColor, $red: -10, $green: 5, $blue: 30);
+$firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
+$secondStyleColorDarken: scale-color($secondStyleColor, $lightness: -30%);
 
-$firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -20%);
-$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 10%);
-$secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 20%);
+/* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
+for placeholder text. */ 
+
+/*Additional experiements */
+
+//$secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $alpha: -0.1);
+//$secondStyleColorBlueTint: adjust-color($secondStyleColor, $red: -10, $green: 5, $blue: 30);
+//$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 10%);
+//$secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 20%);
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -175,18 +181,18 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: $secondStyleColor;
+    color: $secondStyleColorDarken;
     opacity: 1; /* For Firefox */
 }
 
 /*For IE 10-11 */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
-    color: $secondStyleColor;
+    color: $secondStyleColorDarken;
 }
 
 /*Edge */
 ::-ms-input-placeholder {
-    color: $secondStyleColor;
+    color: $secondStyleColorDarken;
 }
 
 textarea {
@@ -235,6 +241,8 @@ h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; }
 h3 {
     font-size: 20px;
 }
+
+h4 { color: $firstStyleColorDarken; }
 
 header { width: 100%; }
 
@@ -296,7 +304,7 @@ nav {
 
 #dropdownContent.show {
     padding: 15px; 
-    background-color: rgba(55,55,55,0.9);
+    background-color: rgba(55,55,55,0.8);
     li {
         height: 21px;
         margin-bottom: 10px;
@@ -313,7 +321,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    background-color: rgba(255,255,255, 0.9);
+    background-color: rgba(255,255,255, 0.8);
 
     h3 {
         color: $firstStyleColor;
@@ -425,13 +433,13 @@ table {
 /*Location page**/
 #content {
     h3.coffee-shop-hours-header {
-        color: $firstStyleColorDarken;
+        color: $firstStyleColor;
     }
     h3.location-header {
-        color: $secondStyleColorBlueTint;
+        color: $secondStyleColor;
     }
     .hours-table {
-        th { color: $secondStyleColorAdjusted; }
+        th { color: $secondStyleColor; }
     }
 }
 
@@ -494,7 +502,7 @@ table {
 
 #contactButton:hover {
     color: $thirdStyleColor;
-    background-color: $firstStyleColorLighten;
+    background-color: $firstStyleColor;
     transition: 0.8s;
 }
 
