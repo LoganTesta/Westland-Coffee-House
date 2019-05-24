@@ -1,4 +1,4 @@
-
+<div class="inner-wrapper">
 <nav id="desktopNav">
     <ul>
         <li><a href="about.php" class="navLink">About</a></li>
@@ -9,7 +9,7 @@
         <li><a href="careers.php" class="navLink">Careers</a></li>
     </ul>
 </nav>
-
+</div>
 <nav id="mobileNav">
     <div id="dropdownButton"></div>
     <div id="dropdownContent">

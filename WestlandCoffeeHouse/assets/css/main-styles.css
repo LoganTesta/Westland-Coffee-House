@@ -425,7 +425,7 @@ nav {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003373}}
 footer {
-  background: url("../images/coffee-shop-exterior.jpg") 50% 0%/100% auto no-repeat; }
+  background: url("../images/coffee-shop-exterior.jpg") 50% 100%/100% auto no-repeat; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003376}}
   footer .footer-background {
     padding: 30px 20px;
@@ -658,7 +658,7 @@ table {
   #desktopNav {
     display: block;
     position: absolute;
-    top: 5px;
+    top: -422px;
     right: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003632}}

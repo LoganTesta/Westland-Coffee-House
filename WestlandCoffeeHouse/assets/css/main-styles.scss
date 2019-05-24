@@ -371,7 +371,7 @@ nav {
 }
 
 footer {
-    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 100%/100% auto no-repeat;
 
     .footer-background {
         padding: 30px 20px;
@@ -626,7 +626,7 @@ table {
     } 
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: 5px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -422px; right: 0; }
 
     .title-container {
         #mainTitle {

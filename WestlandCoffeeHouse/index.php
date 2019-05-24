@@ -1,4 +1,4 @@
-float-right-larger-screens<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
