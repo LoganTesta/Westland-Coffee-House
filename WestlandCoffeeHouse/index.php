@@ -34,7 +34,11 @@ float-right-larger-screens<!DOCTYPE html>
                                         to grab coffee and hangout.</p>
                                 </div>
                                 <div class="col-sma-5">
-                                    <div class="index-content-item-image one"></div>
+                                    <div class="index-content-image-container">
+                                        <a href="about.php">
+                                            <div class="index-content-item-image one"></div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="clear-both"></div>
                             </div>
@@ -45,7 +49,11 @@ float-right-larger-screens<!DOCTYPE html>
                                         soups, salads, sandwiches, and more!</p>
                                 </div>
                                 <div class="col-sma-5 float-right-larger-screens">
-                                    <div class="index-content-item-image two"></div>
+                                    <div class="index-content-image-container">
+                                        <a href="menu.php">
+                                            <div class="index-content-item-image two"></div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="clear-both"></div>
                             </div>
@@ -55,7 +63,11 @@ float-right-larger-screens<!DOCTYPE html>
                                     <p>But don't take our word for it, come on by and see for yourself!</p>
                                 </div>
                                 <div class="col-sma-5">
-                                    <div class="index-content-item-image three"></div>
+                                    <div class="index-content-image-container">
+                                        <a href="location-and-hours.php">
+                                            <div class="index-content-item-image three"></div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="clear-both"></div>
                             </div>

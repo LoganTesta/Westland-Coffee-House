@@ -343,9 +343,19 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.index-content-image-container {
+    overflow: hidden;
+    cursor: pointer;
+}
 
 .index-content-item-image {
     min-height: 300px;
+    transition: 0.8s;
+}
+
+.index-content-item-image:hover {
+    transform: scale(1.08);
+    transition: 0.8s;
 }
 
 .index-content-item-image.one {
