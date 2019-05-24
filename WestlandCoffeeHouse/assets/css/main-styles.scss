@@ -238,7 +238,7 @@ input:focus, textarea:focus {
     
 }
 
-h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; }
+h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; text-align: center; }
 
 
 h3 {
@@ -249,7 +249,7 @@ h4 { color: $firstStyleColorDarken; }
 
 header { 
     width: 100%; 
-    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 5%/100% auto no-repeat;
 }
 
 .title-container { 
@@ -578,6 +578,7 @@ table {
 
     h2 {
         font-size: 26px;
+        text-align: left;
     } 
 
 }
@@ -609,13 +610,13 @@ table {
     }
 
     #bodyWrapper {
-        .title-container { margin-left: 170px; width: 350px; }
+        .title-container { width: 350px; padding-top: 30px; margin-left: 170px; }
         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
         #subTitle { margin-left: 170px; }
     } 
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: 0px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: 5px; right: 0; }
 
     .title-container {
         #mainTitle {
