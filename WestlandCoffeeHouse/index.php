@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+float-right-larger-screens<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -26,7 +26,6 @@
             <div id="content">
                 <div class="content-row inner-wrapper">
                     <div class="content-body">
-                        <div class="col-sma-0">&nbsp;</div>
                         <div class="col-sma-12">
                             <div class="content-row index-section one">
                                 <div class="col-sma-7">
@@ -40,13 +39,13 @@
                                 <div class="clear-both"></div>
                             </div>
                             <div class="content-row index-section two">
-                                <div class="col-sma-5">
-                                    <div class="index-content-item-image two"></div>
-                                </div>
-                                <div class="col-sma-7">
+                                <div class="col-sma-7 float-right-larger-screens">
                                     <h3>Top Notch Coffee and Hearty Food</h3>
                                     <p>We have all your favorite hot, chilled beverages.  We also server a wide variety of tasty  food, ranging from bagels, 
                                         soups, salads, sandwiches, and more!</p>
+                                </div>
+                                <div class="col-sma-5 float-right-larger-screens">
+                                    <div class="index-content-item-image two"></div>
                                 </div>
                                 <div class="clear-both"></div>
                             </div>
@@ -61,7 +60,6 @@
                                 <div class="clear-both"></div>
                             </div>
                         </div>
-                        <div class="col-sma-0">&nbsp;</div>
                         <div class="clear-both"></div>
                     </div>
                 </div>

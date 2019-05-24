@@ -119,8 +119,11 @@ html {
 .width-100-percent {
     width: 100%;
 }
-
-
+@media only screen and (min-width: 1200px){
+    .float-right-larger-screens {
+        float: right;
+    }
+}
 /*** Beginning of style sheet. ***/
 
 body {
@@ -337,8 +340,8 @@ nav {
 
 
 .index-section {
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .index-content-item-image {
