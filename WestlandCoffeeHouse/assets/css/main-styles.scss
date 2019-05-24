@@ -232,7 +232,7 @@ input:focus, textarea:focus {
 /******************************************************* Beginning of site-specific styles */
 
 #bodyWrapper {
-    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+    
 }
 
 h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; }
@@ -244,7 +244,10 @@ h3 {
 
 h4 { color: $firstStyleColorDarken; }
 
-header { width: 100%; }
+header { 
+    width: 100%; 
+    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+}
 
 .title-container { 
     text-align: center;
@@ -320,7 +323,6 @@ nav {
     min-height: 200px; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
     background-color: rgba(255,255,255, 1);
 
     h3 {
@@ -334,11 +336,20 @@ nav {
 }
 
 
+.index-section {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
 footer {
-    padding: 30px 20px;
-    color: #333;
-    background-color: $thirdStyleColorRGBA;
-    text-align: center;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+
+    .footer-background {
+        padding: 30px 20px;
+        color: #333;
+        background-color: $thirdStyleColorRGBA;
+        text-align: center;
+    }
     .footer-to-top {
         padding-bottom: 0px;
     }
@@ -573,15 +584,19 @@ table {
     }
 
 
-    #bodyWrapper{
-        header { }
+
+    header { 
+        padding-bottom: 200px;
+    }
+
+    #bodyWrapper {
         .title-container { margin-left: 170px; width: 350px; }
         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
         #subTitle { margin-left: 170px; }
     } 
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -192px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: 0px; right: 0; }
 
     .title-container {
         #mainTitle {
@@ -604,7 +619,6 @@ table {
 
     #content {
         padding: 50px 20px;
-        margin-top: 200px;
         h3 {
             padding-left: 20px;
         }
@@ -616,6 +630,10 @@ table {
         }
     }
 
+    .index-section {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
 
     .input-container {
         label { 

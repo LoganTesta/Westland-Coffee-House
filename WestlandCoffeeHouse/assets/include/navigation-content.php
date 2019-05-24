@@ -1,15 +1,15 @@
-<div class="inner-wrapper">
-    <nav id="desktopNav">
-        <ul>
-            <li><a href="about.php" class="navLink">About</a></li>
-            <li><a href="locations-and-hours.php" class="navLink">Location</a></li>
-            <li><a href="menu.php" class="navLink">Menu</a></li>
-            <li><a href="events.php" class="navLink">Events</a></li>
-            <li><a href="contact-us.php" class="navLink">Contact Us</a></li>
-            <li><a href="careers.php" class="navLink">Careers</a></li>
-        </ul>
-    </nav>
-</div>
+
+<nav id="desktopNav">
+    <ul>
+        <li><a href="about.php" class="navLink">About</a></li>
+        <li><a href="locations-and-hours.php" class="navLink">Location</a></li>
+        <li><a href="menu.php" class="navLink">Menu</a></li>
+        <li><a href="events.php" class="navLink">Events</a></li>
+        <li><a href="contact-us.php" class="navLink">Contact Us</a></li>
+        <li><a href="careers.php" class="navLink">Careers</a></li>
+    </ul>
+</nav>
+
 <nav id="mobileNav">
     <div id="dropdownButton"></div>
     <div id="dropdownContent">

@@ -28,10 +28,20 @@
                     <div class="content-body">
                         <div class="col-sma-2">&nbsp;</div>
                         <div class="col-sma-8">
-                            <h3>The Place to Grab Coffee and Meet up!</h3>
-                            <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
-                                to grab coffee and hangout.</p>
-                            <p>But don't take our word for it, come on by and see for yourself!</p>
+                            <div class="index-section one">
+                                <h3>The Place to Grab Coffee and Meet up</h3>
+                                <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
+                                    to grab coffee and hangout.</p>
+                            </div>
+                            <div class="index-section one">
+                                <h3>Top Notch Coffee and Hearty Food</h3>
+                                <p>We have all your favorite hot, chilled beverages.  We also server a wide variety of tasty  food, ranging from bagels, 
+                                soups, salads, sandwiches, and more!</p>
+                            </div>
+                            <div class="index-section two">
+                                <h3>Our Shop is Open</h3>
+                                <p>But don't take our word for it, come on by and see for yourself!</p>
+                            </div>
                         </div>
                         <div class="col-sma-2">&nbsp;</div>
                     </div>
