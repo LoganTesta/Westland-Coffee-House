@@ -26,24 +26,43 @@
             <div id="content">
                 <div class="content-row inner-wrapper">
                     <div class="content-body">
-                        <div class="col-sma-2">&nbsp;</div>
-                        <div class="col-sma-8">
-                            <div class="index-section one">
-                                <h3>The Place to Grab Coffee and Meet up</h3>
-                                <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
-                                    to grab coffee and hangout.</p>
+                        <div class="col-sma-0">&nbsp;</div>
+                        <div class="col-sma-12">
+                            <div class="content-row index-section one">
+                                <div class="col-sma-7">
+                                    <h3>The Place to Grab Coffee and Meet up</h3>
+                                    <p>Welcome to our Westland Coffee House.  We have the finest coffee and are reputed to be one of the best places in Portland 
+                                        to grab coffee and hangout.</p>
+                                </div>
+                                <div class="col-sma-5">
+                                    <div class="index-content-item-image one"></div>
+                                </div>
+                                <div class="clear-both"></div>
                             </div>
-                            <div class="index-section one">
-                                <h3>Top Notch Coffee and Hearty Food</h3>
-                                <p>We have all your favorite hot, chilled beverages.  We also server a wide variety of tasty  food, ranging from bagels, 
-                                soups, salads, sandwiches, and more!</p>
+                            <div class="content-row index-section two">
+                                <div class="col-sma-5">
+                                    <div class="index-content-item-image two"></div>
+                                </div>
+                                <div class="col-sma-7">
+                                    <h3>Top Notch Coffee and Hearty Food</h3>
+                                    <p>We have all your favorite hot, chilled beverages.  We also server a wide variety of tasty  food, ranging from bagels, 
+                                        soups, salads, sandwiches, and more!</p>
+                                </div>
+                                <div class="clear-both"></div>
                             </div>
-                            <div class="index-section two">
-                                <h3>Our Shop is Open</h3>
-                                <p>But don't take our word for it, come on by and see for yourself!</p>
+                            <div class="content-row index-section three">
+                                <div class="col-sma-7">
+                                    <h3>Our Shop is Open</h3>
+                                    <p>But don't take our word for it, come on by and see for yourself!</p>
+                                </div>
+                                <div class="col-sma-5">
+                                    <div class="index-content-item-image three"></div>
+                                </div>
+                                <div class="clear-both"></div>
                             </div>
                         </div>
-                        <div class="col-sma-2">&nbsp;</div>
+                        <div class="col-sma-0">&nbsp;</div>
+                        <div class="clear-both"></div>
                     </div>
                 </div>
             </div>

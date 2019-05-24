@@ -49,7 +49,7 @@ html {
 @media only screen and (min-width: 700px){
     .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12 {
         float: left;
-        padding: 5px;
+        padding: 15px;
     }
 
     .col-sma-1 { width: 8.333333%; }
@@ -337,8 +337,24 @@ nav {
 
 
 .index-section {
-    padding-top: 20px;
-    padding-bottom: 20px
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.index-content-item-image {
+    min-height: 300px;
+}
+
+.index-content-item-image.one {
+    background: url('../images/index/roasted-coffee.jpg') 50% 0%/cover no-repeat;
+}
+
+.index-content-item-image.two {
+    background: url('../images/index/mocha-on-plate.jpg') 50% 0%/cover no-repeat;
+}
+
+.index-content-item-image.three {
+    background: url('../images/index/coffee-shop-counter.jpg') 50% 0%/cover no-repeat;
 }
 
 footer {
@@ -631,8 +647,8 @@ table {
     }
 
     .index-section {
-        padding-top: 50px;
-        padding-bottom: 50px
+        padding-top: 25px;
+        padding-bottom: 25px
     }
 
     .input-container {
