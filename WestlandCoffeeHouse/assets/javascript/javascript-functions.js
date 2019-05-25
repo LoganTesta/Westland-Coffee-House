@@ -2,11 +2,11 @@
 
 function setCurrentPage(linkNumber) {
     var navBarDesktop = document.getElementById("desktopNav");
-    var navBarDesktopItems = navBarDesktop.getElementsByClassName("navLink");
+    var navBarDesktopItems = navBarDesktop.getElementsByClassName("nav-link");
     for (var i = 0; i < navBarDesktopItems.length; i++) {
-        navBarDesktopItems[i].className.replace(" currentPage", "");
+        navBarDesktopItems[i].className.replace(" current-page", "");
     }
-    navBarDesktopItems[linkNumber].className += " currentPage";
+    navBarDesktopItems[linkNumber].className += " current-page";
 }
 
 var dropdownButton=document.getElementById("dropdownButton");

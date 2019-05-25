@@ -191,7 +191,7 @@
             <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(0);
+                    setCurrentPage(2);
                 });
             </script>
         </div>
