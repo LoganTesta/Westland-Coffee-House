@@ -1,7 +1,7 @@
 
 
 $firstStyleColor: #6f4e37;  /* coffee brown */
-$secondStyleColor: #33dd66; /* green */
+$secondStyleColor: #22cc55; /* green */
 $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
 
@@ -268,15 +268,15 @@ header {
 .subtitle-container {
     display: inline-block;
     min-width: 100px;
+    width: 60%;
     height: auto;
     padding: 15px 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 20px;
-    background-color: rgba(255,255,255,0.9);
-    
-    
+    background-color: rgba(20,20,20,0.8);   
 }
+
 
 
 #logo { position: static; width: 40px; margin-left: 10px; }
@@ -639,9 +639,13 @@ table {
         .title-container { width: 350px; padding-top: 30px; margin-left: 170px; }
         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
         .subtitle-container {
+            display: inline-block;
+            
+               
             position: absolute;
             top: 220px;
             left: 220px;
+            width: auto;
             margin-left: 0;
             margin-right: 0;
             
