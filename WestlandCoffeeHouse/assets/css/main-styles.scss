@@ -265,6 +265,20 @@ header {
     } 
 }
 
+.subtitle-container {
+    display: inline-block;
+    min-width: 100px;
+    height: auto;
+    padding: 15px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.9);
+    
+    
+}
+
+
 #logo { position: static; width: 40px; margin-left: 10px; }
 #mobileNav { display: block; }
 #desktopNav { display: none; }
@@ -590,7 +604,7 @@ table {
 
     h2 {
         font-size: 26px;
-        text-align: left;
+       
     } 
 
 }
@@ -624,11 +638,19 @@ table {
     #bodyWrapper {
         .title-container { width: 350px; padding-top: 30px; margin-left: 170px; }
         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
-        #subTitle { margin-left: 170px; }
+        .subtitle-container {
+            position: absolute;
+            top: 220px;
+            left: 220px;
+            margin-left: 0;
+            margin-right: 0;
+            
+        }
+        #subTitle {  }
     } 
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -422px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -388px; right: 0; }
 
     .title-container {
         #mainTitle {

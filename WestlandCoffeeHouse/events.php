@@ -16,7 +16,9 @@
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
+                    <div class="subtitle-container">
                     <h2 id="subTitle">Events</h2>
+                    </div>
                 </div>
             </header>
 
