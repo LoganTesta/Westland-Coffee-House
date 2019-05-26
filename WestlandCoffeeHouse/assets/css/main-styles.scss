@@ -6,6 +6,7 @@ $thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
 $thirdStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
+$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 30%);
 $secondStyleColorDarken: scale-color($secondStyleColor, $lightness: -30%);
 
 /* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
@@ -261,7 +262,7 @@ header {
             display: inline-block;
             font-size: 28px; 
             font-weight: bold;
-            color: #ffffff;  
+            color: $firstStyleColorLighten;  
         }
     } 
 }
