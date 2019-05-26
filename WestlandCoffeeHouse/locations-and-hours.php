@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="" />
-        <title>Westland Coffee House</title>	
+        <title>Location | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
