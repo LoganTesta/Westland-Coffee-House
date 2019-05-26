@@ -250,7 +250,7 @@ h4 { color: $firstStyleColorDarken; }
 
 header { 
     width: 100%; 
-    min-height: 232px;
+    min-height: 231px;
     background: url('../images/coffee-shop-exterior.jpg') 50% 5%/100% auto no-repeat;
 }
 
@@ -270,11 +270,11 @@ header {
 .subtitle-container {
     display: inline-block;
     min-width: 100px;
-    width: 60%;
+    width: 76%;
     height: auto;
     padding: 15px 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 12%;
+    margin-right: 12%;
     border-radius: 20px;
     background-color: rgba(20,20,20,0.7);   
 }
@@ -287,7 +287,6 @@ header {
 
 .current-page { text-decoration: underline; }
 nav { 
-    padding: 0 15px;
     color: $firstStyleColor; 
     li { }
     a {
@@ -654,7 +653,9 @@ table {
         }
         #subTitle {  }
     } 
-
+    
+    nav { padding: 0 15px;}
+    
     #mobileNav { display: none; }
     #desktopNav { display: block; position: absolute; top: -388px; right: 0; }
 
