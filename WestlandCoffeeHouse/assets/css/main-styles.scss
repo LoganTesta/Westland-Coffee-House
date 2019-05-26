@@ -249,6 +249,7 @@ h4 { color: $firstStyleColorDarken; }
 
 header { 
     width: 100%; 
+    min-height: 232px;
     background: url('../images/coffee-shop-exterior.jpg') 50% 5%/100% auto no-repeat;
 }
 
@@ -274,7 +275,7 @@ header {
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 20px;
-    background-color: rgba(20,20,20,0.8);   
+    background-color: rgba(20,20,20,0.7);   
 }
 
 
