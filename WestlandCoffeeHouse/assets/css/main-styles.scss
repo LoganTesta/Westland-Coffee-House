@@ -239,7 +239,12 @@ input:focus, textarea:focus {
     
 }
 
-h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; text-align: center; }
+html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+
+h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; text-align: center;}
 
 
 h3 {
@@ -261,6 +266,7 @@ header {
             position: relative;
             display: inline-block;
             font-size: 28px; 
+            font-family: "Lato", sans-serif;
             font-weight: bold;
             color: $firstStyleColor;  
         }
@@ -656,14 +662,14 @@ table {
     nav { padding: 0 15px;}
     
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -388px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -410px; right: 0; }
 
     .title-container {
         #mainTitle {
             width: 100%;
             max-width: 210px;
             a { 
-                font-size: 48px; 
+                font-size: 50px; 
             }
         }
     }
