@@ -3,9 +3,10 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="" />
+        <meta name="description" content="Portland's friendliest coffee and sandwhich place.  Come grab a nice beverage or some 
+              food with us and meet up with friends and family." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="coffee, bagels, sandwiches, latte, matcha, mocha, smoothie, Westland Coffee House, Portland, Oregon." />
         <title>500 | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>

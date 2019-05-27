@@ -4,9 +4,9 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="" />
+        <meta name="description" content="Contact Westland Coffee House." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="coffee, bagels, sandwiches, latte, matcha, mocha, smoothie,  Westland Coffee House, Portland, Oregon, contact us." />
         <title>Contact | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
