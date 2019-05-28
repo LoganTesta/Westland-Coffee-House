@@ -3,7 +3,7 @@
 $firstStyleColor: #6f4e37;  /* coffee brown */
 $secondStyleColor: #365d2e;  /* complimentary green */
 $thirdStyleColor: #28344a; /* complimentary dark blue */
-$fourthStyleColor: #ffe9cc; /* chosen at will: white orange ffe9cc */
+$fourthStyleColor: #ffe9cc; /* chosen without a scheme: white orange ffe9cc */
 
 
 
@@ -255,6 +255,7 @@ h2 { font-size: 24px; font-weight: bold; color: #ffffff; text-align: center;}
 
 h3 {
     font-size: 20px;
+    text-align: center;
 
 }
 
@@ -633,6 +634,7 @@ table {
 
     h3 {
         font-size: 26px;
+        text-align: left;
     }
     h4 {
         font-size: 22px;
