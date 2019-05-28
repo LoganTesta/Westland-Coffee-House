@@ -1,13 +1,19 @@
 
 
 $firstStyleColor: #6f4e37;  /* coffee brown */
-$secondStyleColor: #22cc55; /* green */
-$thirdStyleColor: #ffe9cc; /* white orange ffe9cc */
-$thirdStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
+$secondStyleColor: #365d2e;  /* complimentary green */
+$thirdStyleColor: #28344a; /* complimentary dark blue */
+$fourthStyleColor: #ffe9cc; /* chosen at will: white orange ffe9cc */
+
+
+
+
+
+$fourthStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
 $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 30%);
-$secondStyleColorDarken: scale-color($secondStyleColor, $lightness: -30%);
+$secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
 /* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
@@ -185,18 +191,18 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: $secondStyleColorDarken;
+    color: $secondStyleColorLighten;
     opacity: 1; /* For Firefox */
 }
 
 /*For IE 10-11 */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
-    color: $secondStyleColorDarken;
+    color: $secondStyleColorLighten;
 }
 
 /*Edge */
 ::-ms-input-placeholder {
-    color: $secondStyleColorDarken;
+    color: $secondStyleColorLighten;
 }
 
 textarea {
@@ -204,7 +210,7 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    box-shadow: 0px 0px 3px 3px rgba(25, 174, 255, 0.6);
+    box-shadow: 0px 0px 3px 3px rgba(54, 93, 46, 0.6);
     transition: 0.2s;
 }
 
@@ -244,14 +250,20 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 }
 
 
-h2 { font-size: 24px; font-weight: bold; color: $secondStyleColor; text-align: center;}
+h2 { font-size: 24px; font-weight: bold; color: #ffffff; text-align: center;}
 
 
 h3 {
     font-size: 20px;
+
 }
 
-h4 { color: $firstStyleColorDarken; }
+.subheader-divider {
+    border-bottom: 2px solid $thirdStyleColor;
+    margin-bottom: 15px;
+}
+
+h4 { color: $secondStyleColor; }
 
 header { 
     width: 100%; 
@@ -303,7 +315,7 @@ nav {
             color: #f9f9f9; 
         }
         &:hover { 
-            color: $thirdStyleColor;
+            color: $fourthStyleColor;
         }
     }   
 }
@@ -398,7 +410,7 @@ footer {
     .footer-background {
         padding: 30px 20px;
         color: #333;
-        background-color: $thirdStyleColorRGBA;
+        background-color: $fourthStyleColorRGBA;
         text-align: center;
     }
     .footer-to-top {
@@ -555,7 +567,7 @@ table {
 
 #contactButton { 
     padding: 10px 15px;
-    background-color: $thirdStyleColor; 
+    background-color: $fourthStyleColor; 
     border: 2px solid #333333;
     border-radius: 15px;
     cursor: pointer;
@@ -563,7 +575,7 @@ table {
 }
 
 #contactButton:hover {
-    color: $thirdStyleColor;
+    color: $fourthStyleColor;
     background-color: $firstStyleColor;
     transition: 0.8s;
 }
