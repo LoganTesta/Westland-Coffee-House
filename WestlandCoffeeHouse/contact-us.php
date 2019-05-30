@@ -28,14 +28,14 @@
             <div id="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
-                        <h3>Write Us!  You might even get a Free Coffee!</h3>
+                        <h3 class="write-us">Write Us!  You might even get a Free Coffee!</h3>
                         <p>Contact us with questions, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
                             and suggestions from our community!</p>
                         <div class="visitors-bg-image two"></div>
                     </div>
 
                     <div class="col-sma-6 contact-us-container">
-                        <h4>Contact Westland Coffee House</h4>
+                        <h4 class="contact-westland">Contact Westland Coffee House</h4>
                         <form id="contactOurCoffeeShop" method="post" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>

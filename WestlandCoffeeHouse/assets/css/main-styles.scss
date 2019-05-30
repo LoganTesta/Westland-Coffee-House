@@ -6,8 +6,6 @@ $thirdStyleColor: #28344a; /* complimentary dark blue */
 
 
 
-
-
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
 $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used in several places in the site  
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
@@ -15,10 +13,8 @@ $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 $firstStyleColorRGBA: rgba(111, 78, 55, 0.8); /* coffee brown with semi-transparents */
 $firstStyleColorLightRGBA: rgba(209, 182, 163, 0.8); /* light coffee brown with semi-transparents */
 
-/* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
+/* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
-
-
 
 
 /* Reset the styles */
@@ -238,7 +234,7 @@ input:focus, textarea:focus {
 /******************************************************* Beginning of site-specific styles */
 
 #bodyWrapper {
-    
+
 }
 
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -507,8 +503,8 @@ table {
 }
 
 .visitors-bg-image.three {
-   background: url('../images/busy-coffee-order-area.jpg') 50% 0%/cover no-repeat;
-    
+    background: url('../images/busy-coffee-order-area.jpg') 50% 0%/cover no-repeat;
+
 }
 
 /*Location page**/
@@ -519,20 +515,36 @@ table {
     h3.location-header {
         color: $secondStyleColor;
     }
-    .hours-table {
-        th { color: $secondStyleColor; }
+    .coffee-shop-hours-header, .location-header {
+        text-align: center;
     }
+    
+    
+    .hours-table {
+        text-align: left;
+        th { color: $secondStyleColor; }
+        .hours-col-1 {
+            width: 45%;
+        }
+        .hours-col-2 {
+            width: 55%;
+        }
+    }
+}
+
+.location-section {
+    padding-top: 40px;
 }
 
 
 
 /* Menu page */
 
-    .menu-table {
-        .item-name, .photos, .item-cost, .description   {
-            display: none;
-        }
+.menu-table {
+    .item-name, .photos, .item-cost, .description   {
+        display: none;
     }
+}
 
 .menu-table, .events-table {
     th, td { display: block; }
@@ -540,10 +552,10 @@ table {
         font-size: 20px; 
         color: $secondStyleColor;
     }
-       .event-name, .date-time, .event-info {
-            display: none;
-        }
-    
+    .event-name, .date-time, .event-info {
+        display: none;
+    }
+
     .table-subheader {
         td { 
             padding: 0;
@@ -580,6 +592,10 @@ table {
 /*Contact Us page*/
 .contact-us-container {
     color: $firstStyleColor;
+}
+
+.write-us, .contact-westland {
+    text-align: center;
 }
 
 #contactButton { 
@@ -639,7 +655,7 @@ table {
 
     h2 {
         font-size: 26px;
-       
+
     } 
 
 }
@@ -676,21 +692,21 @@ table {
         #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; padding-top: 0; }
         .subtitle-container {
             display: inline-block;
-            
-               
+
+
             position: absolute;
             top: 220px;
             left: 220px;
             width: auto;
             margin-left: 0;
             margin-right: 0;
-            
+
         }
         #subTitle {  }
     } 
-    
+
     nav { padding: 0 15px;}
-    
+
     #mobileNav { display: none; }
     #desktopNav { display: block; position: absolute; top: -410px; right: 0; }
 
@@ -715,12 +731,12 @@ table {
     footer {
         background: url('../images/coffee-shop-exterior.jpg') 50% 100%/100% auto no-repeat;
     }
-     
-    
+
+
     #content {
         padding: 50px 20px;
         h3 {
-            
+
         }
         table {
             img {
@@ -738,7 +754,7 @@ table {
     .index-content-item-image {
         height: 300px;
     }
-    
+
     .input-container {
         label { 
             width: 25%;
@@ -752,11 +768,19 @@ table {
         }
     }
 
-.visitors-bg-image {
-    height: 400px;
-}
+    .visitors-bg-image {
+        height: 400px;
+    }
 
+    .hours-table {
+        th, td {
+            padding-left: 80px;
+        }
+    }
 
+    .location-section {
+        padding-top: 0;
+    }
     .menu-table, .events-table {
         th {
             text-transform: uppercase;
@@ -801,6 +825,10 @@ table {
             }
         }
 
+    }
+    
+    #contactButton {
+        float: right;
     }
 
 }
