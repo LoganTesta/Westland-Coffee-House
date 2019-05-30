@@ -28,7 +28,9 @@
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-12">
                         <h3>Peruse Our Delicious Food and Beverages Menu</h3>
-                        <p>Menu items.</p>
+                        <p>Our menu ranges from warm and soothing hot coffee, chocolate, lattes, tea, and more to cool, chilled coffee, tea,
+                            smoothies, and more!  We also serve a variety of delicious food all day long too!  From tasty waffles to bagels, 
+                            sandwiches and more, we've got food for you!</p>
                         <table class="menu-table">
                             <thead>
                                 <tr>

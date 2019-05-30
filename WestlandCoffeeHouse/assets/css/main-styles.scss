@@ -1,16 +1,19 @@
 
 
-$firstStyleColor: #6f4e37;  /* coffee brown */
+$firstStyleColor: #6f4e37;  /* (111, 78, 55) coffee brown */
 $secondStyleColor: #365d2e;  /* complimentary green */
 $thirdStyleColor: #28344a; /* complimentary dark blue */
 
 
 
-$firstStyleColorRGBA: rgba(209, 182, 163, 0.8); /* white orange semi-transparents */
+
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
 $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used in several places in the site  
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
+
+$firstStyleColorRGBA: rgba(111, 78, 55, 0.8); /* coffee brown with semi-transparents */
+$firstStyleColorLightRGBA: rgba(209, 182, 163, 0.8); /* light coffee brown with semi-transparents */
 
 /* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
@@ -342,10 +345,10 @@ nav {
 
 #dropdownContent.show {
     padding: 15px; 
-    background-color: rgba(55,55,55,0.8);
+    background-color: $firstStyleColor;
     li {
         height: 21px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         opacity: 1;
         transition: 0.8s all ease-in;
     }
@@ -407,7 +410,7 @@ footer {
     .footer-background {
         padding: 30px 20px;
         color: #333;
-        background-color: $firstStyleColorRGBA;
+        background-color: $firstStyleColorLightRGBA;
         text-align: center;
     }
     .footer-to-top {
@@ -521,6 +524,13 @@ table {
 
 
 /* Menu page */
+
+    .menu-table {
+        .item-name, .photos, .item-cost, .description   {
+            display: none;
+        }
+    }
+
 .menu-table, .events-table {
     th, td { display: block; }
     th { 
@@ -752,7 +762,9 @@ table {
     }
 
     .menu-table {
-
+        .item-name, .photos, .item-cost, .description   {
+            display: table-cell;
+        }
         .item-name {
             width: 30%;
         }
