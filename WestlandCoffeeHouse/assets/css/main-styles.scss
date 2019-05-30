@@ -3,27 +3,20 @@
 $firstStyleColor: #6f4e37;  /* coffee brown */
 $secondStyleColor: #365d2e;  /* complimentary green */
 $thirdStyleColor: #28344a; /* complimentary dark blue */
-$fourthStyleColor: #ffe9cc; /* chosen without a scheme: white orange ffe9cc */
 
 
 
-
-
-$fourthStyleColorRGBA: rgba(255, 233, 204, 0.8); /* white orange semi-transparents */
+$firstStyleColorRGBA: rgba(209, 182, 163, 0.8); /* white orange semi-transparents */
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
-$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 30%);
+$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used in several places in the site  
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
 /* used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
 
-/*Additional experiements */
 
-//$secondStyleColorAdjusted: adjust-color($secondStyleColor, $lightness: +20%, $alpha: -0.1);
-//$secondStyleColorBlueTint: adjust-color($secondStyleColor, $red: -10, $green: 5, $blue: 30);
-//$firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 10%);
-//$secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 20%);
+
 
 /* Reset the styles */
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
@@ -282,6 +275,7 @@ header {
             font-family: "Lato", sans-serif;
             font-weight: bold;
             color: $firstStyleColor;  
+            text-shadow: 0 1px rgb(209,182,163);
         }
     } 
 }
@@ -294,8 +288,10 @@ header {
     padding: 15px 20px;
     margin-left: 12%;
     margin-right: 12%;
-    border-radius: 20px;
-    background-color: rgba(20,20,20,0.7);   
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: rgba(209,182,163,0.7);   
+    color: $firstStyleColorLighten;
 }
 
 
@@ -316,7 +312,7 @@ nav {
             color: #f9f9f9; 
         }
         &:hover { 
-            color: $fourthStyleColor;
+            color: $firstStyleColorLighten;
         }
     }   
 }
@@ -406,12 +402,12 @@ nav {
 }
 
 footer {
-    background: url('../images/coffee-shop-exterior.jpg') 50% 100%/100% auto no-repeat;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 100%/cover no-repeat;
 
     .footer-background {
         padding: 30px 20px;
         color: #333;
-        background-color: $fourthStyleColorRGBA;
+        background-color: $firstStyleColorRGBA;
         text-align: center;
     }
     .footer-to-top {
@@ -456,7 +452,7 @@ footer {
 
 
 .input-container {
-    padding: 15px; 
+    padding: 15px;
     color: $firstStyleColor;
     label { 
         float: left;
@@ -468,6 +464,7 @@ footer {
     }
     textarea {
         width: 100%;
+        margin-top: 15px;
     }
 }
 
@@ -489,20 +486,23 @@ table {
     }
 }
 
-
-/*About page*/
 .visitors-bg-image {
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin-bottom: 20px;
 }
 
 .visitors-bg-image.one {
-    background: url('../images/two-women-visitors.jpg') 50% 0%/cover no-repeat;    
+    background: url('../images/three-women-talking-at-a-table.jpg') 50% 0%/cover no-repeat;    
 }
 
 .visitors-bg-image.two { 
     background: url('../images/two-visitors-at-a-table.jpg') 50% 0%/cover no-repeat;
+}
+
+.visitors-bg-image.three {
+   background: url('../images/busy-coffee-order-area.jpg') 50% 0%/cover no-repeat;
+    
 }
 
 /*Location page**/
@@ -568,7 +568,7 @@ table {
 
 #contactButton { 
     padding: 10px 15px;
-    background-color: $fourthStyleColor; 
+    background-color: $firstStyleColorLighten; 
     border: 2px solid #333333;
     border-radius: 15px;
     cursor: pointer;
@@ -576,7 +576,7 @@ table {
 }
 
 #contactButton:hover {
-    color: $fourthStyleColor;
+    color: $firstStyleColorLighten;
     background-color: $firstStyleColor;
     transition: 0.8s;
 }
@@ -696,7 +696,11 @@ table {
             a, a:link, a:visited { font-size: 22px; }
         }
     }
-
+    footer {
+        background: url('../images/coffee-shop-exterior.jpg') 50% 100%/100% auto no-repeat;
+    }
+     
+    
     #content {
         padding: 50px 20px;
         h3 {
@@ -723,9 +727,14 @@ table {
             float: left;
             width: 75%;
         }
+        textarea {
+            margin-top: 0;
+        }
     }
 
-
+.visitors-bg-image {
+    height: 400px;
+}
 
 
     .menu-table, .events-table {

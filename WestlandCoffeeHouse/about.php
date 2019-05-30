@@ -41,7 +41,7 @@
 
                     <div class="col-sma-6">
                         <div class="visitors-bg-image one"></div>
-                        <div class="visitors-bg-image two"></div>
+                        <div class="visitors-bg-image three"></div>
                     </div>
                 </div>
             </div>

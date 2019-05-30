@@ -31,6 +31,7 @@
                         <h3>Write Us!  You might even get a Free Coffee!</h3>
                         <p>Contact us with questions, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
                             and suggestions from our community!</p>
+                        <div class="visitors-bg-image two"></div>
                     </div>
 
                     <div class="col-sma-6 contact-us-container">
