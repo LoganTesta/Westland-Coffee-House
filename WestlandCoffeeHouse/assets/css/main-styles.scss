@@ -380,13 +380,13 @@ nav {
 }
 
 .index-content-item-image {
-    min-height: 300px;
-    transition: 0.8s;
+    height: 200px;
+    transition: 0.8s ease-in;
 }
 
 .index-content-item-image:hover {
     transform: scale(1.08);
-    transition: 0.8s;
+    transition: 0.8s ease-in;
 }
 
 .index-content-item-image.one {
@@ -719,6 +719,10 @@ table {
         padding-bottom: 25px
     }
 
+    .index-content-item-image {
+        height: 300px;
+    }
+    
     .input-container {
         label { 
             width: 25%;

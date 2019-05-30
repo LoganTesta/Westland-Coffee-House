@@ -431,13 +431,13 @@ nav {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003382}}
 .index-content-item-image {
-  min-height: 300px;
-  transition: 0.8s; }
+  height: 200px;
+  transition: 0.8s ease-in; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003387}}
 .index-content-item-image:hover {
   transform: scale(1.08);
-  transition: 0.8s; }
+  transition: 0.8s ease-in; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003392}}
 .index-content-item-image.one {
@@ -739,59 +739,63 @@ table {
     padding-top: 25px;
     padding-bottom: 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003723}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003722}}
+  .index-content-item-image {
+    height: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003727}}
   .input-container label {
     width: 25%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003726}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003730}}
   .input-container input, .input-container textarea {
     float: left;
     width: 75%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003730}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003734}}
   .input-container textarea {
     margin-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003735}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003739}}
   .visitors-bg-image {
     height: 400px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003741}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003745}}
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003742}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003746}}
   .menu-table th, .events-table th {
     text-align: left;
     font-size: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003744}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003748}}
   .menu-table tr td:nth-of-type(1), .menu-table tr td:nth-of-type(3), .events-table tr td:nth-of-type(1), .events-table tr td:nth-of-type(3) {
     text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003752}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003756}}
   .menu-table .item-name {
     width: 30%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003755}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003759}}
   .menu-table .photos {
     width: 20%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003762}}
   .menu-table .item-cost {
     width: 20%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003761}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003765}}
   .menu-table .description {
     width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003767}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003771}}
   .events-table .event-name {
     width: 30%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003768}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003772}}
   .events-table .date-time {
     width: 30%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003769}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003773}}
   .events-table .event-info {
     width: 40%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003775}}
   .events-table tr td:nth-of-type(2) {
     text-align: left; } }
 @media only screen and (min-width: 1600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003783}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003787}}
   .inner-wrapper {
     width: 1540px; } }
 
