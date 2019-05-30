@@ -432,12 +432,12 @@ nav {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003382}}
 .index-content-item-image {
   height: 200px;
-  transition: 0.8s ease-in; }
+  transition: transform 0.8s ease-in; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003387}}
 .index-content-item-image:hover {
   transform: scale(1.08);
-  transition: 0.8s ease-in; }
+  transition: transform 0.8s ease-in; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003392}}
 .index-content-item-image.one {

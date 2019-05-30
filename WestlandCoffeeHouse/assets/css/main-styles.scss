@@ -381,12 +381,12 @@ nav {
 
 .index-content-item-image {
     height: 200px;
-    transition: 0.8s ease-in;
+    transition: transform 0.8s ease-in;
 }
 
 .index-content-item-image:hover {
     transform: scale(1.08);
-    transition: 0.8s ease-in;
+    transition: transform 0.8s ease-in;
 }
 
 .index-content-item-image.one {
