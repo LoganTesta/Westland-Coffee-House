@@ -36,7 +36,7 @@
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Contact Westland Coffee House</h4>
-                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateConttactForm();" action="validate-contact-form.php">
+                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="validate-contact-form.php">
                             <div class="input-container">
                                 <label for="userName"><strong>Name **</strong></label>
                                 <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
@@ -67,6 +67,7 @@
 
             <?php include 'assets/include/footer-content.php'; ?>
             <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
+             <script type="text/javascript" src="assets/javascript/contact-form-validation.js"></script>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     setCurrentPage(4);
