@@ -144,6 +144,19 @@
                                     <td>served with brown sugar, cranberries, nuts, and more</td>
                                 </tr>
                                 <tr>
+                                    <td>Slice of Toast</td>
+                                    <td></td>
+                                    <td>$0.90/slice</td>
+                                    <td>Comes with your choice butter and other toppings.  Bread types include white, whole wheat, multigrain, 
+                                        cinnamon raison, and more.</td>
+                                </tr>
+                                <tr>
+                                    <td>Toasted Waffles</td>
+                                    <td></td>
+                                    <td>$0.95/each</td>
+                                    <td>Your choice of toppings, including maple syrup, honey, spices, nuts, etc.  Add fresh fruit for $0.50.</td>
+                                </tr>
+                                <tr>
                                     <td>Deluxe Bagel Sandwich</td>
                                     <td></td>
                                     <td>$4.25</td>

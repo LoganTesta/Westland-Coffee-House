@@ -264,7 +264,7 @@ h4 { color: $secondStyleColor; }
 
 header { 
     width: 100%; 
-    min-height: 231px;
+    min-height: 226px;
     background: url('../images/coffee-shop-exterior.jpg') 50% 5%/100% auto no-repeat;
 }
 
@@ -299,7 +299,7 @@ header {
 
 
 
-#logo { position: static; width: 40px; margin-left: 10px; }
+#logo { position: static; width: 40px; padding-top: 5px; margin-left: 10px; }
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 
@@ -322,7 +322,7 @@ nav {
 
 #dropdownButton {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 20px;
     width: 30px;
     height: 30px;
@@ -351,14 +351,17 @@ nav {
         margin-bottom: 20px;
         opacity: 1;
         transition: 0.8s all ease-in;
+        &:last-of-type {
+            margin-bottom: 0;
+        } 
     }
+
     transition: 0.8s all ease-in;
 }
 
 
 #content {
     width: 100%;
-    min-height: 200px; 
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255,255,255, 1);
@@ -537,7 +540,10 @@ table {
         font-size: 20px; 
         color: $secondStyleColor;
     }
-
+       .event-name, .date-time, .event-info {
+            display: none;
+        }
+    
     .table-subheader {
         td { 
             padding: 0;
@@ -667,7 +673,7 @@ table {
 
     #bodyWrapper {
         .title-container { width: 350px; padding-top: 30px; margin-left: 170px; }
-        #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; }
+        #logo { position: absolute; top: 20px; left: 20px; width: 100%; padding-left: 0; padding-top: 0; }
         .subtitle-container {
             display: inline-block;
             
@@ -752,8 +758,14 @@ table {
 
 
     .menu-table, .events-table {
+        th {
+            text-transform: uppercase;
+        }
         th, td { display: table-cell; }
         th { text-align: left; font-size: 20px; }
+        .event-name, .date-time, .event-info {
+            display: table-cell;
+        }
         tr {
             td:nth-of-type(1), td:nth-of-type(3)  { 
                 text-align: left;
