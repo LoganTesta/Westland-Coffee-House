@@ -483,7 +483,7 @@ table {
         border-bottom: 2px solid $firstStyleColor;
     }
     th, td {
-        padding: 15px 5px;   
+        padding: 15px 10px;   
     }
     th {
         font-size: 20px; 
@@ -492,7 +492,39 @@ table {
     img {
         width: 100%;
         height: auto;
+
     }
+
+
+
+    .item-image-container {
+        overflow: hidden;
+    }
+    .item-image {     
+        height: 200px;
+        transition: 0.8s;
+    }
+
+    .item-image:hover {
+        transform: scale(1.12);
+        transition: 0.8s;
+    }
+    .item-image.empty {
+        display: none;
+    }
+    .item-image.one {
+        background: url("../images/menu/house-coffee.jpg") 50% 0%/cover no-repeat;
+    }
+    .item-image.six {
+        background: url("../images/menu/mocha.jpg") 50% 0%/cover no-repeat;
+    }
+    .item-image.seven {
+        background: url("../images/menu/green-tea-latte.jpg") 50% 0%/cover no-repeat;
+    }
+    .item-image.twenty {
+        background: url("../images/menu/cake-slice.jpg") 50% 0%/cover no-repeat;
+    }
+
 }
 
 .visitors-bg-image {
@@ -740,16 +772,23 @@ table {
 
     #content {
         padding: 50px 20px;
-        h3 {
 
-        }
-        table {
-            img {
-                width: auto;
-                height: 100px;
-            }
-        }
     }
+
+    table {
+        th { font-size: 22px; }
+
+        img {
+            width: auto;
+            height: 150px;
+        }
+
+        .item-image {
+            height: 150px;
+        }
+
+    }
+
 
     .index-section {
         padding-top: 25px;
@@ -789,11 +828,9 @@ table {
     .location-section {
         padding-top: 0;
     }
-    
-    table {
-            th { font-size: 22px; }
-    }
-    
+
+
+
     .menu-table, .events-table {
         th {
             text-transform: uppercase;
