@@ -456,7 +456,7 @@ input, textarea {
     outline: 0;
 }
 .required-field-needed {
-   box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 1);
+    box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 1);
 }
 
 .input-container {
@@ -483,9 +483,10 @@ table {
         border-bottom: 2px solid $firstStyleColor;
     }
     th, td {
-        padding: 10px 5px;   
+        padding: 15px 5px;   
     }
     th {
+        font-size: 20px; 
         font-weight: bold; 
     }
     img {
@@ -524,8 +525,8 @@ table {
     .coffee-shop-hours-header, .location-header {
         text-align: center;
     }
-    
-    
+
+
     .hours-table {
         text-align: left;
         th { color: $secondStyleColor; }
@@ -555,7 +556,6 @@ table {
 .menu-table, .events-table {
     th, td { display: block; }
     th { 
-        font-size: 20px; 
         color: $secondStyleColor;
     }
     .event-name, .date-time, .event-info {
@@ -564,10 +564,9 @@ table {
 
     .table-subheader {
         td { 
-            padding: 0;
-        }
-        td:nth-of-type(1){
-            padding: 25px 5px;
+            padding: 25px 0px;
+            background-color: $firstStyleColorLighten;
+            text-transform: uppercase;
         }
     }
     tr {
@@ -782,23 +781,40 @@ table {
         th, td {
             padding-left: 80px;
         }
+        th {
+            text-transform: uppercase;
+        }
     }
 
     .location-section {
         padding-top: 0;
     }
+    
+    table {
+            th { font-size: 22px; }
+    }
+    
     .menu-table, .events-table {
         th {
             text-transform: uppercase;
         }
         th, td { display: table-cell; }
-        th { text-align: left; font-size: 20px; }
+        th { text-align: left; }
         .event-name, .date-time, .event-info {
             display: table-cell;
         }
         tr {
             td:nth-of-type(1), td:nth-of-type(3)  { 
                 text-align: left;
+            }
+        }
+        .table-subheader {
+            td {
+                padding: 25px 0px;      
+                h4 {
+                    padding-left: 50px;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -832,7 +848,7 @@ table {
         }
 
     }
-    
+
     #contactButton {
         float: right;
     }

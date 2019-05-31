@@ -42,10 +42,7 @@
                             </thead>
                             <tbody>
                                 <tr class="table-subheader">
-                                    <td><h4>Beverages/Coffee</h4></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td colspan="4"><h4>Beverages/Coffee</h4></td>
                                 </tr>
                                 <tr>
                                     <td>House Coffee</td>
@@ -113,11 +110,8 @@
                                     <td>$1.95, $2.20, $2.45</td>
                                     <td>Assortment of teas, including mint, green, chai, and more.</td>
                                 </tr>
-                                <tr>
-                                    <td class="table-subheader"><h4>Food</h4></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                <tr class="table-subheader">
+                                    <td colspan="4"><h4>Food</h4></td>
                                 </tr>
                                 <tr>
                                     <td>Bagel with cream cheese</td>
