@@ -49,7 +49,8 @@ html {
 @media only screen and (min-width: 700px){
     .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12 {
         float: left;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .col-sma-1 { width: 8.333333%; }
@@ -369,6 +370,7 @@ nav {
 
 #content {
     width: 100%;
+    padding: 20px 10px 20px 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255,255,255, 1);
@@ -391,6 +393,14 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+    .index-section:first-of-type{
+        padding-top: 0px;
+    }
+        .index-section:last-of-type{
+        padding-bottom: 0px;
+    }
+
 .index-content-image-container {
     overflow: hidden;
     cursor: pointer;
@@ -566,6 +576,7 @@ table {
 
 .visitors-bg-image.three {
     background: url('../images/busy-coffee-order-area.jpg') 50% 0%/cover no-repeat;
+       margin-bottom: 0px;
 
 }
 
@@ -810,9 +821,7 @@ table {
         .item-image {
             height: 150px;
         }
-
     }
-
 
     .index-section {
         padding-top: 25px;
