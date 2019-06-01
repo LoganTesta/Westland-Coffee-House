@@ -51,7 +51,8 @@
                                 <tr>
                                     <td>Quarterly Art Show/Gallery</td>
                                     <td>Saturday, April 18, 11-5PM</td>
-                                    <td></td>
+                                    <td>Want to get your artwork out for the public to see?  Want to decorate a cool coffee shop and maybe get a few
+                                        sales? <a href="contact-us.php">Contact Us and let's talk!</a></td>
                                 </tr>
                                 <tr>
                                     <td>Food Drive</td>
