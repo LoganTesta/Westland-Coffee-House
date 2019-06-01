@@ -427,6 +427,14 @@ footer {
         background-color: $firstStyleColorLightRGBA;
         text-align: center;
     }
+    
+    a, a:link, a:visited {
+        color: #000000;
+    }
+    a:hover {
+        color: #ffffff;
+    }
+    
     .footer-to-top {
         padding-bottom: 0px;
     }
