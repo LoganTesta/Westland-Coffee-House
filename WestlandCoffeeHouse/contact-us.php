@@ -29,21 +29,21 @@
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
                         <h3 class="write-us">Write Us!  You might even get a Free Coffee!</h3>
-                        <p>Contact us with questions, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
+                        <p>Contact us with questions, comments, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
                             and suggestions from our community!</p>
                         <div class="visitors-bg-image two"></div>
                     </div>
 
                     <div class="col-sma-6 contact-us-container">
-                        <h4 class="contact-westland">Contact Westland Coffee House</h4>
+                        <h4 class="contact-westland">Write Us Here:</h4>
                         <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="validate-contact-form.php">
                             <div class="input-container">
-                                <label for="userName"><strong>Name **</strong></label>
+                                <label for="userName"><strong>Name *</strong></label>
                                 <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
                                 <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
-                                <label for="userEmail"><strong>Email **</strong></label>
+                                <label for="userEmail"><strong>Email *</strong></label>
                                 <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Here" required="required"> 
                                 <div class="clear-both"></div>
                             </div>
@@ -53,11 +53,11 @@
                                 <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
-                                <label for="userComments"><strong>Message **</strong></label>
+                                <label for="userComments"><strong>Message *</strong></label>
                                 <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
                                 <div class="clear-both"></div>
                             </div>                           
-                            <div class="input-container">
+                            <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          
                             </div>
                         </form>
