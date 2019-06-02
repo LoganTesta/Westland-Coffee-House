@@ -30,8 +30,12 @@
                     <div class="col-sma-8">
                         <h3>Careers</h3>
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
+                        <div class="positions-open-container">
+                        <h3>Positions Open</h3>
+                        <h4>Part or Full Time Barista</h4>
                         <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westland Coffee House THE best 
-                            coffee store in the Portland area.  Come on in an pick an application!</p>
+                            coffee store in the Portland area.  Come on in an pick an application.  We look forward to hearing from you!</p>
+                        </div>
                     </div>
                     <div class="col-sma-4 careers-featured">
                         <h4>"It's Westland Time!"</h4>
