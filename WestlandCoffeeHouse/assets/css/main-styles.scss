@@ -309,7 +309,7 @@ header {
 
 
 
-#logo { position: static; width: 40px; padding-top: 5px; margin-left: 10px; }
+#logo { position: static; width: 40px; padding-top: 5px; margin-left: 15px; }
 #mobileNav { display: block; }
 #desktopNav { display: none; }
 
@@ -721,9 +721,6 @@ table {
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px){
     /* The main border around the entire document */
-    .inner-wrapper {
-        width: 90%;
-    }
 
     .title-container { 
         text-align: center;
@@ -733,7 +730,7 @@ table {
             }
         }
     }
-    
+
     .subtitle-container {
 
     }
@@ -743,9 +740,18 @@ table {
 
 
 @media only screen and (min-width: 700px){
+header { 
+    width: 100%; 
+    min-height: 250px;
+    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+}
+
     .title-container {
         position: relative;
         top: -50px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: center;
         #mainTitle {
             a { 
@@ -754,17 +760,17 @@ table {
         }
     }
 
-        
+
     .subtitle-container {
         display: block;
         width: auto;
-        max-width: 350px;
+        max-width: 345px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
 
     }
-    
+
     h2 {
         font-size: 26px;
 
@@ -775,6 +781,9 @@ table {
 
 
 @media only screen and (min-width: 1200px){
+    .inner-wrapper {
+        width: 90%;
+    }
 
     h3 {
         font-size: 26px;
@@ -806,6 +815,7 @@ table {
             width: 350px; 
             padding-top: 30px; 
             margin-left: 170px;
+            margin-right: 0;
             text-align: left;
         }
         #logo {
@@ -815,6 +825,7 @@ table {
             width: 100%;
             padding-left: 0; 
             padding-top: 0; 
+            margin-left: 0;
         }
         .subtitle-container {
             display: inline-block;
@@ -826,6 +837,7 @@ table {
             width: auto;
             margin-left: 0;
             margin-right: 0;
+            margin-top: 15px;
 
         }
         #subTitle {  }
