@@ -723,6 +723,11 @@ table {
     /* The main border around the entire document */
 
     .title-container { 
+        position: relative;
+        top: -50px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: center;
         #mainTitle {
             a {
@@ -732,7 +737,8 @@ table {
     }
 
     .subtitle-container {
-
+        position: relative;
+        top: -30px;
     }
 
 }
@@ -740,11 +746,11 @@ table {
 
 
 @media only screen and (min-width: 700px){
-header { 
-    width: 100%; 
-    min-height: 250px;
-    background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
-}
+    header { 
+        width: 100%; 
+        min-height: 310px;
+        background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+    }
 
     .title-container {
         position: relative;
@@ -778,6 +784,12 @@ header {
 
 }
 
+
+@media only screen and (min-width: 1000px){
+    header {  
+        background: url('../images/coffee-shop-exterior.jpg') 50% 10%/100% auto no-repeat;
+    }
+}
 
 
 @media only screen and (min-width: 1200px){
