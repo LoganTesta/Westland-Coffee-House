@@ -540,13 +540,13 @@ table {
         overflow: hidden;
     }
     .item-image {     
-        height: 200px;
-        transition: 0.8s;
+        height: 220px;
+        transition: transform 0.8s;
     }
 
     .item-image:hover {
         transform: scale(1.12);
-        transition: 0.8s;
+        transition: transform 0.8s;
     }
     .item-image.empty {
         display: none;
@@ -568,7 +568,7 @@ table {
 
 .visitors-bg-image {
     width: 100%;
-    height: 200px;
+    height: 220px;
     margin-bottom: 20px;
 }
 
@@ -711,7 +711,7 @@ table {
 
 .barista {
     width: 100%;
-    height: 300px;
+    height: 220px;
 }
 
 .barista.one {
@@ -743,6 +743,25 @@ table {
         margin-left: 15%;
         margin-right: 15%;
     }
+
+    .visitors-bg-image {
+        height: 300px;
+
+    }
+
+    table {
+        .item-image {     
+            width: 60%;
+            height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .barista {
+        height: 300px;
+    }
+
 
 }
 
@@ -787,12 +806,31 @@ table {
 
     } 
 
+    .visitors-bg-image {
+        height: 280px;
+    }
+
+    table {
+        .item-image {   
+            width: 50%;
+            height: 300px;
+        }
+    }
+
+    .barista {
+        height: 220px;
+    }
+
 }
 
 
 @media only screen and (min-width: 1000px){
     header {  
         background: url('../images/coffee-shop-exterior.jpg') 50% 10%/100% auto no-repeat;
+    }
+
+    .visitors-bg-image {
+        height: 300px;
     }
 }
 
@@ -902,7 +940,10 @@ table {
         }
 
         .item-image {
+            width: 100%;
             height: 150px;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 
@@ -1005,8 +1046,8 @@ table {
         padding-bottom: 15px;
     }
 
-    #contactButton {
-
+    .barista {
+        height: 300px;
     }
 
 }
