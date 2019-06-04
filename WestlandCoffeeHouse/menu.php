@@ -170,7 +170,7 @@
                                 </tr>
                                 <tr>
                                     <td>Ice Cream Per Scoop (seasonal/summertime)</td>
-                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image twenty-one"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image twenty-one"></div></div></td>
                                     <td>$2.25</td>
                                     <td>Vanilla, Chocolate, Strawberry, Cherry, Chocolate Fudge, and more!</td>
                                 </tr>
