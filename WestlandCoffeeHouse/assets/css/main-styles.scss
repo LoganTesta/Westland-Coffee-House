@@ -657,6 +657,7 @@ table {
             font-size: 18px;
             font-weight: bold; 
             color: $firstStyleColor;
+            text-align: center;
         }
         td:nth-of-type(3) {
             text-align: center;
@@ -1041,8 +1042,15 @@ table {
 
     .menu-table {
         .table-subheader {
-            td {
-                text-align: center;
+                td:nth-of-type(1) {
+                    text-align: center;
+                }
+            
+
+        }
+        tr {
+            td:nth-of-type(1), td:nth-of-type(3)  { 
+                text-align: left;
             }
         }
         .item-name, .photos, .item-cost, .description   {
