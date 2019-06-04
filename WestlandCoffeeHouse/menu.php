@@ -46,67 +46,67 @@
                                 </tr>
                                 <tr>
                                     <td>House Coffee</td>
-                                    <td><div class="item-image-container"><div class="item-image one"></div></div></td>
+                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image one"></div></div></td>
                                     <td>$1.75, $2.10, $2.50</td>
                                     <td>Our basic coffee is still a fan favorite!</td>
                                 </tr>
                                 <tr>
                                     <td>Featured Blend of the Month</td>
-                                    <td><div class="item-image-container"><div class="item-image two empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image two"></div></div></td>
                                     <td>$1.85, $2.25, $2.65</td>
                                     <td>Our basic coffee is still a fan favorite!</td>
                                 </tr>
                                 <tr>
                                     <td>Hot Chocolate</td>
-                                    <td><div class="item-image-container"><div class="item-image three empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image three"></div></div></td>
                                     <td>$2.75, $3.25, $3.75</td>
                                     <td>Always a good treat on a chilly day!</td>
                                 </tr>
                                 <tr>
                                     <td>Latte</td>
-                                    <td><div class="item-image-container"><div class="item-image four empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image four"></div></div></td>
                                     <td>$3.00, $3.50, $4.00</td>
                                     <td>Classic, plain and simple.</td>
                                 </tr>
                                 <tr>
                                     <td>Cappuccino</td>
-                                    <td><div class="item-image-container"><div class="item-image five empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image five"></div></div></td>
                                     <td>$3.00, $3.50, $4.00</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Mocha</td>
-                                    <td><div class="item-image-container"><div class="item-image six"></div></div></td>
+                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image six"></div></div></td>
                                     <td>$3.50, $4.00, $4.50</td>
                                     <td>Always a classic, and one of our best sellers!</td>
                                 </tr>
                                 <tr>
                                     <td>Green Tea (Matcha) Latte</td>
-                                    <td><div class="item-image-container"><div class="item-image seven"></div></div></td>
+                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image seven"></div></div></td>
                                     <td>$3.50, $4.00, $4.50</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Iced Coffee</td>
-                                    <td><div class="item-image-container"><div class="item-image eight empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image eight"></div></div></td>
                                     <td>$2.25, $2.75, $3.25</td>
                                     <td>Cool and refreshing, with milk and sweetener to taste</td>
                                 </tr>
                                 <tr>
                                     <td>Milkshake (no-coffee)</td>
-                                    <td><div class="item-image-container"><div class="item-image nine empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image nine"></div></div></td>
                                     <td>$3.50, $4.00, $4.50</td>
                                     <td>Vanilla, chocolate, or strawberry.</td>
                                 </tr>
                                 <tr>
                                     <td>Milkshake (caffeine)</td>
-                                    <td><div class="item-image-container"><div class="item-image ten empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image ten"></div></div></td>
                                     <td>$4.00, $4.50, $5.00</td>
                                     <td>Vanilla, chocolate, or strawberry.</td>
                                 </tr>
                                 <tr>
                                     <td>Cold or Hot Tea</td>
-                                    <td><div class="item-image-container"><div class="item-image eleven empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image eleven"></div></div></td>
                                     <td>$1.95, $2.20, $2.45</td>
                                     <td>Assortment of teas, including mint, green, chai, and more.</td>
                                 </tr>
@@ -115,80 +115,80 @@
                                 </tr>
                                 <tr>
                                     <td>Bagel with cream cheese</td>
-                                    <td><div class="item-image-container"><div class="item-image twelve empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image twelve"></div></div></td>
                                     <td>$3.05</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Cookie</td>
-                                    <td><div class="item-image-container"><div class="item-image thirteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image thirteen"></div></div></td>
                                     <td>$1.95</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Muffin</td>
-                                    <td><div class="item-image-container"><div class="item-image fourteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image fourteen"></div></div></td>
                                     <td>$1.95</td>
                                     <td>Bran, Blueberry, Chocolate fudge chip, and more seasonally!  Baked fresh daily, our muffins are a best-seller!</td>
                                 </tr>
                                 <tr>
                                     <td>Oatmeal</td>
-                                    <td><div class="item-image-container"><div class="item-image fifteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image fifteen"></div></div></td>
                                     <td>$2.50</td>
                                     <td>served with brown sugar, cranberries, nuts, and more</td>
                                 </tr>
                                 <tr>
                                     <td>Slice of Toast</td>
-                                    <td><div class="item-image-container"><div class="item-image sixteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image sixteen"></div></div></td>
                                     <td>$0.90/slice</td>
                                     <td>Comes with your choice butter and other toppings.  Bread types include white, whole wheat, multigrain, 
                                         cinnamon raison, and more.</td>
                                 </tr>
                                 <tr>
                                     <td>Toasted Waffles</td>
-                                    <td><div class="item-image-container"><div class="item-image seventeen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image seventeen"></div></div></td>
                                     <td>$0.95/each</td>
                                     <td>Your choice of toppings, including maple syrup, honey, spices, nuts, etc.  Add fresh fruit for $0.50.</td>
                                 </tr>
                                 <tr>
                                     <td>Deluxe Bagel Sandwich</td>
-                                    <td><div class="item-image-container"><div class="item-image eighteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image eighteen"></div></div></td>
                                     <td>$4.25</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Deluxe Sandwich</td>
-                                    <td><div class="item-image-container"><div class="item-image nineteen empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image nineteen"></div></div></td>
                                     <td>$4.00-$6.50</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>Slice of Cake</td>
-                                    <td><div class="item-image-container"><div class="item-image twenty"></div></div></td>
+                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image twenty"></div></div></td>
                                     <td>$3.00</td>
                                     <td>Vanilla, Chocolate, and more</td>
                                 </tr>
                                 <tr>
                                     <td>Ice Cream Per Scoop (seasonal/summertime)</td>
-                                    <td><div class="item-image-container"><div class="item-image twenty-one empty"></div></div></td>
+                                    <td class="item-image-td"><div class="item-image-container"><div class="item-image twenty-one"></div></div></td>
                                     <td>$2.25</td>
                                     <td>Vanilla, Chocolate, Strawberry, Cherry, Chocolate Fudge, and more!</td>
                                 </tr>
                                 <tr>
                                     <td>House made slice of pie!</td>
-                                    <td><div class="item-image-container"><div class="item-image twenty-two empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image twenty-two"></div></div></td>
                                     <td>$3.00</td>
                                     <td>Seasonal: Blueberry, pumpkin, pecan, banana cream</td>
                                 </tr>
                                 <tr>
                                     <td>House made banana bread slice</td>
-                                    <td><div class="item-image-container"><div class="item-image twenty-three empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image twenty-three"></div></div></td>
                                     <td>$2.25/slice or $12.00 loaf</td>
                                     <td>Made with half whole grain, flaxseed, and oats.  Delicious!</td>
                                 </tr>
                                 <tr>
                                     <td>Soup Bowl</td>
-                                    <td><div class="item-image-container"><div class="item-image twenty-four empty"></div></div></td>
+                                    <td class="item-image-td empty"><div class="item-image-container"><div class="item-image twenty-four"></div></div></td>
                                     <td>$2.75-$4.75</td>
                                     <td>Tomato, Minestrone, Soup of the Day.  Comes with your choice crackers.</td>
                                 </tr>

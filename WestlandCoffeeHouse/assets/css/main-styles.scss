@@ -536,7 +536,13 @@ table {
 
     }
 
-
+    .item-image-td.empty {
+         padding: 0;
+    }
+    
+    .item-image-td.empty .item-image {
+        display: none;
+    }
 
     .item-image-container {
         overflow: hidden;
@@ -550,9 +556,7 @@ table {
         transform: scale(1.12);
         transition: transform 0.8s;
     }
-    .item-image.empty {
-        display: none;
-    }
+
     .item-image.one {
         background: url("../images/menu/house-coffee.jpg") 50% 0%/cover no-repeat;
     }
