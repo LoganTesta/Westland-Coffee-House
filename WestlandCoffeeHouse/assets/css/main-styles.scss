@@ -745,7 +745,10 @@ table {
     }
 
     .visitors-bg-image {
+        width: 80%; 
         height: 300px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -807,7 +810,10 @@ table {
     } 
 
     .visitors-bg-image {
-        height: 280px;
+        width: 100%;
+        height: 240px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     table {
