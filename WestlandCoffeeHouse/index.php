@@ -50,7 +50,7 @@
                                 <div class="col-sma-7 float-right-above-a-breakpoint">
                                     <h3>Top Notch Coffee and Hearty Food</h3>
                                     <div class="subheader-divider"></div>
-                                    <p>We have all your favorite hot, chilled beverages.  We also server a wide variety of tasty  food, ranging from bagels, 
+                                    <p>We have all your favorite hot, chilled beverages.  We also serve a wide variety of tasty food, ranging from bagels, 
                                         soups, salads, sandwiches, and more!</p>
                                 </div>
                                 <div class="col-sma-5 float-right-above-a-breakpoint">

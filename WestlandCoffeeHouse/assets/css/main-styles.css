@@ -337,12 +337,12 @@ header {
   display: inline-block;
   width: 76%;
   height: auto;
-  padding: 12px 15px;
+  padding: 10px 12px;
   margin-left: 12%;
   margin-right: 12%;
   margin-top: 15px;
   border-radius: 15px;
-  background-color: rgba(209, 182, 163, 0.7);
+  background-color: rgba(209, 182, 163, 0.8);
   color: #d1b6a3; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003314}}
@@ -748,7 +748,7 @@ table {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/WestlandCoffeeHouse\/WestlandCoffeeHouse\/assets\/css\/main-styles\.scss}line{font-family:\00003741}}
   .subtitle-container {
     position: relative;
-    top: -65px;
+    top: -60px;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%; }
