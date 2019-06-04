@@ -625,14 +625,6 @@ table {
 
 /* Menu page */
 
-.menu-table {
-    .item-name, .photos, .item-cost, .description   {
-        display: none;
-    }
-    h4 {
-        color: #ffffff;
-    }
-}
 
 .menu-table, .events-table {
     th, td { display: block; }
@@ -657,20 +649,25 @@ table {
             font-size: 18px;
             font-weight: bold; 
             color: $firstStyleColor;
-            text-align: center;
-        }
-        td:nth-of-type(3) {
-            text-align: center;
         }
     } 
+    td {
+        text-align: center;
+    }
+}
+
+
+.menu-table {
+    .item-name, .photos, .item-cost, .description   {
+        display: none;
+    }
+    h4 {
+        color: #ffffff;
+    }
 }
 
 .events-table {
-    tr {
-        td:nth-of-type(2) { 
-            text-align: center;
-        }
-    }
+    
 }
 
 
@@ -1036,23 +1033,20 @@ table {
                 }
             }
         }
+        td {
+            text-align: left;
+        }
     }
 
 
 
     .menu-table {
         .table-subheader {
-                td:nth-of-type(1) {
-                    text-align: center;
-                }
-            
-
-        }
-        tr {
-            td:nth-of-type(1), td:nth-of-type(3)  { 
-                text-align: left;
+            td:nth-of-type(1) {
+                text-align: center;
             }
         }
+
         .item-name, .photos, .item-cost, .description   {
             display: table-cell;
         }
@@ -1074,16 +1068,6 @@ table {
         .event-name { width: 30%; }
         .date-time { width: 30%; }
         .event-info { width: 40%; }
-        tr {
-            td:nth-of-type(2) { 
-                text-align: left;
-            }
-        }
-        tr {
-            td:nth-of-type(1), td:nth-of-type(3)  { 
-                text-align: left;
-            }
-        }
 
     }
 
