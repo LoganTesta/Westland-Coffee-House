@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div id="bodyWrapper" class="index">
+        <div id="bodyWrapper" class="index-page">
 
             <header>
                 <div class="inner-wrapper">
@@ -38,9 +38,9 @@
                                         to grab coffee and hangout.</p>
                                 </div>
                                 <div class="col-sma-5">
-                                    <div class="index-content-image-container">
+                                    <div class="item-image-container">
                                         <a href="about.php">
-                                            <div class="index-content-item-image one"></div>
+                                            <div class="item-image index-one"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -54,9 +54,9 @@
                                         soups, salads, sandwiches, and more!</p>
                                 </div>
                                 <div class="col-sma-5 float-right-above-a-breakpoint">
-                                    <div class="index-content-image-container">
+                                    <div class="item-image-container">
                                         <a href="menu.php">
-                                            <div class="index-content-item-image two"></div>
+                                            <div class="item-image index-two"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -69,9 +69,9 @@
                                     <p>But don't take our word for it, come on by and see for yourself!</p>
                                 </div>
                                 <div class="col-sma-5">
-                                    <div class="index-content-image-container">
+                                    <div class="item-image-container">
                                         <a href="location-and-hours.php">
-                                            <div class="index-content-item-image three"></div>
+                                            <div class="item-image index-three"></div>
                                         </a>
                                     </div>
                                 </div>
