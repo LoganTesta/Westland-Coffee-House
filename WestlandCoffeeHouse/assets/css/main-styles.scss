@@ -229,7 +229,7 @@ $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
 $firstStyleColorRGBA: rgba(111, 78, 55, 0.8); /* coffee brown with semi-transparents */
-$firstStyleColorLightRGBA: rgba(209, 182, 163, 0.8); /* light coffee brown with semi-transparents */
+$firstStyleColorLightRGBA: rgba(209, 182, 163, 0.85); /* light coffee brown with semi-transparents */
 
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
@@ -434,13 +434,17 @@ nav {
 
 
 footer {
+font-size: 28px;
     background: url('../images/coffee-shop-exterior.jpg') 50% 100%/cover no-repeat;
-
     .footer-background {
         padding: 30px 20px;
         color: #333;
         background-color: $firstStyleColorLightRGBA;
         text-align: center;
+    }
+    
+    .footer-to-top a, .footer-copyright, .footer-hours *, .location-footer * {
+          font-size: 18px;
     }
 
     a, a:link, a:visited {
@@ -449,9 +453,12 @@ footer {
     a:hover {
         color: #ffffff;
     }
-
+    
     .footer-to-top {
         padding-bottom: 0px;
+        a {
+              
+        }
     }
     .footer-copyright {
         padding-top: 20px;
