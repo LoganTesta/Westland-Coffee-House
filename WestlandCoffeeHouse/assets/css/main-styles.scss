@@ -224,7 +224,7 @@ $thirdStyleColor: #28344a; /* complimentary dark blue */
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
 $firstStyleColorLighter20: scale-color($firstStyleColor, $lightness: 20%);  // rgb (157, 110, 78)
-$firstStyleColorLighterSome: scale-color($firstStyleColor, $lightness: 30%);
+$firstStyleColorLighter30: scale-color($firstStyleColor, $lightness: 30%);
 $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used in several places in the site  
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
@@ -383,7 +383,7 @@ nav {
 #dropdownContent.show {
     padding: 15px; 
     background-color: $firstStyleColor;
-    background-image: linear-gradient($firstStyleColor, $firstStyleColorLighter20, $firstStyleColor);
+    background-image: linear-gradient($firstStyleColor, $firstStyleColorLighter30, $firstStyleColor);
     li {
         height: 21px;
         margin-bottom: 20px;
@@ -669,7 +669,7 @@ table {
         td { 
             padding: 25px 0px;
             background-color: $firstStyleColorLighten;
-            background-image: linear-gradient(90deg, $firstStyleColorLighterSome, $firstStyleColorLighten, $firstStyleColorLighterSome);
+            background-image: linear-gradient(90deg, $firstStyleColorLighter30, $firstStyleColorLighten, $firstStyleColorLighter30);
             text-transform: uppercase;
             text-align: center;
         }
@@ -963,7 +963,7 @@ table {
     nav { padding: 0 15px;}
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -400px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -396px; right: 0; }
 
     .title-container {
         #mainTitle {
