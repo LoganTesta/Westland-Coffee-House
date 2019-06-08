@@ -184,7 +184,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*Edge */
 ::-ms-input-placeholder {
-  
+
 }
 
 textarea {
@@ -431,9 +431,9 @@ footer {
         background-color: $firstStyleColorLightRGBA;
         text-align: center;
     }
-    
+
     .footer-to-top a, .footer-copyright, .footer-hours *, .location-footer * {
-          font-size: 18px;
+        font-size: 18px;
     }
 
     a, a:link, a:visited {
@@ -442,11 +442,11 @@ footer {
     a:hover {
         color: #ffffff;
     }
-    
+
     .footer-to-top {
         padding-bottom: 0px;
         a {
-              
+
         }
     }
     .footer-copyright {
@@ -516,16 +516,24 @@ input, textarea {
 table {
     width: 100%;
     border-collapse: collapse; 
-    tr {
-        border-bottom: 1px solid $firstStyleColor;
-    }
+
     th, td {
-        padding: 15px 10px;   
+        padding: 10px 0px;   
     }
     th {
         font-size: 20px; 
         font-weight: bold; 
     }
+    tr {
+        border-bottom: 1px solid $firstStyleColor;
+        td:first-of-type { 
+            padding-top: 30px;
+        }
+        td:last-of-type{
+            padding-bottom: 30px;
+        }
+    }
+
     img {
         width: 100%;
         height: auto;
@@ -690,7 +698,7 @@ table {
         }
     }
     tr {
-        td:nth-of-type(1) { 
+        td:first-of-type { 
             font-size: 18px;
             font-weight: bold; 
             color: $firstStyleColor;
@@ -703,7 +711,7 @@ table {
 
 
 .menu-table {
-    .item-name, .photos, .item-cost, .description   {
+    .item-name, .photos, .description   {
         display: none;
     }
     h4 {
@@ -833,6 +841,15 @@ table {
         background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
     }
 
+    h2 {
+        font-size: 26px;
+
+    } 
+
+    table {
+        th, td { padding: 12px 0px; }
+    }
+
     .title-container {
         position: relative;
         top: -55px;
@@ -847,7 +864,6 @@ table {
         }
     }
 
-
     .subtitle-container {
         display: block;
         position: relative;
@@ -859,10 +875,6 @@ table {
         margin-top: 0;
     }
 
-    h2 {
-        font-size: 26px;
-
-    } 
     .item-image-container {
         width: 100%;
         margin-left: 0;
@@ -874,7 +886,6 @@ table {
         height: 280px;
         margin-left: 0;
         margin-right: 0;
-
     }
 
     .visitors-bg-image {
@@ -893,11 +904,11 @@ table {
             margin-right: auto;
         }
     }
-    
+
     .index-section-content {
-    padding-bottom: 0px;
-}
-    
+        padding-bottom: 0px;
+    }
+
     .barista {
         height: 220px;
     }
@@ -934,11 +945,8 @@ table {
     #bodyWrapper {
         .inner-wrapper {
             width: 1200px;
-
         }
     }
-
-
 
     header { 
         padding-bottom: 190px;
@@ -965,8 +973,6 @@ table {
         }
         .subtitle-container {
             display: inline-block;
-
-
             position: absolute;
             top: 220px;
             left: 170px;
@@ -994,7 +1000,6 @@ table {
         }
     }
 
-
     nav {
         padding: 15px 15px;
         li { 
@@ -1014,21 +1019,21 @@ table {
 
     table {
         th { font-size: 22px; }
-
+        th, td, tr td:first-of-type, tr td:last-of-type { padding: 15px 10px; }
         img {
             width: auto;
             height: 150px;
         }
 
-       .item-image-container {
+        .item-image-container {
             width: 100%;
             margin-left: 0;
             margin-right: 0;
         }
-        
+
         .item-image {
             width: 100%;
-            height: 150px;
+            height: 200px;
             margin-left: 0;
             margin-right: 0;
         }
@@ -1088,25 +1093,23 @@ table {
 
     .menu-table {
         .table-subheader {
-            td:nth-of-type(1) {
+            td:first-of-type {
                 text-align: center;
             }
         }
 
-        .item-name, .photos, .item-cost, .description   {
+        .item-name, .photos, .description   {
             display: table-cell;
+            padding-left: 20px;
         }
         .item-name {
-            width: 30%;
+            width: 32%;
         }
         .photos {
-            width: 20%;
-        }
-        .item-cost {
-            width: 20%;
+            width: 30%;
         }
         .description {
-            width: 30%;
+            width: 38%;
         }
     }
 
