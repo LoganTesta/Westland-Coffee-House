@@ -98,6 +98,10 @@ html {
     height: 0;   
 }
 
+.bulleted-list {
+    list-style-type: disc;
+}
+
 .width-100-percent {
     width: 100%;
 }
@@ -418,23 +422,8 @@ nav {
 
 }
 
-
-.index-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.index-section:first-of-type{
-    padding-top: 0px;
-}
-.index-section:last-of-type{
-    padding-bottom: 0px;
-}
-
-
-
 footer {
-font-size: 28px;
+    font-size: 28px;
     background: url('../images/coffee-shop-exterior.jpg') 50% 100%/cover no-repeat;
     .footer-background {
         padding: 30px 20px;
@@ -569,6 +558,21 @@ table {
 }
 
 
+.index-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.index-section:first-of-type{
+    padding-top: 0px;
+}
+.index-section:last-of-type{
+    padding-bottom: 0px;
+}
+
+.food-beverage-list {
+    padding-left: 30px;
+}
 
 .index-page .item-image { 
     cursor: pointer;
