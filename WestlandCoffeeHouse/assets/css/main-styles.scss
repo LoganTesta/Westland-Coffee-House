@@ -677,7 +677,10 @@ table {
 
 
 /* Menu page */
-
+.table-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .menu-table, .events-table {
     th, td { display: block; }
@@ -1065,7 +1068,10 @@ table {
         padding-top: 0;
     }
 
-
+    .table-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     .menu-table, .events-table {
         th {
@@ -1088,8 +1094,6 @@ table {
             text-align: left;
         }
     }
-
-
 
     .menu-table {
         .table-subheader {
