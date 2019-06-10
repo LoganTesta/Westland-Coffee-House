@@ -305,7 +305,7 @@ input:focus, textarea:focus {
 header { 
     width: 100%; 
     min-height: 226px;
-    background: url('../images/coffee-shop-exterior.jpg') 50% 5%/100% auto no-repeat;
+    background: url('../images/coffee-shop-exterior2.jpg') 50% 5%/cover no-repeat;
 }
 
 .title-container { 
@@ -347,18 +347,25 @@ header {
 .current-page { text-decoration: underline; }
 nav { 
     color: $firstStyleColor; 
-    li { }
     a {
         font-size: 18px; 
         font-weight: bold; 
-        color: #f9f9f9; 
-        &:link, &:visited { 
-            color: #f9f9f9; 
-        }
         &:hover { 
             color: $firstStyleColorLighten;
         }
     }   
+}
+#mobileNav a {
+    
+    color: #f9f9f9; 
+    &:link, &:visited {  
+        color: #f9f9f9; 
+    }
+}
+#desktopNav a {
+    &:link, &:visited {  
+        color: $firstStyleColor; 
+    }
 }
 
 #dropdownButton {
@@ -841,7 +848,7 @@ table {
     header { 
         width: 100%; 
         min-height: 310px;
-        background: url('../images/coffee-shop-exterior.jpg') 50% 0%/100% auto no-repeat;
+        background: url('../images/coffee-shop-exterior2.jpg') 50% 0%/cover no-repeat;
     }
 
     h2 {
@@ -921,7 +928,7 @@ table {
 
 @media only screen and (min-width: 1000px){
     header {  
-        background: url('../images/coffee-shop-exterior.jpg') 50% 10%/100% auto no-repeat;
+        background: url('../images/coffee-shop-exterior2.jpg') 50% 10%/cover no-repeat;
     }
 
     .visitors-bg-image {
@@ -953,7 +960,7 @@ table {
 
     header { 
         padding-bottom: 190px;
-        background: url('../images/coffee-shop-exterior.jpg') 50% 3%/100% auto no-repeat;
+        background: url('../images/coffee-shop-exterior2.jpg') 0% 38%/auto no-repeat;
     }
 
     #bodyWrapper {
@@ -1143,7 +1150,7 @@ table {
 
 
     header { 
-        background: url('../images/coffee-shop-exterior.jpg') 50% 18%/100% auto no-repeat;
+        background: url('../images/coffee-shop-exterior2.jpg') 50% 18%/cover no-repeat;
     }
 
 }
