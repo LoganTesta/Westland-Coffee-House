@@ -341,7 +341,7 @@ input:focus, textarea:focus {
 header {
   width: 100%;
   min-height: 226px;
-  background: url("../images/coffee-shop-exterior2.jpg") 50% 5%/cover no-repeat; }
+  background: url("../images/coffee-shop-background.jpg") 0% 5%/cover no-repeat; }
 
 /* line 311, main-styles.scss */
 .title-container {
@@ -845,7 +845,7 @@ table {
   header {
     width: 100%;
     min-height: 310px;
-    background: url("../images/coffee-shop-exterior2.jpg") 50% 0%/cover no-repeat; }
+    background: url("../images/coffee-shop-background.jpg") 50% 0%/cover no-repeat; }
 
   /* line 854, main-styles.scss */
   h2 {
@@ -914,7 +914,7 @@ table {
 @media only screen and (min-width: 1000px) {
   /* line 930, main-styles.scss */
   header {
-    background: url("../images/coffee-shop-exterior2.jpg") 50% 10%/cover no-repeat; }
+    background: url("../images/coffee-shop-background.jpg") 50% 10%/cover no-repeat; }
 
   /* line 934, main-styles.scss */
   .visitors-bg-image {
@@ -942,7 +942,7 @@ table {
   /* line 961, main-styles.scss */
   header {
     padding-bottom: 190px;
-    background: url("../images/coffee-shop-exterior2.jpg") 0% 38%/auto no-repeat; }
+    background: url("../images/coffee-shop-background.jpg") 0% 26%/auto no-repeat; }
 
   /* line 967, main-styles.scss */
   #bodyWrapper .title-container {
@@ -1008,7 +1008,7 @@ table {
 
   /* line 1020, main-styles.scss */
   footer {
-    background: url("../images/coffee-shop-exterior.jpg") 50% 100%/100% auto no-repeat; }
+    background: url("../images/coffee-shop-exterior.jpg") 50% 100%/cover no-repeat; }
 
   /* line 1025, main-styles.scss */
   #content {
@@ -1128,6 +1128,6 @@ table {
 
   /* line 1152, main-styles.scss */
   header {
-    background: url("../images/coffee-shop-exterior2.jpg") 50% 18%/cover no-repeat; } }
+    background: url("../images/coffee-shop-background.jpg") 50% 12%/cover no-repeat; } }
 
 /*# sourceMappingURL=main-styles.css.map */
