@@ -305,7 +305,7 @@ input:focus, textarea:focus {
 header { 
     width: 100%; 
     min-height: 226px;
-    background: url('../images/coffee-shop-background.jpg') 0% 5%/cover no-repeat;
+    background: url('../images/coffee-shop-background.jpg') 0% 0%/cover no-repeat;
 }
 
 .title-container { 
@@ -777,6 +777,24 @@ table {
 
 .positions-open-container {
     padding-top: 25px;
+}
+
+.position-title {
+    padding-bottom: 15px; 
+}
+.position-image-container {
+    padding-left: 0;
+}
+
+.position-text-container {
+    padding-right: 0;
+}
+
+.position-image {
+    width: 100%;
+    height: 200px;
+    background: url('../images/barista-position-icon.jpg') 50% 0%/cover no-repeat;  
+ 
 }
 
 .barista {

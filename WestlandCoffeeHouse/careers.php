@@ -18,7 +18,7 @@
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
                     <div class="subtitle-container">
-                    <h2 id="subTitle">Careers</h2>
+                        <h2 id="subTitle">Careers</h2>
                     </div>
                 </div>
             </header>
@@ -31,10 +31,21 @@
                         <h3>Careers</h3>
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
                         <div class="positions-open-container">
-                        <h3>Positions Open</h3>
-                        <h4>Part or Full Time Barista</h4>
-                        <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westland Coffee House THE best 
-                            coffee store in the Portland area.  Come on in an pick an application.  We look forward to hearing from you!</p>
+                            <h3>Positions Open</h3>
+                            <div class="position-container">
+                                <div class="position-title">
+                                      <h4>Part or Full Time Barista</h4>
+                                </div>
+                              
+                                <div class="col-sma-4 position-image-container">
+                                    <div class="position-image"></div>
+                                </div>
+                                <div class="col-sma-8 position-text-container">
+                                <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westland Coffee House THE best 
+                                    coffee store in the Portland area.  Come on in an pick an application.  We look forward to hearing from you!</p>
+                                </div>
+                                <div class="clear-both"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sma-4 careers-featured">
@@ -42,6 +53,7 @@
                         <div class="barista one">
                         </div>
                     </div>
+                    <div class="clear-both"></div>
                 </div>
             </div>
 
