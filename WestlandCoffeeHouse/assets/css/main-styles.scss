@@ -533,12 +533,6 @@ table {
     }
     tr {
         border-bottom: 1px solid $firstStyleColor;
-        td:first-of-type { 
-            padding-top: 30px;
-        }
-        td:last-of-type{
-            padding-bottom: 30px;
-        }
     }
 
     img {
@@ -717,6 +711,12 @@ table {
     td {
         text-align: center;
     }
+    td:first-of-type { 
+        padding-top: 30px;
+    }
+    td:last-of-type{
+        padding-bottom: 30px;
+    }
 }
 
 
@@ -784,7 +784,7 @@ table {
 }
 
 .position-container {
-        padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .position-title {
@@ -1115,9 +1115,10 @@ table {
     .menu-table, .events-table {
         th {
             text-transform: uppercase;
+            text-align: left;
         }
         th, td { display: table-cell; }
-        th { text-align: left; }
+        th, td, tr td:first-of-type, tr td:last-of-type { padding: 15px 10px; }    
         .event-name, .date-time, .event-info {
             display: table-cell;
         }
@@ -1170,12 +1171,12 @@ table {
     .item-image.position-image-container {
 
     }
-    
+
     .item-image-container.position-image-container {
         width: 220px;
         height: 160px;
     }
-    
+
     .position-image {
         width: 220px;
         height: 160px;

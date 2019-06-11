@@ -565,176 +565,176 @@ table {
   /* line 534, main-styles.scss */
   table tr {
     border-bottom: 1px solid #6f4e37; }
-    /* line 536, main-styles.scss */
-    table tr td:first-of-type {
-      padding-top: 30px; }
-    /* line 539, main-styles.scss */
-    table tr td:last-of-type {
-      padding-bottom: 30px; }
-  /* line 544, main-styles.scss */
+  /* line 538, main-styles.scss */
   table img {
     width: 100%;
     height: auto; }
 
-/* line 550, main-styles.scss */
+/* line 544, main-styles.scss */
 .item-image-td.empty {
   padding: 0; }
 
-/* line 554, main-styles.scss */
+/* line 548, main-styles.scss */
 .item-image-td.empty .item-image {
   display: none; }
 
-/* line 560, main-styles.scss */
+/* line 554, main-styles.scss */
 .item-image-container {
   overflow: hidden; }
 
-/* line 564, main-styles.scss */
+/* line 558, main-styles.scss */
 .item-image {
   height: 220px;
   transition: transform 0.8s ease-in;
   cursor: pointer; }
 
-/* line 570, main-styles.scss */
+/* line 564, main-styles.scss */
 .item-image:hover {
   transform: scale(1.08);
   transition: transform 0.8s ease-in; }
 
-/* line 576, main-styles.scss */
+/* line 570, main-styles.scss */
 .index-section {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-/* line 581, main-styles.scss */
+/* line 575, main-styles.scss */
 .index-section:first-of-type {
   padding-top: 0px; }
 
-/* line 584, main-styles.scss */
+/* line 578, main-styles.scss */
 .index-section:last-of-type {
   padding-bottom: 0px; }
 
-/* line 588, main-styles.scss */
+/* line 582, main-styles.scss */
 .index-section-content {
   padding-bottom: 10px; }
 
-/* line 592, main-styles.scss */
+/* line 586, main-styles.scss */
 .food-beverage-list {
   padding-left: 30px; }
 
-/* line 596, main-styles.scss */
+/* line 590, main-styles.scss */
 .index-page .item-image {
   cursor: pointer;
   transition: transform 0.8s; }
 
-/* line 601, main-styles.scss */
+/* line 595, main-styles.scss */
 .index-page .item-image:hover {
   cursor: pointer;
   transform: scale(1.12);
   transition: transform 0.8s; }
 
-/* line 607, main-styles.scss */
+/* line 601, main-styles.scss */
 .item-image.index-one {
   background: url("../images/index/roasted-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 611, main-styles.scss */
+/* line 605, main-styles.scss */
 .item-image.index-two {
   background: url("../images/index/mocha-on-plate.jpg") 50% 0%/cover no-repeat; }
 
-/* line 615, main-styles.scss */
+/* line 609, main-styles.scss */
 .item-image.index-three {
   background: url("../images/index/coffee-shop-counter.jpg") 50% 0%/cover no-repeat; }
 
-/* line 619, main-styles.scss */
+/* line 613, main-styles.scss */
 .item-image.one {
   background: url("../images/menu/house-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 622, main-styles.scss */
+/* line 616, main-styles.scss */
 .item-image.six {
   background: url("../images/menu/mocha.jpg") 50% 0%/cover no-repeat; }
 
-/* line 625, main-styles.scss */
+/* line 619, main-styles.scss */
 .item-image.seven {
   background: url("../images/menu/green-tea-latte.jpg") 50% 0%/cover no-repeat; }
 
-/* line 628, main-styles.scss */
+/* line 622, main-styles.scss */
 .item-image.twenty {
   background: url("../images/menu/cake-slice.jpg") 50% 0%/cover no-repeat; }
 
-/* line 635, main-styles.scss */
+/* line 629, main-styles.scss */
 .visitors-bg-image {
   width: 100%;
   height: 220px;
   margin-bottom: 20px; }
 
-/* line 641, main-styles.scss */
+/* line 635, main-styles.scss */
 .visitors-bg-image.one {
   background: url("../images/three-women-talking-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
-/* line 645, main-styles.scss */
+/* line 639, main-styles.scss */
 .visitors-bg-image.two {
   background: url("../images/two-visitors-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
-/* line 649, main-styles.scss */
+/* line 643, main-styles.scss */
 .visitors-bg-image.three {
   background: url("../images/busy-coffee-order-area.jpg") 50% 0%/cover no-repeat;
   margin-bottom: 0px; }
 
 /*Location page**/
-/* line 657, main-styles.scss */
+/* line 651, main-styles.scss */
 #content h3.coffee-shop-hours-header {
   color: #6f4e37; }
-/* line 660, main-styles.scss */
+/* line 654, main-styles.scss */
 #content h3.location-header {
   color: #365d2e; }
-/* line 663, main-styles.scss */
+/* line 657, main-styles.scss */
 #content .coffee-shop-hours-header, #content .location-header {
   text-align: center; }
-/* line 668, main-styles.scss */
+/* line 662, main-styles.scss */
 #content .hours-table {
   text-align: left; }
-  /* line 670, main-styles.scss */
+  /* line 664, main-styles.scss */
   #content .hours-table th {
     color: #365d2e; }
-  /* line 671, main-styles.scss */
+  /* line 665, main-styles.scss */
   #content .hours-table .hours-col-1 {
     width: 45%; }
-  /* line 674, main-styles.scss */
+  /* line 668, main-styles.scss */
   #content .hours-table .hours-col-2 {
     width: 55%; }
 
-/* line 680, main-styles.scss */
+/* line 674, main-styles.scss */
 .location-section {
   padding-top: 40px; }
 
 /* Menu page */
-/* line 687, main-styles.scss */
+/* line 681, main-styles.scss */
 .table-container {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-/* line 693, main-styles.scss */
+/* line 687, main-styles.scss */
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }
-/* line 694, main-styles.scss */
+/* line 688, main-styles.scss */
 .menu-table th, .events-table th {
   color: #365d2e; }
-/* line 697, main-styles.scss */
+/* line 691, main-styles.scss */
 .menu-table .event-name, .menu-table .date-time, .menu-table .event-info, .events-table .event-name, .events-table .date-time, .events-table .event-info {
   display: none; }
-/* line 702, main-styles.scss */
+/* line 696, main-styles.scss */
 .menu-table .table-subheader td, .events-table .table-subheader td {
   padding: 25px 0px;
   background-color: #d1b6a3;
   background-image: linear-gradient(90deg, #af7f5e, #d1b6a3, #af7f5e);
   text-transform: uppercase;
   text-align: center; }
-/* line 711, main-styles.scss */
+/* line 705, main-styles.scss */
 .menu-table tr td:first-of-type, .events-table tr td:first-of-type {
   font-size: 18px;
   font-weight: bold;
   color: #6f4e37; }
-/* line 717, main-styles.scss */
+/* line 711, main-styles.scss */
 .menu-table td, .events-table td {
   text-align: center; }
+/* line 714, main-styles.scss */
+.menu-table td:first-of-type, .events-table td:first-of-type {
+  padding-top: 30px; }
+/* line 717, main-styles.scss */
+.menu-table td:last-of-type, .events-table td:last-of-type {
+  padding-bottom: 30px; }
 
 /* line 724, main-styles.scss */
 .menu-table .item-name, .menu-table .photos, .menu-table .description {
@@ -1095,76 +1095,77 @@ table {
 
   /* line 1116, main-styles.scss */
   .menu-table th, .events-table th {
-    text-transform: uppercase; }
-  /* line 1119, main-styles.scss */
+    text-transform: uppercase;
+    text-align: left; }
+  /* line 1120, main-styles.scss */
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
-  /* line 1120, main-styles.scss */
-  .menu-table th, .events-table th {
-    text-align: left; }
   /* line 1121, main-styles.scss */
+  .menu-table th, .menu-table td, .menu-table tr td:first-of-type, .menu-table tr td:last-of-type, .events-table th, .events-table td, .events-table tr td:first-of-type, .events-table tr td:last-of-type {
+    padding: 15px 10px; }
+  /* line 1122, main-styles.scss */
   .menu-table .event-name, .menu-table .date-time, .menu-table .event-info, .events-table .event-name, .events-table .date-time, .events-table .event-info {
     display: table-cell; }
-  /* line 1125, main-styles.scss */
+  /* line 1126, main-styles.scss */
   .menu-table .table-subheader td, .events-table .table-subheader td {
     padding: 25px 0px; }
-    /* line 1127, main-styles.scss */
+    /* line 1128, main-styles.scss */
     .menu-table .table-subheader td h4, .events-table .table-subheader td h4 {
       font-size: 20px; }
-  /* line 1132, main-styles.scss */
+  /* line 1133, main-styles.scss */
   .menu-table td, .events-table td {
     text-align: left; }
 
-  /* line 1139, main-styles.scss */
+  /* line 1140, main-styles.scss */
   .menu-table .table-subheader td:first-of-type {
     text-align: center; }
-  /* line 1144, main-styles.scss */
+  /* line 1145, main-styles.scss */
   .menu-table .item-name, .menu-table .photos, .menu-table .description {
     display: table-cell;
     padding-left: 20px; }
-  /* line 1148, main-styles.scss */
+  /* line 1149, main-styles.scss */
   .menu-table .item-name {
     width: 32%; }
-  /* line 1151, main-styles.scss */
+  /* line 1152, main-styles.scss */
   .menu-table .photos {
     width: 30%; }
-  /* line 1154, main-styles.scss */
+  /* line 1155, main-styles.scss */
   .menu-table .description {
     width: 38%; }
 
-  /* line 1160, main-styles.scss */
+  /* line 1161, main-styles.scss */
   .events-table .event-name {
     width: 30%; }
-  /* line 1161, main-styles.scss */
+  /* line 1162, main-styles.scss */
   .events-table .date-time {
     width: 30%; }
-  /* line 1162, main-styles.scss */
+  /* line 1163, main-styles.scss */
   .events-table .event-info {
     width: 40%; }
 
-  /* line 1166, main-styles.scss */
+  /* line 1167, main-styles.scss */
   .contact-westland {
     padding-bottom: 15px; }
 
-  /* line 1174, main-styles.scss */
+  /* line 1175, main-styles.scss */
   .item-image-container.position-image-container {
     width: 220px;
     height: 160px; }
 
-  /* line 1179, main-styles.scss */
+  /* line 1180, main-styles.scss */
   .position-image {
     width: 220px;
     height: 160px; }
 
-  /* line 1184, main-styles.scss */
+  /* line 1185, main-styles.scss */
   .barista {
     height: 300px; } }
 @media only screen and (min-width: 1600px) {
-  /* line 1193, main-styles.scss */
+  /* line 1194, main-styles.scss */
   .inner-wrapper {
     width: 1540px; }
 
-  /* line 1198, main-styles.scss */
+  /* line 1199, main-styles.scss */
   header {
     background: url("../images/coffee-shop-background.jpg") 50% 12%/cover no-repeat; } }
 
