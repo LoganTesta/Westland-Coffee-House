@@ -229,6 +229,7 @@ $thirdStyleColor: #28344a; /* complimentary dark blue */
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
 $firstStyleColorLighter20: scale-color($firstStyleColor, $lightness: 20%);  // rgb (157, 110, 78)
 $firstStyleColorLighter30: scale-color($firstStyleColor, $lightness: 30%);
+$firstStyleColorLighter40: scale-color($firstStyleColor, $lightness: 40%);
 $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used in several places in the site  
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
@@ -267,7 +268,6 @@ a, a:link, a:visited {
 
 a:hover {
     color: $thirdStyleColor;
-
 }
 
 input, textarea {
@@ -350,9 +350,6 @@ nav {
     a {
         font-size: 18px; 
         font-weight: bold; 
-        &:hover { 
-            color: $firstStyleColorLighten;
-        }
     }   
 }
 #mobileNav a {
@@ -361,10 +358,16 @@ nav {
     &:link, &:visited {  
         color: #f9f9f9; 
     }
+    &:hover { 
+            color: $firstStyleColorLighten;
+    }
 }
 #desktopNav a {
     &:link, &:visited {  
         color: $firstStyleColor; 
+    }
+    &:hover { 
+        color: $firstStyleColorLighter40;
     }
 }
 
@@ -998,9 +1001,9 @@ table {
     #bodyWrapper {
         .title-container { 
             position: static;
-            width: 350px; 
+            width: 216px; 
             padding-top: 30px; 
-            margin-left: 170px;
+            margin-left: 160px;
             margin-right: 0;
             text-align: left;
         }
@@ -1008,7 +1011,7 @@ table {
             position: absolute;
             top: 20px; 
             left: 20px; 
-            width: 93px;
+            width: 80px;
             padding-left: 0; 
             padding-top: 0; 
             margin-left: 0;
@@ -1017,7 +1020,7 @@ table {
             display: inline-block;
             position: absolute;
             top: 220px;
-            left: 170px;
+            left: 160px;
             width: auto;
             margin-left: 0;
             margin-right: 0;
@@ -1197,7 +1200,7 @@ table {
 
 
     header { 
-        background: url('../images/coffee-shop-background.jpg') 50% 12%/cover no-repeat;
+        background: url('../images/coffee-shop-background.jpg') 50% 15%/cover no-repeat;
     }
 
 }
