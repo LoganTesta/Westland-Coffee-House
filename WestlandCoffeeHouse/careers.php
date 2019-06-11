@@ -31,25 +31,43 @@
                         <h3>Careers</h3>
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
                         <div class="positions-open-container">
-                            <h3>Positions Open</h3>
+                            <div class="positions-title-container">
+                                     <h3>Positions Open</h3>
+                            </div>
+                       
                             <div class="position-container">
                                 <div class="position-title">
-                                      <h4>Part or Full Time Barista</h4>
+                                    <h4>Barista</h4>
                                 </div>
-                              
-                                <div class="col-sma-4 position-image-container">
-                                    <div class="position-image"></div>
-                                </div>
-                                <div class="col-sma-8 position-text-container">
-                                <p>We are currently hiring either a part-time or a fulltime barista.  Make delicious beverages and Westland Coffee House THE best 
-                                    coffee store in the Portland area.  Come on in an pick an application.  We look forward to hearing from you!</p>
-                                </div>
-                                <div class="clear-both"></div>
+                                <div class="position-text-container">
+                                    <div class="item-image-container position-image-container">
+                                        <div class="item-image position-image position-image-one"></div>
+                                    </div>                                 
+                                    <p>Part or Full Time.  Provide excellent customer service.
+                                        Make delicious beverages and Westland 
+                                        Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!</p>
+                                    <div class="clear-both"></div>
+                                </div>                               
                             </div>
+                            <div class="position-container">
+                                <div class="position-title">
+                                    <h4>Barista Lead</h4>
+                                </div>
+                                <div class="position-text-container">
+                                    <div class="item-image-container position-image-container">
+                                        <div class="item-image position-image position-image-two"></div>
+                                    </div>                                 
+                                    <p>Part or Full Time.  Provide excellent customer service, train new baristas on brewing and prep techniques and customer service, general barista
+                                        duties, some supervisory duties as needed.  Reports to the Store Managers.</p>
+                                    <div class="clear-both"></div>
+                                </div>                               
+                            </div>
+                            <p><strong>Make delicious beverages and Westland Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!  
+                                    We look forward to hearing from you!</strong></p>
                         </div>
                     </div>
                     <div class="col-sma-4 careers-featured">
-                        <h4>"It's Westland Time!"</h4>
+                        <h4>"Come Join the Westland Team!"</h4>
                         <div class="barista one">
                         </div>
                     </div>

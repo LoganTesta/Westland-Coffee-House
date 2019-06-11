@@ -356,7 +356,7 @@ nav {
     }   
 }
 #mobileNav a {
-    
+
     color: #f9f9f9; 
     &:link, &:visited {  
         color: #f9f9f9; 
@@ -776,25 +776,39 @@ table {
 }
 
 .positions-open-container {
-    padding-top: 25px;
+    margin-top: 30px;
+}
+
+.positions-title-container {
+    padding-bottom: 10px;
+}
+
+.position-container {
+        padding-bottom: 30px;
 }
 
 .position-title {
     padding-bottom: 15px; 
 }
-.position-image-container {
-    padding-left: 0;
+
+.item-image-container.position-image-container {
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
-.position-text-container {
-    padding-right: 0;
+.item-image.position-image {
+
 }
 
-.position-image {
-    width: 100%;
-    height: 200px;
-    background: url('../images/barista-position-icon.jpg') 50% 0%/cover no-repeat;  
- 
+.item-image.position-image-one {
+    background: url('../images/mug-with-coffee.jpg') 50% 0%/cover no-repeat;  
+}
+
+.item-image.position-image-two {
+    background: url('../images/mug-with-coffee.jpg') 50% 0%/cover no-repeat;  
 }
 
 .barista {
@@ -1151,6 +1165,20 @@ table {
 
     .contact-westland {
         padding-bottom: 15px;
+    }
+
+    .item-image.position-image-container {
+
+    }
+    
+    .item-image-container.position-image-container {
+        width: 220px;
+        height: 160px;
+    }
+    
+    .position-image {
+        width: 220px;
+        height: 160px;
     }
 
     .barista {
