@@ -998,44 +998,14 @@ table {
         background: url('../images/coffee-shop-background.jpg') 0% 26%/auto no-repeat;
     }
 
-    #bodyWrapper {
-        .title-container { 
-            position: static;
-            width: 216px; 
-            padding-top: 30px; 
-            margin-left: 160px;
-            margin-right: 0;
-            text-align: left;
-        }
-        #logo {
-            position: absolute;
-            top: 20px; 
-            left: 20px; 
-            width: 80px;
-            padding-left: 0; 
-            padding-top: 0; 
-            margin-left: 0;
-        }
-        .subtitle-container {
-            display: inline-block;
-            position: absolute;
-            top: 220px;
-            left: 160px;
-            width: auto;
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: 15px;
 
-        }
-        #subTitle {  }
-    } 
-
-    nav { padding: 0 15px;}
-
-    #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -396px; right: 0; }
-
-    .title-container {
+    .title-container { 
+        position: static;
+        width: 216px; 
+        padding-top: 30px; 
+        margin-left: 160px;
+        margin-right: 0;
+        text-align: left;
         #mainTitle {
             width: 100%;
             max-width: 210px;
@@ -1044,6 +1014,32 @@ table {
             }
         }
     }
+    #logo {
+        position: absolute;
+        top: 20px; 
+        left: 20px; 
+        width: 80px;
+        padding-left: 0; 
+        padding-top: 0; 
+        margin-left: 0;
+    }
+    .subtitle-container {
+        display: inline-block;
+        position: absolute;
+        top: 220px;
+        left: 160px;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+
+    }
+
+
+    nav { padding: 0 15px;}
+
+    #mobileNav { display: none; }
+    #desktopNav { display: block; position: absolute; top: -396px; right: 0; }
 
     nav {
         padding: 15px 15px;
@@ -1198,9 +1194,22 @@ table {
         width: 1540px;
     }
 
-
+    .title-container {
+        width: 242px;
+        #mainTitle {
+            a { 
+                font-size: 56px; 
+            }
+        }
+    }
+    
+    .subtitle-container { 
+     top: 240px;   
+    }
+    
     header { 
-        background: url('../images/coffee-shop-background.jpg') 50% 15%/cover no-repeat;
+        padding-bottom: 169px;
+        background: url('../images/coffee-shop-background.jpg') 50% 18%/cover no-repeat;
     }
 
 }

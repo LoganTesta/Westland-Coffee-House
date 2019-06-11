@@ -976,15 +976,23 @@ table {
     background: url("../images/coffee-shop-background.jpg") 0% 26%/auto no-repeat; }
 
   /* line 1002, main-styles.scss */
-  #bodyWrapper .title-container {
+  .title-container {
     position: static;
     width: 216px;
     padding-top: 30px;
     margin-left: 160px;
     margin-right: 0;
     text-align: left; }
-  /* line 1010, main-styles.scss */
-  #bodyWrapper #logo {
+    /* line 1009, main-styles.scss */
+    .title-container #mainTitle {
+      width: 100%;
+      max-width: 210px; }
+      /* line 1012, main-styles.scss */
+      .title-container #mainTitle a {
+        font-size: 50px; }
+
+  /* line 1017, main-styles.scss */
+  #logo {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -992,8 +1000,9 @@ table {
     padding-left: 0;
     padding-top: 0;
     margin-left: 0; }
-  /* line 1019, main-styles.scss */
-  #bodyWrapper .subtitle-container {
+
+  /* line 1026, main-styles.scss */
+  .subtitle-container {
     display: inline-block;
     position: absolute;
     top: 220px;
@@ -1003,173 +1012,177 @@ table {
     margin-right: 0;
     margin-top: 15px; }
 
-  /* line 1033, main-styles.scss */
+  /* line 1039, main-styles.scss */
   nav {
     padding: 0 15px; }
 
-  /* line 1035, main-styles.scss */
+  /* line 1041, main-styles.scss */
   #mobileNav {
     display: none; }
 
-  /* line 1036, main-styles.scss */
+  /* line 1042, main-styles.scss */
   #desktopNav {
     display: block;
     position: absolute;
     top: -396px;
     right: 0; }
 
-  /* line 1039, main-styles.scss */
-  .title-container #mainTitle {
-    width: 100%;
-    max-width: 210px; }
-    /* line 1042, main-styles.scss */
-    .title-container #mainTitle a {
-      font-size: 50px; }
-
-  /* line 1048, main-styles.scss */
+  /* line 1044, main-styles.scss */
   nav {
     padding: 15px 15px; }
-    /* line 1050, main-styles.scss */
+    /* line 1046, main-styles.scss */
     nav li {
       display: inline-block;
       padding-right: 40px; }
-      /* line 1052, main-styles.scss */
+      /* line 1048, main-styles.scss */
       nav li a, nav li a:link, nav li a:visited {
         font-size: 22px; }
 
-  /* line 1055, main-styles.scss */
+  /* line 1051, main-styles.scss */
   footer {
     background: url("../images/coffee-shop-exterior.jpg") 50% 100%/cover no-repeat; }
 
-  /* line 1060, main-styles.scss */
+  /* line 1056, main-styles.scss */
   #content {
     padding: 50px 20px; }
 
-  /* line 1066, main-styles.scss */
+  /* line 1062, main-styles.scss */
   table th {
     font-size: 22px; }
-  /* line 1067, main-styles.scss */
+  /* line 1063, main-styles.scss */
   table th, table td, table tr td:first-of-type, table tr td:last-of-type {
     padding: 15px 10px; }
-  /* line 1068, main-styles.scss */
+  /* line 1064, main-styles.scss */
   table img {
     width: auto;
     height: 150px; }
-  /* line 1073, main-styles.scss */
+  /* line 1069, main-styles.scss */
   table .item-image-container {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-  /* line 1079, main-styles.scss */
+  /* line 1075, main-styles.scss */
   table .item-image {
     width: 100%;
     height: 200px;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1087, main-styles.scss */
+  /* line 1083, main-styles.scss */
   .index-section {
     padding-top: 25px;
     padding-bottom: 25px; }
 
-  /* line 1092, main-styles.scss */
+  /* line 1088, main-styles.scss */
   .item-image {
     height: 300px; }
 
-  /* line 1096, main-styles.scss */
+  /* line 1092, main-styles.scss */
   .visitors-bg-image {
     height: 400px; }
 
-  /* line 1101, main-styles.scss */
+  /* line 1097, main-styles.scss */
   .hours-table th, .hours-table td {
     padding-left: 80px; }
-  /* line 1104, main-styles.scss */
+  /* line 1100, main-styles.scss */
   .hours-table th {
     text-transform: uppercase; }
 
-  /* line 1109, main-styles.scss */
+  /* line 1105, main-styles.scss */
   .location-section {
     padding-top: 0; }
 
-  /* line 1113, main-styles.scss */
+  /* line 1109, main-styles.scss */
   .table-container {
     padding-top: 0;
     padding-bottom: 0; }
 
-  /* line 1119, main-styles.scss */
+  /* line 1115, main-styles.scss */
   .menu-table th, .events-table th {
     text-transform: uppercase;
     text-align: left; }
-  /* line 1123, main-styles.scss */
+  /* line 1119, main-styles.scss */
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
-  /* line 1124, main-styles.scss */
+  /* line 1120, main-styles.scss */
   .menu-table th, .menu-table td, .menu-table tr td:first-of-type, .menu-table tr td:last-of-type, .events-table th, .events-table td, .events-table tr td:first-of-type, .events-table tr td:last-of-type {
     padding: 15px 10px; }
-  /* line 1125, main-styles.scss */
+  /* line 1121, main-styles.scss */
   .menu-table .event-name, .menu-table .date-time, .menu-table .event-info, .events-table .event-name, .events-table .date-time, .events-table .event-info {
     display: table-cell; }
-  /* line 1129, main-styles.scss */
+  /* line 1125, main-styles.scss */
   .menu-table .table-subheader td, .events-table .table-subheader td {
     padding: 25px 0px; }
-    /* line 1131, main-styles.scss */
+    /* line 1127, main-styles.scss */
     .menu-table .table-subheader td h4, .events-table .table-subheader td h4 {
       font-size: 20px; }
-  /* line 1136, main-styles.scss */
+  /* line 1132, main-styles.scss */
   .menu-table td, .events-table td {
     text-align: left; }
 
-  /* line 1143, main-styles.scss */
+  /* line 1139, main-styles.scss */
   .menu-table .table-subheader td:first-of-type {
     text-align: center; }
-  /* line 1148, main-styles.scss */
+  /* line 1144, main-styles.scss */
   .menu-table .item-name, .menu-table .photos, .menu-table .description {
     display: table-cell;
     padding-left: 20px; }
-  /* line 1152, main-styles.scss */
+  /* line 1148, main-styles.scss */
   .menu-table .item-name {
     width: 32%; }
-  /* line 1155, main-styles.scss */
+  /* line 1151, main-styles.scss */
   .menu-table .photos {
     width: 30%; }
-  /* line 1158, main-styles.scss */
+  /* line 1154, main-styles.scss */
   .menu-table .description {
     width: 38%; }
 
-  /* line 1164, main-styles.scss */
+  /* line 1160, main-styles.scss */
   .events-table .event-name {
     width: 30%; }
-  /* line 1165, main-styles.scss */
+  /* line 1161, main-styles.scss */
   .events-table .date-time {
     width: 30%; }
-  /* line 1166, main-styles.scss */
+  /* line 1162, main-styles.scss */
   .events-table .event-info {
     width: 40%; }
 
-  /* line 1170, main-styles.scss */
+  /* line 1166, main-styles.scss */
   .contact-westland {
     padding-bottom: 15px; }
 
-  /* line 1178, main-styles.scss */
+  /* line 1174, main-styles.scss */
   .item-image-container.position-image-container {
     width: 220px;
     height: 160px; }
 
-  /* line 1183, main-styles.scss */
+  /* line 1179, main-styles.scss */
   .position-image {
     width: 220px;
     height: 160px; }
 
-  /* line 1188, main-styles.scss */
+  /* line 1184, main-styles.scss */
   .barista {
     height: 300px; } }
 @media only screen and (min-width: 1600px) {
-  /* line 1197, main-styles.scss */
+  /* line 1193, main-styles.scss */
   .inner-wrapper {
     width: 1540px; }
 
-  /* line 1202, main-styles.scss */
+  /* line 1197, main-styles.scss */
+  .title-container {
+    width: 242px; }
+    /* line 1200, main-styles.scss */
+    .title-container #mainTitle a {
+      font-size: 56px; }
+
+  /* line 1206, main-styles.scss */
+  .subtitle-container {
+    top: 240px; }
+
+  /* line 1210, main-styles.scss */
   header {
-    background: url("../images/coffee-shop-background.jpg") 50% 15%/cover no-repeat; } }
+    padding-bottom: 169px;
+    background: url("../images/coffee-shop-background.jpg") 50% 18%/cover no-repeat; } }
 
 /*# sourceMappingURL=main-styles.css.map */
