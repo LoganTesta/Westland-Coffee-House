@@ -1,6 +1,5 @@
 
-/* Base reset and generic styles for print */
-
+/***############### Base reset and generic styles for print ***/
 /*Enable background-colors and background-images on (most) browsers. */
 * {
     -webkit-print-color-adjust: exact !important; /* Chomre, Safari */
@@ -10,9 +9,11 @@
 .noprint {
     display: none;
 }
+/***########## End of General Reset and Setup ****/
 
-/* Website Specific Styles. */
 
+
+/***############### Website Specific Styles. ***/
 /*Hide certain page elements if needed.  */
 * {
  
