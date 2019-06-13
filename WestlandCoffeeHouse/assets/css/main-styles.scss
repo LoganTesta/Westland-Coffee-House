@@ -792,6 +792,7 @@ table {
 
 .position-title {
     padding-bottom: 15px; 
+    text-align: center;
 }
 
 .item-image-container.position-image-container {
@@ -928,7 +929,7 @@ table {
 
     .item-image {
         width: 100%;
-        height: 280px;
+        height: 240px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -954,6 +955,12 @@ table {
         padding-bottom: 0px;
     }
 
+    /*Careers */
+    .position-title {
+        text-align: left;
+        padding-left: 20px;
+    }
+    
     .barista {
         height: 220px;
     }
@@ -966,6 +973,10 @@ table {
         background: url('../images/coffee-shop-background.jpg') 50% 10%/cover no-repeat;
     }
 
+    .item-image {
+        height: 280px;
+    }
+    
     .visitors-bg-image {
         height: 300px;
     }
