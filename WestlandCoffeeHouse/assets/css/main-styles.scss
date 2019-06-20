@@ -94,6 +94,7 @@ ul {
 }
 
 p {
+    padding-bottom: 16px;
     line-height: 22.4px;
 }
 
@@ -401,10 +402,6 @@ nav {
     a, a:link, a:visited {
         text-decoration: underline;   
     }
-    p {
-        margin-bottom: 18px;
-    }
-
 }
 
 footer {
@@ -966,9 +963,6 @@ table {
 
 
 @media only screen and (min-width: 1200px){
-    .inner-wrapper {
-        width: 90%;
-    }
 
     h2 {
         font-size: 26px;
