@@ -274,7 +274,7 @@ header {
     margin-right: 12%;
     margin-top: 15px;
     border-radius: 15px;
-    background-color: $firstStyleColorLighter20SemiOpacity;
+    background-color: $secondStyleColorSemiOpacity;
 }
 
 
@@ -285,7 +285,7 @@ header {
 .current-page { text-decoration: underline; }
 
 nav { 
-    color: $secondStyleColor; 
+    color: $firstStyleColor; 
     a {
         font-size: 18px; 
         font-weight: bold; 
@@ -303,7 +303,7 @@ nav {
 }
 #desktopNav a {
     &:link, &:visited {  
-        color: $secondStyleColor; 
+        color: $firstStyleColor; 
     }
     &:hover { 
         color: $firstStyleColorLighter40;
