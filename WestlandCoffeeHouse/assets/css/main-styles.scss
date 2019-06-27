@@ -206,6 +206,7 @@ $firstStyleColorLighten: scale-color($firstStyleColor, $lightness: 60%); // Used
 $secondStyleColorLighten: scale-color($secondStyleColor, $lightness: 30%);
 
 $firstStyleColorRGBA: rgba(111, 78, 55, 0.8); /* coffee brown with semi-transparents */
+$firstStyleColorLighter20RGBA: rgba(157, 110, 78, 0.85);
 $firstStyleColorLightRGBA: rgba(209, 182, 163, 0.85); /* light coffee brown with semi-transparents */
 
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
@@ -309,7 +310,7 @@ header {
     margin-right: 12%;
     margin-top: 15px;
     border-radius: 15px;
-    background-color: rgba(209,182,163,0.8);   
+    background-color: $firstStyleColorLighter20RGBA;   
     color: $firstStyleColorLighten;
 }
 
