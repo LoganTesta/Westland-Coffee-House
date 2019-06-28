@@ -311,7 +311,7 @@ h3 {
 /* line 229, main-styles.scss */
 h4 {
   font-size: 20px;
-  color: #365d2e; }
+  color: #28344a; }
 
 /* line 230, main-styles.scss */
 h2, h3 {
@@ -507,276 +507,279 @@ footer {
   /* line 384, main-styles.scss */
   footer .footer-to-top {
     padding-bottom: 0px; }
-  /* line 389, main-styles.scss */
+    /* line 386, main-styles.scss */
+    footer .footer-to-top a, footer .footer-to-top a:link, footer .footer-to-top a:visited {
+      color: #28344a; }
+  /* line 390, main-styles.scss */
   footer .footer-copyright {
     padding-top: 20px;
     padding-bottom: 20px; }
-  /* line 393, main-styles.scss */
+  /* line 394, main-styles.scss */
   footer .social-container {
     padding-top: 20px;
     padding-bottom: 20px; }
-    /* line 396, main-styles.scss */
+    /* line 397, main-styles.scss */
     footer .social-container .social-logo {
       display: inline-block;
       padding: 0 15px; }
-      /* line 399, main-styles.scss */
+      /* line 400, main-styles.scss */
       footer .social-container .social-logo .social-icon {
         transition: 0.4s all; }
-      /* line 402, main-styles.scss */
+      /* line 403, main-styles.scss */
       footer .social-container .social-logo .social-icon:hover {
         transition: 0.4s all; }
-  /* line 408, main-styles.scss */
+  /* line 409, main-styles.scss */
   footer .footer-hours {
     padding-top: 20px;
     padding-bottom: 10px; }
-    /* line 411, main-styles.scss */
+    /* line 412, main-styles.scss */
     footer .footer-hours .day-hours {
       padding-bottom: 10px; }
-    /* line 412, main-styles.scss */
+    /* line 413, main-styles.scss */
     footer .footer-hours .day, footer .footer-hours .hours {
       width: 150px;
       display: inline-block; }
-    /* line 416, main-styles.scss */
+    /* line 417, main-styles.scss */
     footer .footer-hours .hours {
       padding-left: 20px; }
-  /* line 420, main-styles.scss */
+  /* line 421, main-styles.scss */
   footer .location-footer {
     padding-top: 20px; }
 
-/* line 425, main-styles.scss */
+/* line 426, main-styles.scss */
 input, textarea {
   outline: 0; }
 
-/* line 428, main-styles.scss */
+/* line 429, main-styles.scss */
 .required-field-needed {
   box-shadow: 0px 0px 3px 3px red; }
 
-/* line 432, main-styles.scss */
+/* line 433, main-styles.scss */
 .input-container {
   padding: 15px;
   color: #6f4e37; }
-  /* line 435, main-styles.scss */
+  /* line 436, main-styles.scss */
   .input-container label {
     display: inline-block;
     margin-bottom: 8px; }
-  /* line 439, main-styles.scss */
+  /* line 440, main-styles.scss */
   .input-container input {
     width: 100%; }
-  /* line 443, main-styles.scss */
+  /* line 444, main-styles.scss */
   .input-container textarea {
     width: 100%; }
 
-/* line 448, main-styles.scss */
+/* line 449, main-styles.scss */
 .input-container.contact-button {
   padding-bottom: 0; }
 
-/* line 452, main-styles.scss */
+/* line 453, main-styles.scss */
 table {
   width: 100%;
   border-collapse: collapse; }
-  /* line 455, main-styles.scss */
+  /* line 456, main-styles.scss */
   table th, table td {
     padding: 10px 0px; }
-  /* line 458, main-styles.scss */
+  /* line 459, main-styles.scss */
   table th {
     font-size: 20px;
     font-weight: bold; }
-  /* line 462, main-styles.scss */
+  /* line 463, main-styles.scss */
   table tr {
     border-bottom: 1px solid #6f4e37; }
-  /* line 465, main-styles.scss */
+  /* line 466, main-styles.scss */
   table img {
     width: 100%;
     height: auto; }
 
-/* line 470, main-styles.scss */
+/* line 471, main-styles.scss */
 .item-image-td.empty {
   padding: 0; }
 
-/* line 474, main-styles.scss */
+/* line 475, main-styles.scss */
 .item-image-td.empty .item-image {
   display: none; }
 
-/* line 478, main-styles.scss */
+/* line 479, main-styles.scss */
 .item-image-container {
   overflow: hidden; }
 
-/* line 482, main-styles.scss */
+/* line 483, main-styles.scss */
 .item-image {
   height: 220px;
   transition: transform 0.8s ease-in;
   cursor: pointer; }
 
-/* line 488, main-styles.scss */
+/* line 489, main-styles.scss */
 .item-image:hover {
   transform: scale(1.08);
   transition: transform 0.8s ease-in; }
 
-/* line 493, main-styles.scss */
+/* line 494, main-styles.scss */
 .index-section {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-/* line 498, main-styles.scss */
+/* line 499, main-styles.scss */
 .index-section:first-of-type {
   padding-top: 0px; }
 
-/* line 501, main-styles.scss */
+/* line 502, main-styles.scss */
 .index-section:last-of-type {
   padding-bottom: 0px; }
 
-/* line 505, main-styles.scss */
+/* line 506, main-styles.scss */
 .index-section-content {
   padding-bottom: 10px; }
 
-/* line 509, main-styles.scss */
+/* line 510, main-styles.scss */
 .food-beverage-list {
   padding-left: 30px; }
 
-/* line 513, main-styles.scss */
+/* line 514, main-styles.scss */
 .index-page .item-image {
   cursor: pointer;
   transition: transform 0.8s; }
 
-/* line 518, main-styles.scss */
+/* line 519, main-styles.scss */
 .index-page .item-image:hover {
   cursor: pointer;
   transform: scale(1.12);
   transition: transform 0.8s; }
 
-/* line 524, main-styles.scss */
+/* line 525, main-styles.scss */
 .item-image.index-one {
   background: url("../images/index/roasted-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 528, main-styles.scss */
+/* line 529, main-styles.scss */
 .item-image.index-two {
   background: url("../images/index/mocha-on-plate.jpg") 50% 0%/cover no-repeat; }
 
-/* line 532, main-styles.scss */
+/* line 533, main-styles.scss */
 .item-image.index-three {
   background: url("../images/index/coffee-shop-counter.jpg") 50% 0%/cover no-repeat; }
 
-/* line 536, main-styles.scss */
+/* line 537, main-styles.scss */
 .item-image.one {
   background: url("../images/menu/house-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 539, main-styles.scss */
+/* line 540, main-styles.scss */
 .item-image.six {
   background: url("../images/menu/mocha.jpg") 50% 0%/cover no-repeat; }
 
-/* line 542, main-styles.scss */
+/* line 543, main-styles.scss */
 .item-image.seven {
   background: url("../images/menu/green-tea-latte.jpg") 50% 0%/cover no-repeat; }
 
-/* line 545, main-styles.scss */
+/* line 546, main-styles.scss */
 .item-image.twenty {
   background: url("../images/menu/cake-slice.jpg") 50% 0%/cover no-repeat; }
 
-/* line 550, main-styles.scss */
+/* line 551, main-styles.scss */
 .visitors-bg-image {
   width: 100%;
   height: 220px;
   margin-bottom: 20px; }
 
-/* line 556, main-styles.scss */
+/* line 557, main-styles.scss */
 .visitors-bg-image.one {
   background: url("../images/three-women-talking-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
-/* line 560, main-styles.scss */
+/* line 561, main-styles.scss */
 .visitors-bg-image.two {
   background: url("../images/two-visitors-at-a-table.jpg") 50% 0%/cover no-repeat; }
 
-/* line 564, main-styles.scss */
+/* line 565, main-styles.scss */
 .visitors-bg-image.three {
   background: url("../images/busy-coffee-order-area.jpg") 50% 0%/cover no-repeat;
   margin-bottom: 0px; }
 
 /*Location page**/
-/* line 571, main-styles.scss */
+/* line 572, main-styles.scss */
 #content h3.coffee-shop-hours-header {
   color: #6f4e37; }
-/* line 574, main-styles.scss */
+/* line 575, main-styles.scss */
 #content h3.location-header {
   color: #365d2e; }
-/* line 577, main-styles.scss */
+/* line 578, main-styles.scss */
 #content .coffee-shop-hours-header, #content .location-header {
   text-align: center; }
-/* line 580, main-styles.scss */
+/* line 581, main-styles.scss */
 #content .hours-table {
   text-align: left; }
-  /* line 582, main-styles.scss */
+  /* line 583, main-styles.scss */
   #content .hours-table th {
     color: #365d2e; }
-  /* line 583, main-styles.scss */
+  /* line 584, main-styles.scss */
   #content .hours-table .hours-col-1 {
     width: 45%; }
-  /* line 586, main-styles.scss */
+  /* line 587, main-styles.scss */
   #content .hours-table .hours-col-2 {
     width: 55%; }
 
-/* line 592, main-styles.scss */
+/* line 593, main-styles.scss */
 .location-section {
   padding-top: 40px; }
 
 /* Menu page */
-/* line 599, main-styles.scss */
+/* line 600, main-styles.scss */
 .table-container {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-/* line 605, main-styles.scss */
+/* line 606, main-styles.scss */
 .menu-table th, .menu-table td, .events-table th, .events-table td {
   display: block; }
-/* line 606, main-styles.scss */
+/* line 607, main-styles.scss */
 .menu-table th, .events-table th {
   color: #365d2e; }
-/* line 609, main-styles.scss */
+/* line 610, main-styles.scss */
 .menu-table .event-name, .menu-table .date-time, .menu-table .event-info, .events-table .event-name, .events-table .date-time, .events-table .event-info {
   display: none; }
-/* line 613, main-styles.scss */
+/* line 614, main-styles.scss */
 .menu-table .table-subheader td, .events-table .table-subheader td {
   padding: 25px 0px;
   background-color: #d1b6a3;
   background-image: linear-gradient(90deg, #af7f5e, #d1b6a3, #af7f5e);
   text-transform: uppercase;
   text-align: center; }
-/* line 622, main-styles.scss */
+/* line 623, main-styles.scss */
 .menu-table tr td:first-of-type, .events-table tr td:first-of-type {
   font-size: 18px;
   font-weight: bold;
   color: #6f4e37; }
-/* line 628, main-styles.scss */
+/* line 629, main-styles.scss */
 .menu-table td, .events-table td {
   text-align: center; }
-/* line 631, main-styles.scss */
+/* line 632, main-styles.scss */
 .menu-table td:first-of-type, .events-table td:first-of-type {
   padding-top: 30px; }
-/* line 634, main-styles.scss */
+/* line 635, main-styles.scss */
 .menu-table td:last-of-type, .events-table td:last-of-type {
   padding-bottom: 30px; }
 
-/* line 640, main-styles.scss */
+/* line 641, main-styles.scss */
 .menu-table .item-name, .menu-table .photos, .menu-table .description {
   display: none; }
-/* line 643, main-styles.scss */
+/* line 644, main-styles.scss */
 .menu-table h4 {
   color: #ffffff; }
 
 /*Events page*/
 /*Contact Us page*/
-/* line 653, main-styles.scss */
+/* line 654, main-styles.scss */
 .contact-us-container {
   color: #6f4e37; }
 
-/* line 657, main-styles.scss */
+/* line 658, main-styles.scss */
 .write-us, .contact-westland {
   text-align: center; }
 
-/* line 661, main-styles.scss */
+/* line 662, main-styles.scss */
 .contact-westland {
   padding-bottom: 10px; }
 
-/* line 665, main-styles.scss */
+/* line 666, main-styles.scss */
 #contactButton {
   padding: 10px 15px;
   background-color: #d1b6a3;
@@ -785,37 +788,37 @@ table {
   cursor: pointer;
   transition: 0.8s; }
 
-/* line 674, main-styles.scss */
+/* line 675, main-styles.scss */
 #contactButton:hover {
   color: #d1b6a3;
   background-color: #6f4e37;
   transition: 0.8s; }
 
 /*Careers page */
-/* line 683, main-styles.scss */
+/* line 684, main-styles.scss */
 .careers-featured h4 {
   padding-bottom: 15px;
   text-align: center;
-  color: #365d2e; }
+  color: #28344a; }
 
-/* line 690, main-styles.scss */
+/* line 691, main-styles.scss */
 .positions-open-container {
   margin-top: 30px; }
 
-/* line 694, main-styles.scss */
+/* line 695, main-styles.scss */
 .positions-title-container {
   padding-bottom: 10px; }
 
-/* line 698, main-styles.scss */
+/* line 699, main-styles.scss */
 .position-container {
   padding-bottom: 40px; }
 
-/* line 702, main-styles.scss */
+/* line 703, main-styles.scss */
 .position-title {
   padding-bottom: 15px;
   text-align: center; }
 
-/* line 707, main-styles.scss */
+/* line 708, main-styles.scss */
 .item-image-container.position-image-container {
   float: left;
   width: 150px;
@@ -823,27 +826,27 @@ table {
   margin-right: 15px;
   margin-bottom: 10px; }
 
-/* line 719, main-styles.scss */
+/* line 720, main-styles.scss */
 .item-image.position-image-one {
   background: url("../images/mug-with-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 723, main-styles.scss */
+/* line 724, main-styles.scss */
 .item-image.position-image-two {
   background: url("../images/mug-with-coffee.jpg") 50% 0%/cover no-repeat; }
 
-/* line 727, main-styles.scss */
+/* line 728, main-styles.scss */
 .barista {
   width: 100%;
   height: 220px; }
 
-/* line 732, main-styles.scss */
+/* line 733, main-styles.scss */
 .barista.one {
   background: url("../images/one-of-our-baristas.jpg") 50% 0%/cover no-repeat; }
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
   /* The main border around the entire document */
-  /* line 740, main-styles.scss */
+  /* line 741, main-styles.scss */
   .title-container {
     position: relative;
     top: -55px;
@@ -851,11 +854,11 @@ table {
     margin-left: 15%;
     margin-right: 15%;
     text-align: center; }
-    /* line 748, main-styles.scss */
+    /* line 749, main-styles.scss */
     .title-container #mainTitle a {
       font-size: 32px; }
 
-  /* line 754, main-styles.scss */
+  /* line 755, main-styles.scss */
   .subtitle-container {
     position: relative;
     top: -60px;
@@ -863,55 +866,55 @@ table {
     margin-left: 15%;
     margin-right: 15%; }
 
-  /* line 762, main-styles.scss */
+  /* line 763, main-styles.scss */
   .item-image-container {
     width: 60%;
     margin-left: auto;
     margin-right: auto; }
 
-  /* line 768, main-styles.scss */
+  /* line 769, main-styles.scss */
   .item-image {
     margin-left: auto;
     margin-right: auto; }
 
-  /* line 773, main-styles.scss */
+  /* line 774, main-styles.scss */
   .item-image {
     height: 300px; }
 
-  /* line 777, main-styles.scss */
+  /* line 778, main-styles.scss */
   .visitors-bg-image {
     width: 80%;
     height: 300px;
     margin-left: auto;
     margin-right: auto; }
 
-  /* line 784, main-styles.scss */
+  /* line 785, main-styles.scss */
   .barista {
     height: 300px; } }
 @media only screen and (min-width: 700px) {
-  /* line 792, main-styles.scss */
+  /* line 793, main-styles.scss */
   header {
     width: 100%;
     min-height: 310px;
     background: url("../images/coffee-shop-background.jpg") 50% 0%/cover no-repeat; }
 
-  /* line 798, main-styles.scss */
+  /* line 799, main-styles.scss */
   h2 {
     font-size: 25px; }
 
-  /* line 802, main-styles.scss */
+  /* line 803, main-styles.scss */
   h3 {
     font-size: 23px; }
 
-  /* line 806, main-styles.scss */
+  /* line 807, main-styles.scss */
   h4 {
     font-size: 21px; }
 
-  /* line 811, main-styles.scss */
+  /* line 812, main-styles.scss */
   table th, table td {
     padding: 12px 0px; }
 
-  /* line 814, main-styles.scss */
+  /* line 815, main-styles.scss */
   .title-container {
     position: relative;
     top: -55px;
@@ -919,11 +922,11 @@ table {
     margin-left: 15%;
     margin-right: 15%;
     text-align: center; }
-    /* line 822, main-styles.scss */
+    /* line 823, main-styles.scss */
     .title-container #mainTitle a {
       font-size: 42px; }
 
-  /* line 828, main-styles.scss */
+  /* line 829, main-styles.scss */
   .subtitle-container {
     display: block;
     position: relative;
@@ -934,83 +937,83 @@ table {
     margin-right: auto;
     margin-top: 0; }
 
-  /* line 839, main-styles.scss */
+  /* line 840, main-styles.scss */
   .item-image-container {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 845, main-styles.scss */
+  /* line 846, main-styles.scss */
   .item-image {
     width: 100%;
     height: 240px;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 852, main-styles.scss */
+  /* line 853, main-styles.scss */
   .visitors-bg-image {
     width: 100%;
     height: 240px;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 861, main-styles.scss */
+  /* line 862, main-styles.scss */
   table .item-image-container {
     width: 60%;
     margin-left: auto;
     margin-right: auto; }
 
-  /* line 868, main-styles.scss */
+  /* line 869, main-styles.scss */
   .index-section-content {
     padding-bottom: 0px; }
 
   /*Careers */
-  /* line 873, main-styles.scss */
+  /* line 874, main-styles.scss */
   .position-title {
     text-align: left;
     padding-left: 20px; }
 
-  /* line 878, main-styles.scss */
+  /* line 879, main-styles.scss */
   .barista {
     height: 220px; } }
 @media only screen and (min-width: 1000px) {
-  /* line 885, main-styles.scss */
+  /* line 886, main-styles.scss */
   header {
     background: url("../images/coffee-shop-background.jpg") 50% 10%/cover no-repeat; }
 
-  /* line 889, main-styles.scss */
+  /* line 890, main-styles.scss */
   .item-image {
     height: 280px; }
 
-  /* line 893, main-styles.scss */
+  /* line 894, main-styles.scss */
   .visitors-bg-image {
     height: 300px; } }
 @media only screen and (min-width: 1200px) {
-  /* line 901, main-styles.scss */
+  /* line 902, main-styles.scss */
   h2 {
     font-size: 26px; }
 
-  /* line 905, main-styles.scss */
+  /* line 906, main-styles.scss */
   h3 {
     font-size: 26px;
     text-align: left; }
 
-  /* line 909, main-styles.scss */
+  /* line 910, main-styles.scss */
   h4 {
     font-size: 22px; }
 
   /* The main border around the entire document */
   /* *** Beginning of Major divs *** */
-  /* line 916, main-styles.scss */
+  /* line 917, main-styles.scss */
   #bodyWrapper .inner-wrapper {
     width: 1200px; }
 
-  /* line 921, main-styles.scss */
+  /* line 922, main-styles.scss */
   header {
     padding-bottom: 190px;
     background: url("../images/coffee-shop-background.jpg") 0% 26%/auto no-repeat; }
 
-  /* line 926, main-styles.scss */
+  /* line 927, main-styles.scss */
   .title-container {
     position: static;
     width: 216px;
@@ -1018,15 +1021,15 @@ table {
     margin-left: 160px;
     margin-right: 0;
     text-align: left; }
-    /* line 933, main-styles.scss */
+    /* line 934, main-styles.scss */
     .title-container #mainTitle {
       width: 100%;
       max-width: 210px; }
-      /* line 936, main-styles.scss */
+      /* line 937, main-styles.scss */
       .title-container #mainTitle a {
         font-size: 50px; }
 
-  /* line 941, main-styles.scss */
+  /* line 942, main-styles.scss */
   #logo {
     position: absolute;
     top: 20px;
@@ -1036,7 +1039,7 @@ table {
     padding-top: 0;
     margin-left: 0; }
 
-  /* line 950, main-styles.scss */
+  /* line 951, main-styles.scss */
   .subtitle-container {
     display: inline-block;
     position: absolute;
@@ -1047,175 +1050,175 @@ table {
     margin-right: 0;
     margin-top: 15px; }
 
-  /* line 962, main-styles.scss */
+  /* line 963, main-styles.scss */
   nav {
     padding: 0 15px; }
 
-  /* line 964, main-styles.scss */
+  /* line 965, main-styles.scss */
   #mobileNav {
     display: none; }
 
-  /* line 965, main-styles.scss */
+  /* line 966, main-styles.scss */
   #desktopNav {
     display: block;
     position: absolute;
     top: -396px;
     right: 0; }
 
-  /* line 967, main-styles.scss */
+  /* line 968, main-styles.scss */
   nav {
     padding: 15px 15px; }
-    /* line 969, main-styles.scss */
+    /* line 970, main-styles.scss */
     nav li {
       display: inline-block;
       padding-right: 40px; }
-      /* line 971, main-styles.scss */
+      /* line 972, main-styles.scss */
       nav li a, nav li a:link, nav li a:visited {
         font-size: 22px; }
 
-  /* line 974, main-styles.scss */
+  /* line 975, main-styles.scss */
   footer {
     background: url("../images/coffee-shop-exterior.jpg") 50% 100%/cover no-repeat; }
 
-  /* line 978, main-styles.scss */
+  /* line 979, main-styles.scss */
   #content {
     padding: 50px 20px; }
 
-  /* line 983, main-styles.scss */
+  /* line 984, main-styles.scss */
   table th {
     font-size: 22px; }
-  /* line 984, main-styles.scss */
+  /* line 985, main-styles.scss */
   table th, table td, table tr td:first-of-type, table tr td:last-of-type {
     padding: 15px 10px; }
-  /* line 985, main-styles.scss */
+  /* line 986, main-styles.scss */
   table img {
     width: auto;
     height: 150px; }
-  /* line 989, main-styles.scss */
+  /* line 990, main-styles.scss */
   table .item-image-container {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-  /* line 994, main-styles.scss */
+  /* line 995, main-styles.scss */
   table .item-image {
     width: 100%;
     height: 200px;
     margin-left: 0;
     margin-right: 0; }
 
-  /* line 1002, main-styles.scss */
+  /* line 1003, main-styles.scss */
   .index-section {
     padding-top: 25px;
     padding-bottom: 25px; }
 
-  /* line 1007, main-styles.scss */
+  /* line 1008, main-styles.scss */
   .item-image {
     height: 300px; }
 
-  /* line 1011, main-styles.scss */
+  /* line 1012, main-styles.scss */
   .visitors-bg-image {
     height: 400px; }
 
-  /* line 1016, main-styles.scss */
+  /* line 1017, main-styles.scss */
   .hours-table th, .hours-table td {
     padding-left: 80px; }
-  /* line 1019, main-styles.scss */
+  /* line 1020, main-styles.scss */
   .hours-table th {
     text-transform: uppercase; }
 
-  /* line 1024, main-styles.scss */
+  /* line 1025, main-styles.scss */
   .location-section {
     padding-top: 0; }
 
-  /* line 1028, main-styles.scss */
+  /* line 1029, main-styles.scss */
   .table-container {
     padding-top: 0;
     padding-bottom: 0; }
 
-  /* line 1034, main-styles.scss */
+  /* line 1035, main-styles.scss */
   .menu-table th, .events-table th {
     text-transform: uppercase;
     text-align: left; }
-  /* line 1038, main-styles.scss */
+  /* line 1039, main-styles.scss */
   .menu-table th, .menu-table td, .events-table th, .events-table td {
     display: table-cell; }
-  /* line 1039, main-styles.scss */
+  /* line 1040, main-styles.scss */
   .menu-table th, .menu-table td, .menu-table tr td:first-of-type, .menu-table tr td:last-of-type, .events-table th, .events-table td, .events-table tr td:first-of-type, .events-table tr td:last-of-type {
     padding: 15px 10px; }
-  /* line 1040, main-styles.scss */
+  /* line 1041, main-styles.scss */
   .menu-table .event-name, .menu-table .date-time, .menu-table .event-info, .events-table .event-name, .events-table .date-time, .events-table .event-info {
     display: table-cell; }
-  /* line 1044, main-styles.scss */
+  /* line 1045, main-styles.scss */
   .menu-table .table-subheader td, .events-table .table-subheader td {
     padding: 25px 0px; }
-    /* line 1046, main-styles.scss */
+    /* line 1047, main-styles.scss */
     .menu-table .table-subheader td h4, .events-table .table-subheader td h4 {
       font-size: 20px; }
-  /* line 1051, main-styles.scss */
+  /* line 1052, main-styles.scss */
   .menu-table td, .events-table td {
     text-align: left; }
 
-  /* line 1058, main-styles.scss */
+  /* line 1059, main-styles.scss */
   .menu-table .table-subheader td:first-of-type {
     text-align: center; }
-  /* line 1063, main-styles.scss */
+  /* line 1064, main-styles.scss */
   .menu-table .item-name, .menu-table .photos, .menu-table .description {
     display: table-cell;
     padding-left: 20px; }
-  /* line 1067, main-styles.scss */
+  /* line 1068, main-styles.scss */
   .menu-table .item-name {
     width: 32%; }
-  /* line 1070, main-styles.scss */
+  /* line 1071, main-styles.scss */
   .menu-table .photos {
     width: 30%; }
-  /* line 1073, main-styles.scss */
+  /* line 1074, main-styles.scss */
   .menu-table .description {
     width: 38%; }
 
-  /* line 1079, main-styles.scss */
+  /* line 1080, main-styles.scss */
   .events-table .event-name {
     width: 30%; }
-  /* line 1080, main-styles.scss */
+  /* line 1081, main-styles.scss */
   .events-table .date-time {
     width: 30%; }
-  /* line 1081, main-styles.scss */
+  /* line 1082, main-styles.scss */
   .events-table .event-info {
     width: 40%; }
 
-  /* line 1085, main-styles.scss */
+  /* line 1086, main-styles.scss */
   .contact-westland {
     padding-bottom: 15px; }
 
-  /* line 1093, main-styles.scss */
+  /* line 1094, main-styles.scss */
   .item-image-container.position-image-container {
     width: 220px;
     height: 160px; }
 
-  /* line 1098, main-styles.scss */
+  /* line 1099, main-styles.scss */
   .position-image {
     width: 220px;
     height: 160px; }
 
-  /* line 1103, main-styles.scss */
+  /* line 1104, main-styles.scss */
   .barista {
     height: 300px; } }
 @media only screen and (min-width: 1600px) {
-  /* line 1111, main-styles.scss */
+  /* line 1112, main-styles.scss */
   .inner-wrapper {
     width: 1540px; }
 
-  /* line 1115, main-styles.scss */
+  /* line 1116, main-styles.scss */
   .title-container {
     width: 242px; }
-    /* line 1118, main-styles.scss */
+    /* line 1119, main-styles.scss */
     .title-container #mainTitle a {
       font-size: 56px; }
 
-  /* line 1124, main-styles.scss */
+  /* line 1125, main-styles.scss */
   .subtitle-container {
     top: 240px; }
 
-  /* line 1128, main-styles.scss */
+  /* line 1129, main-styles.scss */
   header {
     padding-bottom: 169px;
     background: url("../images/coffee-shop-background.jpg") 50% 18%/cover no-repeat; } }
