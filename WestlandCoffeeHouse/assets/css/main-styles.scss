@@ -192,9 +192,9 @@ a:hover {
 
 
 /***############### Beginning of Website-specific style sheet. ****/
-$firstStyleColor: #6f4e37;  /* (111, 78, 55) coffee brown */
-$secondStyleColor: #365d2e;  /* (54, 93, 46)complimentary green */
-$thirdStyleColor: #28344a; /* complimentary dark blue */
+$firstStyleColor: #6f4e37;   /* (111, 78, 55) coffee brown */
+$secondStyleColor: #365d2e;  /* (54, 93, 46) complimentary green */
+$thirdStyleColor: #28344a;   /* (40, 52, 74)    complimentary dark blue */
 
 
 $firstStyleColorDarken: scale-color($firstStyleColor, $lightness: -30%);
@@ -209,6 +209,8 @@ $firstStyleColorLighter20SemiOpacity: rgba(157, 110, 78, 0.85);
 $firstStyleColorLighter60SemiOpacity: rgba(209, 182, 163, 0.85); /* light coffee brown with semi-transparents */
 
 $secondStyleColorSemiOpacity: rgba(54, 93, 46, 0.8);
+
+$thirdStyleColorPartialOpacity: rgba(40, 52, 74, 0.6);
 
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
@@ -509,6 +511,16 @@ table {
 
 .food-beverage-list {
     padding-left: 30px;
+}
+
+.index-page .item-image-container {
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.index-page .item-image-container:hover {
+    box-shadow: 0 0 6px 6px $thirdStyleColorPartialOpacity;
+    transition: 0.4s;
 }
 
 .index-page .item-image { 
