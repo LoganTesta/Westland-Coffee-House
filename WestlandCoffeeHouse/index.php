@@ -11,9 +11,8 @@
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
-    <body>
-        <div id="bodyWrapper" class="index-page">
-
+    <body class="page-index">
+        <div id="bodyWrapper">
             <header>
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>

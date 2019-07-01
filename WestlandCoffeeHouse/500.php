@@ -11,7 +11,7 @@
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
-    <body>
+    <body class="page-500">
         <div id="bodyWrapper">
             <header>
                 <div class="inner-wrapper">

@@ -10,7 +10,7 @@
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
 
-    <body>
+    <body class="page-events">
         <div id="bodyWrapper">
             <header>
                 <div class="inner-wrapper">
