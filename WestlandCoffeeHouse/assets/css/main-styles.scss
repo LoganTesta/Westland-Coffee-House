@@ -516,22 +516,22 @@ table {
     padding-left: 30px;
 }
 
-.index-page .item-image-container {
+.page-index .item-image-container {
     border-radius: 5px;
     transition: 0.4s;
 }
 
-.index-page .item-image-container:hover {
+.page-index .item-image-container:hover {
     box-shadow: 0 0 6px 6px $thirdStyleColorPartialOpacity;
     transition: 0.4s;
 }
 
-.index-page .item-image { 
+.page-index .item-image { 
     cursor: pointer;
-    transition: transform 0.8s;
+    transition: transform 0.8s; 
 }
 
-.index-page .item-image:hover { 
+.page-index .item-image:hover { 
     cursor: pointer;
     transform: scale(1.12);
     transition: transform 0.8s;  

@@ -640,22 +640,22 @@ table {
   padding-left: 30px; }
 
 /* line 519, main-styles.scss */
-.index-page .item-image-container {
+.page-index .item-image-container {
   border-radius: 5px;
   transition: 0.4s; }
 
 /* line 524, main-styles.scss */
-.index-page .item-image-container:hover {
+.page-index .item-image-container:hover {
   box-shadow: 0 0 6px 6px rgba(40, 52, 74, 0.6);
   transition: 0.4s; }
 
 /* line 529, main-styles.scss */
-.index-page .item-image {
+.page-index .item-image {
   cursor: pointer;
   transition: transform 0.8s; }
 
 /* line 534, main-styles.scss */
-.index-page .item-image:hover {
+.page-index .item-image:hover {
   cursor: pointer;
   transform: scale(1.12);
   transition: transform 0.8s; }
