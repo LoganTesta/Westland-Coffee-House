@@ -74,7 +74,7 @@ body {
     background-color: #f6f6f6;
 }
 
-#bodyWrapper {
+.body-wrapper {
     position: relative;
     width: 100%;
     border: 0;
@@ -139,16 +139,19 @@ a:hover {
 }
 
 /***########## General layout settings and general classes. ***/
-#content {
+.content {
     width: 100%;
     padding: 20px 10px 20px 10px;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center;
 }
 
 .content-row {
     width: 100%; 
+}
+
+.content-row:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .justify-content > div {
@@ -158,10 +161,6 @@ a:hover {
 }
 
 /* General Resuable Classes */
-.clear-both {
-    clear: both;
-}
-
 .sr-only {
     display: block;
     opacity: 0;
@@ -173,7 +172,11 @@ a:hover {
     width: 100%;
 }
 
-/* Use .inner-wrapper for layouts where you want to have backgrounds go out of the site 'border' provided by #bodyWrapper '*/
+.clear-both {
+    clear: both;
+}
+
+/* Use .inner-wrapper for layouts where you want to have backgrounds go out of the site 'border' provided by .body-wrapper '*/
 .inner-wrapper {
     position: relative;
     padding: 0;

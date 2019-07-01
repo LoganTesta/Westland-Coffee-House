@@ -40,22 +40,18 @@
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
                                 <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
-                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userEmail"><strong>Email *</strong></label>
                                 <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Here" required="required"> 
-                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
                                 <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">    
-                                <div class="clear-both"></div>
                             </div>
                             <div class="input-container">
                                 <label for="userComments"><strong>Message *</strong></label>
                                 <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
-                                <div class="clear-both"></div>
                             </div>                           
                             <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          

@@ -49,7 +49,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="clear-both"></div>
                             </div>
                             <div class="content-row index-section two">
                                 <div class="col-sma-7 float-right-above-a-breakpoint">
@@ -76,7 +75,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="clear-both"></div>
                             </div>
                             <div class="content-row index-section three">
                                 <div class="col-sma-7">
@@ -97,10 +95,8 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="clear-both"></div>
                             </div>
                         </div>
-                        <div class="clear-both"></div>
                     </div>
                 </div>
             </div>
