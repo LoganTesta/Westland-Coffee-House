@@ -11,17 +11,12 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 }
 
 /*For ease of development and maintainability, combine an element's width, padding, margin, and border into a final value, and enable this on all elements. */
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
 /***########## Grid Column layout available.  Desktop and mobile settings.  Automatically make columns full width below a certain width. ***/
 .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12,
-.col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12{
+.col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12 {
     float: none;
     width: 100%;
     padding-left: 0;
@@ -70,54 +65,22 @@ html {
 }
 
 /***########## General Styling and Typography settings. ***/
-body {
-    background-color: #f6f6f6;
-}
-
-.body-wrapper {
-    position: relative;
-    width: 100%;
-    border: 0;
-    min-width: 300px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-}
-
+body { background-color: #f6f6f6; }
 h1 { font-size: 24px; }
 h2 { font-size: 20px; }
 h3 { font-size: 18px; }
 h4 { font-size: 18px; }
+ul { list-style-type: none; }
+p { padding-bottom: 16px; line-height: 22.4px; }
+a { text-decoration: none; }
+img { max-width: 100%; font-size: 0px; } /*Don't allow images to go offscreen horizontally */
+a:link, a:visited { color: #000000; }
+a:hover { color: #2d41ff; }
 
-ul {
-    list-style-type: none;
-}
-
-p {
-    padding-bottom: 16px;
-    line-height: 22.4px;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    font-size: 0px;
-    max-width: 100%; /*Don't allow images to go offscreen horizontally */
-}
-
-a:link, a:visited {
-    color: #000000;
-}
-
-a:hover {
-    color: #2d41ff;
-}
+.body-wrapper { position: relative; width: 100%; min-width: 300px; padding: 0; border: 0; margin-left: auto; margin-right: auto;
+                background-color: #ffffff; }
 
 @media only screen and (min-width: 500px){
-
 }
 
 @media only screen and (min-width: 700px){
@@ -135,62 +98,26 @@ a:hover {
 }
 
 @media only screen and (min-width: 1600px){
-
 }
 
 /***########## General layout settings and general classes. ***/
-.content {
-    width: 100%;
-    padding: 20px 10px 20px 10px;
-}
-
-.content-row {
-    width: 100%; 
-}
-
-.content-row:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.justify-content > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+.content { width: 100%; padding: 20px 10px 20px 10px; }
+.content-row { width: 100%; }
+.content-row:after { content: ""; display: block; clear: both; }
+.justify-content > div { display: flex; flex-wrap: wrap; justify-content: center; }
 
 /* General Resuable Classes */
-.sr-only {
-    display: block;
-    opacity: 0;
-    width: 0;
-    height: 0;   
-}
-
-.width-100-percent {
-    width: 100%;
-}
-
-.clear-both {
-    clear: both;
-}
+.sr-only { display: block; width: 0; height: 0; opacity: 0; }
+.width-100-percent { width: 100%; }
+.clear-both { clear: both; }
 
 /* Use .inner-wrapper for layouts where you want to have backgrounds go out of the site 'border' provided by .body-wrapper '*/
-.inner-wrapper {
-    position: relative;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
+.inner-wrapper { position: relative; padding: 0; margin-left: auto; margin-right: auto; }
 
 @media only screen and (min-width: 700px){
-    .float-right-above-a-breakpoint {
-        float: right;
-    }
+    .float-right-above-a-breakpoint { float: right; }
 }
 /***########## End of General Styling Reset and Setup ****/
-
 
 
 
