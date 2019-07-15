@@ -24,7 +24,7 @@
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
-            <div id="content">
+            <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-12">
                         <h3>Events</h3>

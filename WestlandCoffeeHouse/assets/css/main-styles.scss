@@ -15,6 +15,11 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
 /***########## Grid Column layout available.  Desktop and mobile settings.  Automatically make columns full width below a certain width. ***/
+.content { width: 100%; padding: 20px 10px 20px 10px; }
+.content-row { width: 100%; padding: 0; }
+.content-row:after { content: ""; display: block; clear: both; }
+.content-row.no-content-row-padding { padding: 0; }
+
 .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12,
 .col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12 {
     float: none;
@@ -25,6 +30,10 @@ html { box-sizing: border-box; }
 
 /* Switch to 12 columns at 700px for small columns and 1200px for large columns. */
 @media only screen and (min-width: 700px){
+    .content-row { padding: 10px 0 10px 0; }
+    .content-row:first-of-type { padding-top: 0; }
+    .content-row:last-of-type { padding-bottom: 0; }
+    
     .col-sma-1, .col-sma-2, .col-sma-3, .col-sma-4, .col-sma-5, .col-sma-6, .col-sma-7, .col-sma-8, .col-sma-9, .col-sma-10, .col-sma-11, .col-sma-12 {
         float: left;
         padding-left: 15px;
@@ -41,10 +50,14 @@ html { box-sizing: border-box; }
     .col-sma-9 { width: 75%; }
     .col-sma-10 { width: 83.333333%; }
     .col-sma-11 { width: 91.666667%; }
-    .col-sma-12 { width: 100%; }
+    .col-sma-12 { width: 100%; }    
 }
 
 @media only screen and (min-width: 1200px){
+    .content-row { padding: 25px 0 25px 0; }
+    .content-row:first-of-type { padding-top: 0; }
+    .content-row:last-of-type { padding-bottom: 0; }
+       
     .col-lar-1, .col-lar-2, .col-lar-3, .col-lar-4, .col-lar-5, .col-lar-6, .col-lar-7, .col-lar-8, .col-lar-9, .col-lar-10, .col-lar-11, .col-lar-12 {
         float: left;
         padding-left: 15px;
@@ -101,9 +114,6 @@ a:hover { color: #2d41ff; }
 }
 
 /***########## General layout settings and general classes. ***/
-.content { width: 100%; padding: 20px 10px 20px 10px; }
-.content-row { width: 100%; }
-.content-row:after { content: ""; display: block; clear: both; }
 .justify-content > div { display: flex; flex-wrap: wrap; justify-content: center; }
 
 /* General Resuable Classes */
@@ -281,12 +291,7 @@ nav {
     transition: 0.8s all ease-in;
 }
 
-#content {
-    width: 100%;
-    padding: 20px 10px 20px 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255,255,255, 1);
+.content {
     h3 {
         color: $firstStyleColor;
     }
@@ -423,18 +428,6 @@ table {
     transition: transform 0.8s ease-in;
 }
 
-.index-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.index-section:first-of-type{
-    padding-top: 0px;
-}
-.index-section:last-of-type{
-    padding-bottom: 0px;
-}
-
 .index-section-content {
     padding-bottom: 10px;
 }
@@ -510,7 +503,7 @@ table {
 }
 
 /*Location page**/
-#content {
+.content {
     h3.coffee-shop-hours-header {
         color: $firstStyleColor;
     }
@@ -918,7 +911,7 @@ table {
         background: url('../images/coffee-shop-exterior.jpg') 50% 100%/cover no-repeat;
     }
 
-    #content {
+    .content {
         padding: 50px 20px;
     }
 
@@ -940,11 +933,6 @@ table {
             margin-left: 0;
             margin-right: 0;
         }
-    }
-
-    .index-section {
-        padding-top: 25px;
-        padding-bottom: 25px
     }
 
     .item-image {

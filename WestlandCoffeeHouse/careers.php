@@ -25,7 +25,7 @@
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
-            <div id="content">
+            <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-8">
                         <h3>Careers</h3>

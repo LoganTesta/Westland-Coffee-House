@@ -25,11 +25,11 @@
 
             <?php include 'assets/include/navigation-content.php'; ?>
 
-            <div id="content">
+            <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="content-body">
                         <div class="col-sma-12">
-                            <div class="content-row index-section one">
+                            <div class="content-row">
                                 <div class="col-sma-7">
                                     <div class="index-section-content">
                                         <h3>The Place to Grab Coffee and Meet up</h3>
@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-row index-section two">
+                            <div class="content-row">
                                 <div class="col-sma-7 float-right-above-a-breakpoint">
                                     <div class="index-section-content">
                                         <h3>Top Notch Coffee and Hearty Food</h3>
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-row index-section three">
+                            <div class="content-row">
                                 <div class="col-sma-7">
                                     <div class="index-section-content">
                                         <h3>Our Shop is Open</h3>
