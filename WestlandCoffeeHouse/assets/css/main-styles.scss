@@ -428,6 +428,14 @@ table {
     transition: transform 0.8s ease-in;
 }
 
+.index-section {
+    padding-bottom: 40px;
+}
+
+.index-section:last-of-type {
+    padding-bottom: 0;
+}
+
 .index-section-content {
     padding-bottom: 10px;
 }
@@ -801,6 +809,10 @@ table {
         }
     }
 
+    .index-section {
+        padding-bottom: 0px;
+    }
+    
     .index-section-content {
         padding-bottom: 0px;
     }
