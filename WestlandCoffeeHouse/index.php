@@ -32,9 +32,9 @@
                             <div class="content-row index-section">
                                 <div class="col-sma-7">
                                     <div class="index-section-content">
-                                        <h3>The Place to Grab Coffee and Meet up</h3>
+                                        <h3>The Place to Grab Coffee and Meet Up</h3>
                                         <div class="subheader-divider"></div>
-                                        <p>Welcome to our Westland Coffee House!</p>
+                                        <p>Welcome to Westland Coffee House!</p>
                                         <p>We have the finest coffee and are reputed to be one of the best places 
                                             in Portland to grab coffee and gather.</p>
                                         <p>Plenty of seating inside and outdoors!</p>
