@@ -12,7 +12,7 @@
     </head>
 
     <body class="page-contact-us">
-        <div id="bodyWrapper">
+        <div class="body-wrapper">
             <header>
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>

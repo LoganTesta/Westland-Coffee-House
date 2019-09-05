@@ -155,7 +155,7 @@ $thirdStyleColorPartialOpacity: rgba(40, 52, 74, 0.6);
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
 
-#bodyWrapper {
+.body-wrapper {
 
 }
 
@@ -860,7 +860,7 @@ table {
 
     /* The main border around the entire document */
     /* *** Beginning of Major divs *** */
-    #bodyWrapper {
+    .body-wrapper {
         .inner-wrapper {
             width: 1200px;
         }

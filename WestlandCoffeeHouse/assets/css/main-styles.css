@@ -1039,7 +1039,7 @@ table {
   /* The main border around the entire document */
   /* *** Beginning of Major divs *** */
   /* line 864, main-styles.scss */
-  #bodyWrapper .inner-wrapper {
+  .body-wrapper .inner-wrapper {
     width: 1200px; }
 
   /* line 869, main-styles.scss */

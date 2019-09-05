@@ -11,7 +11,7 @@
     </head>
 
     <body class="page-events">
-        <div id="bodyWrapper">
+        <div class="body-wrapper">
             <header>
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
