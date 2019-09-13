@@ -1,4 +1,62 @@
+<?php declare(strict_types=1);
+ob_start();
+session_start();
 
+
+$ValidationResponse="";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $UserName = htmlspecialchars(strip_tags(trim($_POST['userName'])));
+    $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail'])));
+    $UserSubject = "Questions/Comments About Westland Coffee House: " . htmlspecialchars(strip_tags(trim($_POST['userSubject'])));
+    $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments'])));
+
+    $SendEmailTo = "logan.testa@outlook.com";
+
+    /* Validation time */
+    $PassedValidation = true;
+    if (Trim($UserName) === "") {
+        $PassedValidation = false;
+    } else if (Trim($UserEmail) === "") {
+        $PassedValidation = false;
+    } else if (Trim($UserComments) === "") {
+        $PassedValidation = false;
+    }
+
+
+    /* More advanced e-mail validation */
+    if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
+        $PassedValidation = false;
+    }
+    if ($PassedValidation === false) {
+        $ValidationResponse .= "<p>Sorry validation failed.  Please check all fields again.</p>";
+    }
+
+    /* Create the e-mail body. */
+    $Body = "";
+    $Body .= "User Name: " . $UserName . "\n";
+    $Body .= "User Email: " . $UserEmail . "\n";
+    $Body .= "Subject: " . $UserSubject . "\n";
+    $Body .= "User Comments: " . $UserComments . "\n";
+
+    /* Send the e-mail. */
+    $SuccessfulSubmission = mail($SendEmailTo, $UserSubject, $Body, "From: <$UserEmail>");
+    if ($SuccessfulSubmission) {
+        $ValidationResponse .= "<p>Thank you for contacting us, " . $UserName . ".  Your message was successfully sent!</p>";
+        $UserName = "";
+        $UserEmail = "";
+        $UserSubject = "";
+        $UserComments = "";
+    } else if ($SuccessfulSubmission === false) {
+        $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
+    }
+} else {
+    $UserName = "";
+    $UserEmail = "";
+    $UserSubject = "";
+    $UserComments = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,22 +94,23 @@
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
-                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="validate-contact-form.php">
+                        <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
+                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
-                                <input type="text" id="userName" name="userName" placeholder="Enter Name Here" required="required">    
+                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
                             </div>
                             <div class="input-container">
                                 <label for="userEmail"><strong>Email *</strong></label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Here" required="required"> 
+                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
-                                <input type="text" id="userSubject" name="userSubject" placeholder="Enter Subject Here">    
+                                <input type="text" id="userSubject" name="userSubject" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                             </div>
                             <div class="input-container">
                                 <label for="userComments"><strong>Message *</strong></label>
-                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"></textarea>                          
+                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
                             </div>                           
                             <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          
