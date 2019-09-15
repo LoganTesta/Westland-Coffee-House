@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
-                        <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
+                        <?php if(!empty($ValidationResponse)) { echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; } ?>
                         <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
