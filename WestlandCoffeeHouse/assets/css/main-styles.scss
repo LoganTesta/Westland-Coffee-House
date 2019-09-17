@@ -608,6 +608,17 @@ table {
     padding-bottom: 10px;
 }
 
+.javascript-validation-results-contact-us {
+    display: none; 
+    padding-top: 15px; 
+    font-weight: bold; 
+}
+
+.javascript-validation-results-contact-us.show {
+    display: block; 
+}
+
+
 #contactButton { 
     padding: 10px 15px;
     background-color: $firstStyleColorLighten; 
