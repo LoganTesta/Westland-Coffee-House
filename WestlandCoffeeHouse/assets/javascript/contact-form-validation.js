@@ -60,9 +60,9 @@ function toggleRequiredFields() {
     var userEmail = document.forms["contactOurCoffeeShop"]["userEmail"];
     var userComments = document.forms["contactOurCoffeeShop"]["userComments"];
 
-    userName.className += " required-field-needed";
-    userEmail.className += " required-field-needed";
-    userComments.className += " required-field-needed";
+    userName.classList.add("required-field-needed");
+    userEmail.classList.add("required-field-needed");
+    userComments.classList.add("required-field-needed");
 
 
     submitButtonClicked = true;
