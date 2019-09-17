@@ -94,7 +94,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
-                        <div class="javascript-validation-results-contact-us"></div>
                         <?php if(!empty($ValidationResponse)) { echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; } ?>
                         <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
@@ -116,6 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          
                             </div>
+                            <div class="javascript-validation-results-contact-us"></div>
                         </form>
                     </div>
                 </div>
