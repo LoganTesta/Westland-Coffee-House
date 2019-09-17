@@ -70,7 +70,7 @@ function validateContactForm() {
 
     if (validContactForm === false) {
         document.getElementsByClassName("javascript-validation-results-contact-us")[0].classList.add("show");
-        document.getElementsByClassName("javascript-validation-results-contact-us")[0].innerHTML = "Sorry, validation failed.  Please fill all required fields in the correct format.";
+        document.getElementsByClassName("javascript-validation-results-contact-us")[0].innerHTML = "Please fill all required fields in the correct format.";
         return false;
     } else if (validContactForm) {
         document.getElementsByClassName("javascript-validation-results-contact-us")[0].classList.remove("show");
