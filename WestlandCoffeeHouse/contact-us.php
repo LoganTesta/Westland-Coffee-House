@@ -8,7 +8,7 @@ $ValidationResponse="";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = htmlspecialchars(strip_tags(trim($_POST['userName'])));
     $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail'])));
-    $UserSubject = "Questions/Comments About Westland Coffee House: " . htmlspecialchars(strip_tags(trim($_POST['userSubject'])));
+    $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject'])));
     $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments'])));
 
     $SendEmailTo = "logan.testa@outlook.com";
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $Body .= "User Comments: " . $UserComments . "\n";
 
     /* Send the e-mail. */
-    $SuccessfulSubmission = mail($SendEmailTo, $UserSubject, $Body, "From: <$UserEmail>");
+    $SuccessfulSubmission = mail($SendEmailTo, "Questions/Comments About Westland Coffee House: " . $UserSubject, $Body, "From: <$UserEmail>");
     if ($SuccessfulSubmission) {
         $ValidationResponse .= "<p>Thank you for contacting us, " . $UserName . ".  Your message was successfully sent!</p>";
         $UserName = "";
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
                         <?php if(!empty($ValidationResponse)) { echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; } ?>
-                        <form id="contactOurCoffeeShop" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                        <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
                                 <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    

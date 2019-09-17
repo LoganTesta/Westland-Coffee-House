@@ -5,48 +5,77 @@ var userComments;
 
 var submitButtonClicked = false;
 
+
 function validateContactForm() {
+ 
+    var userName = document.forms["contactForm"]["userName"].value;
+    var userEmail = document.forms["contactForm"]["userEmail"].value;
+    var userSubject = document.forms["contactForm"]["userSubject"].value;
+    var userComments = document.forms["contactForm"]["userComments"].value;
+    var validContactForm = true;
 
-    var userName = document.forms["contactOurCoffeeShop"]["userName"];
-    var userEmail = document.forms["contactOurCoffeeShop"]["userEmail"];
-    var userComments = document.forms["contactOurCoffeeShop"]["userComments"];
 
+    var atPosition = userEmail.indexOf("@");
+    var dotPosition = userEmail.lastIndexOf(".");
+    var lastEmailCharacter = userEmail.length - 1;
 
-    if (userName.value !== "") {
-        userName.classList.remove("required-field-needed");
+    var validName = true;
+        
+    if (userName === null || userName === "") {
+        validName = false;
     }
 
-    if (userComments.value !== "") {
-        userComments.classList.remove("required-field-needed");
+    if(validName){
+        document.forms["contactForm"]["userName"].classList.remove("required-field-needed");
+    } else {
+        validContactForm = false;
+        document.forms["contactForm"]["userName"].classList.add("required-field-needed");
     }
 
-
-    var validEmail = true;
-
-    var atPosition = userEmail.value.indexOf("@");
-    var dotPosition = userEmail.value.lastIndexOf(".");
-    var lastEmailCharacter = userEmail.value.length - 1;
-
-    if (userEmail.value === "") {
-        validEmail = false;
-    }
+    
     /*If the @ position is at the start (or less) position of value 0,  validContactForm=false. */
-    if (atPosition <= 0) {
-        validEmail = false;
-    }
-
     /* There must be at least 1 character after the @ position and the last dot position. */
-    else if (atPosition + 1 >= dotPosition) {
-        validEmail = false;
-    }
-
     /* There must be at least two characters after the last "." symbol.  */
-    else if (dotPosition + 1 >= lastEmailCharacter) {
+    var validEmail = true;
+    if (userEmail === null || userEmail === "") {
+        validEmail = false;
+    } else if (atPosition <= 0) {
+        validEmail = false;
+    } else if (atPosition + 1 >= dotPosition) {
+        validEmail = false;
+    } else if (dotPosition + 1 >= lastEmailCharacter) {
         validEmail = false;
     }
+   
+    if(validEmail){
+        document.forms["contactForm"]["userEmail"].classList.remove("required-field-needed");
+    } else {
+        validContactForm = false;
+        document.forms["contactForm"]["userEmail"].classList.add("required-field-needed");
+    }
+    
+    
+    var validComments = true;
+    if (userComments === null || userComments === "") {
+        validComments = false;
+    }
 
-    if (validEmail) {
-        userEmail.classList.remove("required-field-needed");
+    if(validComments){
+         document.forms["contactForm"]["userComments"].classList.remove("required-field-needed");
+    } else {
+        validContactForm = false;
+        document.forms["contactForm"]["userComments"].classList.add("required-field-needed");
+    }
+    
+
+    if (validContactForm === false) {
+        document.getElementsByClassName("javascript-validation-results-contact-us")[0].classList.add("show");
+        document.getElementsByClassName("javascript-validation-results-contact-us")[0].innerHTML = "Sorry, validation failed.  Please fill all required fields in the correct format.";
+        return false;
+    } else if (validContactForm) {
+        document.getElementsByClassName("javascript-validation-results-contact-us")[0].classList.remove("show");
+        document.getElementsByClassName("javascript-validation-results-contact-us")[0].innerHTML = "";
+        return true;
     }
 }
 
@@ -56,15 +85,6 @@ contactButton.addEventListener("click", toggleRequiredFields, "false");
 
 function toggleRequiredFields() {
 
-    var userName = document.forms["contactOurCoffeeShop"]["userName"];
-    var userEmail = document.forms["contactOurCoffeeShop"]["userEmail"];
-    var userComments = document.forms["contactOurCoffeeShop"]["userComments"];
-
-    userName.classList.add("required-field-needed");
-    userEmail.classList.add("required-field-needed");
-    userComments.classList.add("required-field-needed");
-
-
     submitButtonClicked = true;
     if (submitButtonClicked) {
         setInterval(function () {
@@ -73,7 +93,3 @@ function toggleRequiredFields() {
     }
 
 }
-
-
-/*End of JavaScript Contact Form Validation */
-/* ************************************ */
