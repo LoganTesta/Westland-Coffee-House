@@ -79,17 +79,17 @@ function validateContactForm() {
     }
 }
 
-
 var contactButton = document.getElementById("contactButton");
-contactButton.addEventListener("click", toggleRequiredFields, "false");
+contactButton.addEventListener("click", validateContactForm, "false");
 
-function toggleRequiredFields() {
+var userName = document.getElementById("userName");
+userName.addEventListener("change", validateContactForm, "false");
 
-    submitButtonClicked = true;
-    if (submitButtonClicked) {
-        setInterval(function () {
-            validateContactForm();
-        }, 10);
-    }
+var userSubject = document.getElementById("userSubject");
+userSubject.addEventListener("change", validateContactForm, "false");
 
-}
+var userEmail = document.getElementById("userEmail");
+userEmail.addEventListener("change", validateContactForm, "false");
+
+var userComments = document.getElementById("userComments");
+userComments.addEventListener("change", validateContactForm, "false");
