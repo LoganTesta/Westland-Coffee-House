@@ -320,13 +320,19 @@ footer {
     a, a:link, a:visited {
         color: $secondStyleColor;
     }
-    a:hover {
+    a:hover  {
         color: #ffffff;
     }
     .footer-to-top {
         padding-bottom: 0px;
         a, a:link, a:visited {
             color: $thirdStyleColor;
+            font-weight: bold;
+            transition: 0.4s all;
+        }
+        a:hover {
+            color: #ffffff;
+            transition: 0.4s all;
         }
     }
     .footer-copyright {
