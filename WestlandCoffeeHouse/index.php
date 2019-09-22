@@ -63,7 +63,7 @@
                                             <li>sandwiches</li>
                                             <li>soups</li>
                                             <li>featured blends</li>
-                                            <li>...and more!</li>
+                                            <li>... and more!</li>
                                         </ul>  
                                     </div>
                                 </div>
