@@ -2,8 +2,7 @@
 var userName;
 var userEmail;
 var userComments;
-
-var submitButtonClicked = false;
+var clickedSubmit = false;
 
 
 function validateContactForm() {
