@@ -123,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             <?php include 'assets/include/footer-content.php'; ?>
             <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-             <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=09262019V2"></script>
+             <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=10072019V2"></script>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     setCurrentPage(4);
