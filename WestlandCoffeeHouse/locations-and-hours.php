@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Westland Coffee House's location and hours." />
@@ -10,7 +9,6 @@
         <title>Location | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-location-and-hours">
         <div class="body-wrapper">
             <header>
@@ -22,9 +20,7 @@
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
@@ -68,27 +64,23 @@
                             </table>
                         </div>
                     </div>
-
                     <div class="col-sma-6">
                         <div class="location-section">
                             <h3 class="location-header">Location</h3>
                             <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
                             <img src="assets/images/westland-coffee-house-location.png" alt="Westland Coffee House Location" />
-
                             <div id="map"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(1);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(1);
+            });
+        </script>
     </body>
-
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Our food and beverage menu at Westland Coffee House." />
@@ -9,7 +8,6 @@
         <title>Menu | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-menu">
         <div class="body-wrapper">
             <header>
@@ -21,9 +19,7 @@
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-12">
@@ -176,15 +172,13 @@
                     </div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(2);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(2);
+            });
+        </script>
     </body>
-
 </html>

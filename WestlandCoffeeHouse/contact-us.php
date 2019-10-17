@@ -57,9 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserComments = "";
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Contact Westland Coffee House." />
@@ -68,7 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <title>Contact | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-contact-us">
         <div class="body-wrapper">
             <header>
@@ -76,13 +75,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
                     <div class="subtitle-container">
-                    <h2 id="subTitle">Contact Us</h2>
+                        <h2 id="subTitle">Contact Us</h2>
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
@@ -94,7 +91,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
-                        <?php if(!empty($ValidationResponse)) { echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; } ?>
+                        <?php if (!empty($ValidationResponse)) {
+                            echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>";
+                        } ?>
                         <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
@@ -120,16 +119,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     </div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-             <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=10072019V2"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(4);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=10072019V2"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(4);
+            });
+        </script>
     </body>
-
 </html>

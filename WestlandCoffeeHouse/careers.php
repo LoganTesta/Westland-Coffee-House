@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Careers with Westland Coffee House." />
@@ -10,7 +9,6 @@
         <title>Careers | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-careers">
         <div class="body-wrapper">
             <header>
@@ -22,9 +20,7 @@
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-8">
@@ -32,9 +28,8 @@
                         <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
                         <div class="positions-open-container">
                             <div class="positions-title-container">
-                                     <h3>Positions Open</h3>
-                            </div>
-                       
+                                <h3>Positions Open</h3>
+                            </div>        
                             <div class="position-container">
                                 <div class="position-title">
                                     <h4>Barista</h4>
@@ -74,15 +69,13 @@
                     <div class="clear-both"></div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(5);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(5);
+            });
+        </script>
     </body>
-
 </html>

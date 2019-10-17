@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="About Westland Coffee House." />
@@ -9,7 +8,6 @@
         <title>About | Westland Coffee House</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-about">
         <div class="body-wrapper">
             <header>  
@@ -17,13 +15,11 @@
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
                     <div class="subtitle-container">
-                    <h2 id="subTitle">About Us</h2>
+                        <h2 id="subTitle">About Us</h2>
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
@@ -38,22 +34,19 @@
                             well.</p>
                         <p>Come pay us a visit and we'll make sure you have a good beverage and a good time!</p>
                     </div>
-
                     <div class="col-sma-6">
                         <div class="visitors-bg-image one"></div>
                         <div class="visitors-bg-image three"></div>
                     </div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(0);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(0);
+            });
+        </script>
     </body>
-
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Portland's friendliest coffee and sandwhich place.  Come grab a nice beverage or some 
@@ -10,7 +9,6 @@
         <title>404 | Westland Coffee Shop</title>	
         <?php include 'assets/include/document-head-components.php'; ?>
     </head>
-
     <body class="page-404">
         <div class="body-wrapper">
             <header>
@@ -18,34 +16,28 @@
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>
                     <div class="subtitle-container">
-                    <h2 id="subTitle">404</h2>
+                        <h2 id="subTitle">404</h2>
                     </div>
                 </div>
             </header>
-
             <?php include 'assets/include/navigation-content.php'; ?>
-
             <div class="content">
                 <div class="content-row inner-wrapper">
                     <div class="col-sma-6">
                         <h3>404 Error</h3>
                         <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
                     </div>
-
                     <div class="col-sma-6">
-
                     </div>
                 </div>
             </div>
-
             <?php include 'assets/include/footer-content.php'; ?>
-            <script type="text/javascript" src="assets/javascript/javascript-functions.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    setCurrentPage(-1);
-                });
-            </script>
         </div>
+        <?php include 'assets/include/javascript-content.php'; ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setCurrentPage(-1);
+            });
+        </script>
     </body>
-
 </html>
