@@ -100,7 +100,6 @@
         <?php include 'assets/include/javascript-content.php'; ?>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                setCurrentPage(-1);
             });
         </script>
     </body>
