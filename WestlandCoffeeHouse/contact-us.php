@@ -2,7 +2,6 @@
  ob_start();
 session_start();
 
-
 $ValidationResponse = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
