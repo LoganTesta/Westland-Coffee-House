@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
-ob_start();
+ ob_start();
 session_start();
 
 
-$ValidationResponse="";
+$ValidationResponse = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = htmlspecialchars(strip_tags(trim($_POST['userName'])));
@@ -32,23 +32,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $ValidationResponse .= "<p>Sorry validation failed.  Please check all fields again.</p>";
     }
 
-    /* Create the e-mail body. */
-    $Body = "";
-    $Body .= "User Name: " . $UserName . "\n";
-    $Body .= "User Email: " . $UserEmail . "\n";
-    $Body .= "Subject: " . $UserSubject . "\n";
-    $Body .= "User Comments: " . $UserComments . "\n";
+    if ($PassedValidation) {
+        /* Create the e-mail body. */
+        $Body = "";
+        $Body .= "User Name: " . $UserName . "\n";
+        $Body .= "User Email: " . $UserEmail . "\n";
+        $Body .= "Subject: " . $UserSubject . "\n";
+        $Body .= "User Comments: " . $UserComments . "\n";
 
-    /* Send the e-mail. */
-    $SuccessfulSubmission = mail($SendEmailTo, "Questions/Comments About Westland Coffee House: " . $UserSubject, $Body, "From: <$UserEmail>");
-    if ($SuccessfulSubmission) {
-        $ValidationResponse .= "<p>Thank you for contacting us, " . $UserName . ".  Your message was successfully sent!</p>";
-        $UserName = "";
-        $UserEmail = "";
-        $UserSubject = "";
-        $UserComments = "";
-    } else if ($SuccessfulSubmission === false) {
-        $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
+        /* Send the e-mail. */
+        $SuccessfulSubmission = mail($SendEmailTo, "Questions/Comments About Westland Coffee House: " . $UserSubject, $Body, "From: <$UserEmail>");
+        if ($SuccessfulSubmission) {
+            $ValidationResponse .= "<p>Thank you for contacting us, " . $UserName . ".  Your message was successfully sent!</p>";
+            $UserName = "";
+            $UserEmail = "";
+            $UserSubject = "";
+            $UserComments = "";
+        } else if ($SuccessfulSubmission === false) {
+            $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
+        }
     }
 } else {
     $UserName = "";
