@@ -11,22 +11,45 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments'])));
 
     $SendEmailTo = "logan.testa@outlook.com";
-
+    
     /* Validation time */
     $PassedValidation = true;
+    
+    $validUserName = "";
     if (Trim($UserName) === "") {
-        $PassedValidation = false;
-    } else if (Trim($UserEmail) === "") {
-        $PassedValidation = false;
-    } else if (Trim($UserComments) === "") {
-        $PassedValidation = false;
+        $validUserName = false;
     }
-
-
+    if($validUserName === false){
+        $PassedValidation = false;
+        $ValidationResponse .= "<p>Please enter a Name.</p>";
+    }
+    
+    
+    $validUserEmail = "";
+    if(Trim($UserEmail) === "") {
+        $validUserEmail = false;
+    }
     /* More advanced e-mail validation */
     if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
-        $PassedValidation = false;
+        $validUserEmail = false;
     }
+    
+    if($validUserEmail === false) {
+        $PassedValidation = false;
+        $ValidationResponse .= "<p>Please enter a valid Email.</p>";
+    }
+    
+    $validUserComments = false;
+    if (Trim($UserComments) === "") {
+        $validUserComments = false;
+     
+    }
+    if($validUserComments === false) {
+        $PassedValidation = false;
+        $ValidationResponse .= "<p>Please write your Message.</p>";
+    }
+
+
     if ($PassedValidation === false) {
         $ValidationResponse .= "<p>Sorry validation failed.  Please check all fields again.</p>";
     }
@@ -98,11 +121,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
-                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" >    
                             </div>
                             <div class="input-container">
                                 <label for="userEmail"><strong>Email *</strong></label>
-                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here"> 
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
@@ -110,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             </div>
                             <div class="input-container">
                                 <label for="userComments"><strong>Message *</strong></label>
-                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
+                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks."><?php echo $UserComments; ?></textarea>                          
                             </div>                           
                             <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          
@@ -123,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <?php include 'assets/include/footer-content.php'; ?>
         </div>
         <?php include 'assets/include/javascript-content.php'; ?>
-        <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=10072019V2"></script>
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 setCurrentPage(4);
