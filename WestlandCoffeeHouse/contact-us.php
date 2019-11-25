@@ -15,36 +15,36 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     /* Validation time */
     $PassedValidation = true;
     
-    $validUserName = "";
+    $ValidUserName = "";
     if (Trim($UserName) === "") {
-        $validUserName = false;
+        $ValidUserName = false;
     }
-    if($validUserName === false){
+    if($ValidUserName === false){
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please enter a Name.</p>";
     }
     
     
-    $validUserEmail = "";
+    $ValidUserEmail = "";
     if(Trim($UserEmail) === "") {
-        $validUserEmail = false;
+        $ValidUserEmail = false;
     }
     /* More advanced e-mail validation */
     if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
-        $validUserEmail = false;
+        $ValidUserEmail = false;
     }
     
-    if($validUserEmail === false) {
+    if($ValidUserEmail === false) {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please enter a valid Email.</p>";
     }
     
-    $validUserComments = false;
+    $ValidUserComments = false;
     if (Trim($UserComments) === "") {
-        $validUserComments = false;
+        $ValidUserComments = false;
      
     }
-    if($validUserComments === false) {
+    if($ValidUserComments === false) {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please write your Message.</p>";
     }
@@ -121,11 +121,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
-                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" >    
+                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
                             </div>
                             <div class="input-container">
                                 <label for="userEmail"><strong>Email *</strong></label>
-                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here"> 
+                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
                             </div>
                             <div class="input-container">
                                 <label for="userSubject"><strong>Subject</strong></label>
@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             </div>
                             <div class="input-container">
                                 <label for="userComments"><strong>Message *</strong></label>
-                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks."><?php echo $UserComments; ?></textarea>                          
+                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
                             </div>                           
                             <div class="input-container contact-button">
                                 <button id="contactButton" type="submit">Contact Us!</button>                          
