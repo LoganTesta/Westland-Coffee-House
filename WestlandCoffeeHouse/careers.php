@@ -3,13 +3,17 @@ declare(strict_types=1);
 ob_start();
 session_start();
 
-$ValidationResponse = "";
+$ValidationResponse0 = "";
+$ValidationResponse1 = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = "";
     $UserEmail = "";
     $UserSubject = "";
     $UserComments = "";
+    
+    $ValidationResponse = "";
+    
     if (isset($_POST['submitButton0'])) {
         $UserName = htmlspecialchars(strip_tags(trim($_POST['userName0'])));
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail0'])));
@@ -94,8 +98,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserSubject = "";
     $UserComments = "";
 }
-?>
 
+    if (isset($_POST['submitButton0'])) {
+        $ValidationResponse0 = $ValidationResponse;
+        $ValidationResponse1 = "";
+    } 
+    else if (isset($_POST['submitButton1'])) {
+        $ValidationResponse0 = "";
+        $ValidationResponse1 = $ValidationResponse;
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -145,8 +157,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 </div>  
                                 <div class="careers-container">
                                     <?php
-                                    if (!empty($ValidationResponse)) {
-                                        echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>";
+                                    if (!empty($ValidationResponse0)) {
+                                        echo "<div class='form-transmission-results'>" . $ValidationResponse0 . "</div>";
                                     }
                                     ?>
                                     <form id="careersForm0" class="position__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
@@ -189,8 +201,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 </div> 
                                 <div class="careers-container">
                                     <?php
-                                    if (!empty($ValidationResponse)) {
-                                        echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>";
+                                    if (!empty($ValidationResponse1)) {
+                                        echo "<div class='form-transmission-results'>" . $ValidationResponse1 . "</div>";
                                     }
                                     ?>
                                     <form id="careersForm1" class="position__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
