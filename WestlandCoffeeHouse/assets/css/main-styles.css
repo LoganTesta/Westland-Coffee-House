@@ -530,7 +530,7 @@ input, textarea {
   .input-container textarea {
     width: 100%; }
 
-.input-container.contact-button {
+.input-container.submit {
   padding-bottom: 0; }
 
 table {
@@ -701,7 +701,7 @@ table {
 .javascript-validation-results-contact-us {
   padding-top: 15px; }
 
-#contactButton {
+.submit-button {
   padding: 10px 15px;
   background-color: #d1b6a3;
   border: 2px solid #333333;
@@ -709,7 +709,7 @@ table {
   cursor: pointer;
   transition: 0.8s; }
 
-#contactButton:hover {
+.submit-button:hover {
   color: #d1b6a3;
   background-color: #6f4e37;
   transition: 0.8s; }
@@ -728,6 +728,9 @@ table {
 
 .position-container {
   padding-bottom: 40px; }
+
+.position-text-container {
+  position: relative; }
 
 .position-title {
   padding-bottom: 15px;
@@ -752,6 +755,23 @@ table {
 
 .barista.one {
   background: url("../images/one-of-our-baristas.jpg") 50% 0%/cover no-repeat; }
+
+.position__apply-button {
+  display: inline-block;
+  width: 110px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6f4e37;
+  cursor: pointer; }
+
+.position__application-form {
+  display: none; }
+
+.position__application-form.show {
+  display: block; }
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {

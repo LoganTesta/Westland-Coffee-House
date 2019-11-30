@@ -135,8 +135,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 <label for="userComments"><strong>Message *</strong></label>
                                 <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
                             </div>                           
-                            <div class="input-container contact-button">
-                                <button id="contactButton" type="submit">Contact Us!</button>                          
+                            <div class="input-container submit">
+                                <button id="contactButton" class="submit-button" type="submit">Contact Us!</button>                          
                             </div>
                             <div class="javascript-validation-results-contact-us"></div>
                         </form>
