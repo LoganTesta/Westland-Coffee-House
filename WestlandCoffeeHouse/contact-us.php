@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     /* Validation time */
     $PassedValidation = true;
     
-    $ValidUserName = "";
+    $ValidUserName = true;
     if (Trim($UserName) === "") {
         $ValidUserName = false;
     }
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
     
     
-    $ValidUserEmail = "";
+    $ValidUserEmail = true;
     if(Trim($UserEmail) === "") {
         $ValidUserEmail = false;
     }
@@ -39,7 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $ValidationResponse .= "<p>Please enter a valid Email.</p>";
     }
     
-    $ValidUserComments = false;
+    
+    $ValidUserComments = true;
     if (Trim($UserComments) === "") {
         $ValidUserComments = false;
      
