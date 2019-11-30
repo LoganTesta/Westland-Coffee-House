@@ -2,13 +2,21 @@
 
 let clickedSubmit = false;
 
-function validateCareersForm() {
+
+function validateCareersForm(formNumber) {
 
     if (clickedSubmit) {
-        let userName = document.forms["careersForm"]["userName"].value.trim();
-        let userEmail = document.forms["careersForm"]["userEmail"].value.trim();
-        let userSubject = document.forms["careersForm"]["userSubject"].value.trim();
-        let userComments = document.forms["careersForm"]["userComments"].value.trim();
+        
+        let formNameString = "careersForm" + formNumber;
+        let userNameString = "userName" + formNumber;
+        let userEmailString = "userEmail" + formNumber;
+        let userSubjectString = "userSubject" + formNumber;
+        let userCommentsString = "userComments" + formNumber;
+                     
+        let userName = document.forms[formNameString][userNameString].value.trim();
+        let userEmail = document.forms[formNameString][userEmailString].value.trim();
+        let userSubject = document.forms[formNameString][userSubjectString].value.trim();
+        let userComments = document.forms[formNameString][userCommentsString].value.trim();
         let validForm = true;
 
 
@@ -23,10 +31,10 @@ function validateCareersForm() {
         }
 
         if (validName) {
-            document.forms["careersForm"]["userName"].classList.remove("required-field-needed");
+            document.forms[formNameString][userNameString].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms["careersForm"]["userName"].classList.add("required-field-needed");
+            document.forms[formNameString][userNameString].classList.add("required-field-needed");
         }
 
 
@@ -45,10 +53,10 @@ function validateCareersForm() {
         }
 
         if (validEmail) {
-            document.forms["careersForm"]["userEmail"].classList.remove("required-field-needed");
+            document.forms[formNameString][userEmailString].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms["careersForm"]["userEmail"].classList.add("required-field-needed");
+            document.forms[formNameString][userEmailString].classList.add("required-field-needed");
         }
 
 
@@ -58,10 +66,10 @@ function validateCareersForm() {
         }
 
         if (validComments) {
-            document.forms["careersForm"]["userComments"].classList.remove("required-field-needed");
+            document.forms[formNameString][userCommentsString].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms["careersForm"]["userComments"].classList.add("required-field-needed");
+            document.forms[formNameString][userCommentsString].classList.add("required-field-needed");
         }
 
 
@@ -82,27 +90,49 @@ function validateCareersForm() {
 
 function setClickedSubmitTrue() {
     let elementWithFocus = document.activeElement;
-    if (submitButton === elementWithFocus) {
+    if (submitButton0 === elementWithFocus) {
+        clickedSubmit = true;
+    } else if (submitButton1 === elementWithFocus) {
         clickedSubmit = true;
     }
 }
 
-let submitButton = document.getElementById("submitButton");
-submitButton.addEventListener("click", setClickedSubmitTrue, "false");
-submitButton.addEventListener("click", validateCareersForm, "false");
+let submitButton0 = document.getElementById("submitButton0");
+submitButton0.addEventListener("click", setClickedSubmitTrue, "false");
+submitButton0.addEventListener("click", function (){ validateCareersForm(0); }, "false");
+
+let userName0 = document.getElementById("userName0");
+userName0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+
+let userSubject0 = document.getElementById("userSubject0");
+userSubject0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+
+let userEmail0 = document.getElementById("userEmail0");
+userEmail0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+
+let userComments0 = document.getElementById("userComments0");
+userComments0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
 
-let userName = document.getElementById("userName");
-userName.addEventListener("change", validateCareersForm, "false");
 
-let userSubject = document.getElementById("userSubject");
-userSubject.addEventListener("change", validateCareersForm, "false");
 
-let userEmail = document.getElementById("userEmail");
-userEmail.addEventListener("change", validateCareersForm, "false");
+let submitButton1 = document.getElementById("submitButton1");
+submitButton1.addEventListener("click", setClickedSubmitTrue, "false");
+submitButton1.addEventListener("click", function (){ validateCareersForm(1); }, "false");
 
-let userComments = document.getElementById("userComments");
-userComments.addEventListener("change", validateCareersForm, "false");
+let userName1 = document.getElementById("userName1");
+userName1.addEventListener("change", function() { validateCareersForm(1); }, "false");
+
+let userSubject1 = document.getElementById("userSubject1");
+userSubject1.addEventListener("change", function() { validateCareersForm(1); }, "false");
+
+let userEmail1 = document.getElementById("userEmail1");
+userEmail1.addEventListener("change", function() { validateCareersForm(1); }, "false");
+
+let userComments1 = document.getElementById("userComments1");
+userComments1.addEventListener("change", function() { validateCareersForm(1); }, "false");
+
+
 
 
 
@@ -112,4 +142,8 @@ function toggleApplication(applicationNumber){
 
 document.getElementsByClassName("position__apply-button")[0].addEventListener("click", function(){
     toggleApplication(0);
+}, false);
+
+document.getElementsByClassName("position__apply-button")[1].addEventListener("click", function(){
+    toggleApplication(1);
 }, false);
