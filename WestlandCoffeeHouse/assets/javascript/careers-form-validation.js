@@ -144,7 +144,7 @@ userCoverLetter1.addEventListener("change", function() { validateCareersForm(1);
 
 
 function toggleApplication(applicationNumber){
-    document.getElementsByClassName("careers__application-form")[applicationNumber].classList.toggle("show");
+    document.getElementsByClassName("application-form")[applicationNumber].classList.toggle("show");
 }
 
 document.getElementsByClassName("position__apply-button")[0].addEventListener("click", function(){

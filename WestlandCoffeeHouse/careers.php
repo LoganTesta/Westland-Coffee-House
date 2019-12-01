@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $UserName = htmlspecialchars(strip_tags(trim($_POST['userName0'])));
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail0'])));
         $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject0'])));
+        $UserResume = htmlspecialchars(strip_tags(trim($_POST['userResume0'])));
         $UserCoverLetter = htmlspecialchars(strip_tags(trim($_POST['userCoverLetter0'])));
         $HiringForPosition = "Barista";
     } 
@@ -28,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $UserName = htmlspecialchars(strip_tags(trim($_POST['userName1'])));
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail1'])));
         $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject1'])));
+        $UserResume = htmlspecialchars(strip_tags(trim($_POST['userResume1'])));
         $UserCoverLetter = htmlspecialchars(strip_tags(trim($_POST['userCoverLetter1'])));
         $HiringForPosition = "Barista Lead";
     }
@@ -79,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($PassedValidation) {
         /* Create the e-mail body. */
-        $Body = "";
+        $Body = "Application for " . $HiringForPosition;
         $Body .= "User Name: " . $UserName . "\n";
         $Body .= "User Email: " . $UserEmail . "\n";
         $Body .= "Subject: " . $UserSubject . "\n";
@@ -87,7 +89,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $Body .= "User Cover Letter: " . $UserCoverLetter . "\n";
 
         /* Send the e-mail. */
-        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $HiringForPosition . " Application from " . $UserName . ": " . $UserSubject, $Body, "From: <$UserEmail>");
+        $EmailSubject = "";
+        if(strlen($UserSubject) > 0) {
+            $EmailSubject = ": Subject: " . $UserSubject;
+        } else {
+            $EmailSubject = "";
+        }
+        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $HiringForPosition . " Application from " . $UserName . $EmailSubject, $Body, "From: <$UserEmail>");
         if ($SuccessfulSubmission) {
             $ValidationResponse .= "<p>Thank you for applying to work with us, " . $UserName . ".  Your application was successfully sent!</p>";
             $UserName = "";
@@ -169,8 +177,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse0 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm0" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                        <h4>Barista Application</h4>
+                                    <form id="careersForm0" class="application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                        <h4 class="application-form__title">Barista Application</h4>
                                         <div class="content-row no-padding">                                          
                                             <div class="input-container col-sma-6">
                                                 <label for="userName"><strong>Name *</strong></label>
@@ -220,8 +228,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse1 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm1" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                        <h4>Barista Lead Application</h4>
+                                    <form id="careersForm1" class="application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                        <h4 class="application-form__title">Barista Lead Application</h4>
                                         <div class="content-row no-padding">    
                                             <div class="input-container col-sma-6">
                                                 <label for="userName"><strong>Name *</strong></label>

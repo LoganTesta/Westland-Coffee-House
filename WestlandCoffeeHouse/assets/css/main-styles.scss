@@ -732,13 +732,16 @@ table {
 
 .careers-container { padding-top: 25px; }
 
-.careers__application-form { 
+.application-form { 
     display: none; 
 }
 
-.careers__application-form.show { 
+.application-form.show { 
     display: block; 
 }
+
+.application-form__title { text-align: center; }
+
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px){
