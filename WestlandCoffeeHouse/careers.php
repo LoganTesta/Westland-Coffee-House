@@ -171,13 +171,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     ?>
                                     <form id="careersForm0" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                         <h4>Barista Application</h4>
-                                        <div class="input-container">
-                                            <label for="userName"><strong>Name *</strong></label>
-                                            <input type="text" id="userName0" name="userName0" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
-                                        </div>
-                                        <div class="input-container">
-                                            <label for="userEmail"><strong>Email *</strong></label>
-                                            <input type="email" id="userEmail0" name="userEmail0" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                        <div class="content-row no-padding">                                          
+                                            <div class="input-container col-sma-6">
+                                                <label for="userName"><strong>Name *</strong></label>
+                                                <input type="text" id="userName0" name="userName0" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                            </div>
+                                            <div class="input-container col-sma-6">
+                                                <label for="userEmail"><strong>Email *</strong></label>
+                                                <input type="email" id="userEmail0" name="userEmail0" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                            </div>
                                         </div>
                                         <div class="input-container">
                                             <label for="userSubject"><strong>Subject</strong></label>
@@ -220,13 +222,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     ?>
                                     <form id="careersForm1" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                         <h4>Barista Lead Application</h4>
-                                        <div class="input-container">
-                                            <label for="userName"><strong>Name *</strong></label>
-                                            <input type="text" id="userName1" name="userName1" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
-                                        </div>
-                                        <div class="input-container">
-                                            <label for="userEmail"><strong>Email *</strong></label>
-                                            <input type="email" id="userEmail1" name="userEmail1" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                        <div class="content-row no-padding">    
+                                            <div class="input-container col-sma-6">
+                                                <label for="userName"><strong>Name *</strong></label>
+                                                <input type="text" id="userName1" name="userName1" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                            </div>
+                                            <div class="input-container col-sma-6">
+                                                <label for="userEmail"><strong>Email *</strong></label>
+                                                <input type="email" id="userEmail1" name="userEmail1" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                            </div>
                                         </div>
                                         <div class="input-container">
                                             <label for="userSubject"><strong>Subject</strong></label>

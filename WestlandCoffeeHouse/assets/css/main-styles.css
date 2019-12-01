@@ -319,6 +319,9 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 .center-text {
   text-align: center; }
 
+.no-padding {
+  padding: 0; }
+
 h2 {
   font-size: 24px;
   font-weight: bold;
