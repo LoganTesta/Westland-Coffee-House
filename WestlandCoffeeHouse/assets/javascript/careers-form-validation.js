@@ -10,12 +10,14 @@ function validateCareersForm(formNumber) {
         let formNameString = "careersForm" + formNumber;
         let userNameString = "userName" + formNumber;
         let userEmailString = "userEmail" + formNumber;
+        let userResumeString = "userResume" + formNumber;
         let userSubjectString = "userSubject" + formNumber;
         let userCoverLetterString = "userCoverLetter" + formNumber;
                      
         let userName = document.forms[formNameString][userNameString].value.trim();
         let userEmail = document.forms[formNameString][userEmailString].value.trim();
         let userSubject = document.forms[formNameString][userSubjectString].value.trim();
+        let userResume = document.forms[formNameString][userResumeString].value.trim();
         let userCoverLetter = document.forms[formNameString][userCoverLetterString].value.trim();
         let validForm = true;
 
@@ -104,11 +106,14 @@ submitButton0.addEventListener("click", function (){ validateCareersForm(0); }, 
 let userName0 = document.getElementById("userName0");
 userName0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
+let userEmail0 = document.getElementById("userEmail0");
+userEmail0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+
 let userSubject0 = document.getElementById("userSubject0");
 userSubject0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
-let userEmail0 = document.getElementById("userEmail0");
-userEmail0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userResume0 = document.getElementById("userResume0");
+userResume0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
 let userCoverLetter0 = document.getElementById("userCoverLetter0");
 userCoverLetter0.addEventListener("change", function() { validateCareersForm(0); }, "false");
@@ -128,6 +133,9 @@ userSubject1.addEventListener("change", function() { validateCareersForm(1); }, 
 
 let userEmail1 = document.getElementById("userEmail1");
 userEmail1.addEventListener("change", function() { validateCareersForm(1); }, "false");
+
+let userResume1 = document.getElementById("userResume1");
+userResume1.addEventListener("change", function() { validateCareersForm(1); }, "false");
 
 let userCoverLetter1 = document.getElementById("userCoverLetter1");
 userCoverLetter1.addEventListener("change", function() { validateCareersForm(1); }, "false");
