@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = "";
     $UserEmail = "";
     $UserSubject = "";
-    $UserComments = "";
+    $UserCoverLetter = "";
     
     $ValidationResponse = "";
     
@@ -18,13 +18,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $UserName = htmlspecialchars(strip_tags(trim($_POST['userName0'])));
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail0'])));
         $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject0'])));
-        $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments0'])));
+        $UserCoverLetter = htmlspecialchars(strip_tags(trim($_POST['userCoverLetter0'])));
     } 
     else if (isset($_POST['submitButton1'])) {
         $UserName = htmlspecialchars(strip_tags(trim($_POST['userName1'])));
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail1'])));
         $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject1'])));
-        $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments1'])));
+        $UserCoverLetter = htmlspecialchars(strip_tags(trim($_POST['userCoverLetter1'])));
     }
 
 
@@ -58,13 +58,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     
-    $ValidUserComments = true;
-    if (Trim($UserComments) === "") {
-        $ValidUserComments = false;
+    $ValidUserCoverLetter = true;
+    if (Trim($UserCoverLetter) === "") {
+        $ValidUserCoverLetter = false;
     }
-    if ($ValidUserComments === false) {
+    if ($ValidUserCoverLetter === false) {
         $PassedValidation = false;
-        $ValidationResponse .= "<p>Please write your Message.</p>";
+        $ValidationResponse .= "<p>Please write your Cover Letter.</p>";
     }
 
 
@@ -78,16 +78,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $Body .= "User Name: " . $UserName . "\n";
         $Body .= "User Email: " . $UserEmail . "\n";
         $Body .= "Subject: " . $UserSubject . "\n";
-        $Body .= "User Comments: " . $UserComments . "\n";
+        $Body .= "User Cover Letter: " . $UserCoverLetter . "\n";
 
         /* Send the e-mail. */
         $SuccessfulSubmission = mail($SendEmailTo, "Cover Letter to Westland Coffee House: " . $UserSubject, $Body, "From: <$UserEmail>");
         if ($SuccessfulSubmission) {
-            $ValidationResponse .= "<p>Thank you for applying to work with us, " . $UserName . ".  Your message was successfully sent!</p>";
+            $ValidationResponse .= "<p>Thank you for applying to work with us, " . $UserName . ".  Your application was successfully sent!</p>";
             $UserName = "";
             $UserEmail = "";
             $UserSubject = "";
-            $UserComments = "";
+            $UserCoverLetter = "";
         } else if ($SuccessfulSubmission === false) {
             $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
         }
@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = "";
     $UserEmail = "";
     $UserSubject = "";
-    $UserComments = "";
+    $UserCoverLetter = "";
 }
 
     if (isset($_POST['submitButton0'])) {
@@ -151,8 +151,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     </div>                                 
                                     <p>Part or Full Time.  Provide excellent customer service.
                                         Make delicious beverages and Westland 
-                                        Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!</p>
-                                    <div class="position__apply-button">Apply Now!</div>
+                                        Coffee House THE best coffee store in the Portland area.</p>
+                                    <p>Come on in and pick an application, or select the 'Apply' button!</p>
+                                    <div class="position__apply-button">Apply Here!</div>
                                     <div class="clear-both"></div>
                                 </div>  
                                 <div class="careers-container">
@@ -161,8 +162,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse0 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm0" class="position__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                        <h4>Apply Here!</h4>
+                                    <form id="careersForm0" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                        <h4>Barista Application</h4>
                                         <div class="input-container">
                                             <label for="userName"><strong>Name *</strong></label>
                                             <input type="text" id="userName0" name="userName0" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
@@ -176,8 +177,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                             <input type="text" id="userSubject0" name="userSubject0" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                                         </div>
                                         <div class="input-container">
-                                            <label for="userComments"><strong>Message *</strong></label>
-                                            <textarea id="userComments0" name="userComments0" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
+                                            <label for="userCoverLetter0"><strong>Cover Letter *</strong></label>
+                                            <textarea id="userCoverLetter0" name="userCoverLetter0" rows="6" placeholder="Please write your cover letter here.  Thanks." required="required"><?php echo $UserCoverLetter; ?></textarea>                          
                                         </div>                           
                                         <div class="input-container submit">
                                             <button id="submitButton0" name="submitButton0" class="submit-button" type="submit">Send Application!</button>                          
@@ -196,7 +197,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     </div>                                 
                                     <p>Part or Full Time.  Provide excellent customer service, train new baristas on brewing and prep techniques and customer service, general barista
                                         duties, some supervisory duties as needed.  Reports to the Store Managers.</p>
-                                    <div class="position__apply-button">Apply Now!</div>
+                                      <p>Come on in and pick an application, or select the 'Apply' button!</p>
+                                    <div class="position__apply-button">Apply Here!</div>
                                     <div class="clear-both"></div>
                                 </div> 
                                 <div class="careers-container">
@@ -205,8 +207,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse1 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm1" class="position__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                        <h4>Apply Here!</h4>
+                                    <form id="careersForm1" class="careers__application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                        <h4>Barista Lead Application</h4>
                                         <div class="input-container">
                                             <label for="userName"><strong>Name *</strong></label>
                                             <input type="text" id="userName1" name="userName1" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
@@ -220,8 +222,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                             <input type="text" id="userSubject1" name="userSubject1" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                                         </div>
                                         <div class="input-container">
-                                            <label for="userComments"><strong>Message *</strong></label>
-                                            <textarea id="userComments1" name="userComments1" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
+                                            <label for="userCoverLetter1"><strong>Cover Letter *</strong></label>
+                                            <textarea id="userCoverLetter1" name="userCoverLetter1" rows="6" placeholder="Please write your cover letter here.  Thanks." required="required"><?php echo $UserCoverLetter; ?></textarea>                          
                                         </div>                           
                                         <div class="input-container submit">
                                             <button id="submitButton1" name="submitButton1" class="submit-button" type="submit">Send Application!</button>                          

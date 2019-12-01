@@ -758,7 +758,7 @@ table {
 
 .position__apply-button {
   display: inline-block;
-  width: 110px;
+  width: 111px;
   padding: 15px 10px;
   border-radius: 10px;
   font-size: 18px;
@@ -767,10 +767,13 @@ table {
   background-color: #6f4e37;
   cursor: pointer; }
 
-.position__application-form {
+.careers-container {
+  padding-top: 25px; }
+
+.careers__application-form {
   display: none; }
 
-.position__application-form.show {
+.careers__application-form.show {
   display: block; }
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/

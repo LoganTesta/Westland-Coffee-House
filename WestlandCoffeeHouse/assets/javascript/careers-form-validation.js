@@ -11,12 +11,12 @@ function validateCareersForm(formNumber) {
         let userNameString = "userName" + formNumber;
         let userEmailString = "userEmail" + formNumber;
         let userSubjectString = "userSubject" + formNumber;
-        let userCommentsString = "userComments" + formNumber;
+        let userCoverLetterString = "userCoverLetter" + formNumber;
                      
         let userName = document.forms[formNameString][userNameString].value.trim();
         let userEmail = document.forms[formNameString][userEmailString].value.trim();
         let userSubject = document.forms[formNameString][userSubjectString].value.trim();
-        let userComments = document.forms[formNameString][userCommentsString].value.trim();
+        let userCoverLetter = document.forms[formNameString][userCoverLetterString].value.trim();
         let validForm = true;
 
 
@@ -60,16 +60,16 @@ function validateCareersForm(formNumber) {
         }
 
 
-        let validComments = true;
-        if (userComments === null || userComments === "") {
-            validComments = false;
+        let validCoverLetter = true;
+        if (userCoverLetter === null || userCoverLetter === "") {
+            validCoverLetter = false;
         }
 
-        if (validComments) {
-            document.forms[formNameString][userCommentsString].classList.remove("required-field-needed");
+        if (validCoverLetter) {
+            document.forms[formNameString][userCoverLetterString].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms[formNameString][userCommentsString].classList.add("required-field-needed");
+            document.forms[formNameString][userCoverLetterString].classList.add("required-field-needed");
         }
 
 
@@ -110,8 +110,8 @@ userSubject0.addEventListener("change", function() { validateCareersForm(0); }, 
 let userEmail0 = document.getElementById("userEmail0");
 userEmail0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
-let userComments0 = document.getElementById("userComments0");
-userComments0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userCoverLetter0 = document.getElementById("userCoverLetter0");
+userCoverLetter0.addEventListener("change", function() { validateCareersForm(0); }, "false");
 
 
 
@@ -129,15 +129,14 @@ userSubject1.addEventListener("change", function() { validateCareersForm(1); }, 
 let userEmail1 = document.getElementById("userEmail1");
 userEmail1.addEventListener("change", function() { validateCareersForm(1); }, "false");
 
-let userComments1 = document.getElementById("userComments1");
-userComments1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
+let userCoverLetter1 = document.getElementById("userCoverLetter1");
+userCoverLetter1.addEventListener("change", function() { validateCareersForm(1); }, "false");
 
 
 
 
 function toggleApplication(applicationNumber){
-    document.getElementsByClassName("position__application-form")[applicationNumber].classList.toggle("show");
+    document.getElementsByClassName("careers__application-form")[applicationNumber].classList.toggle("show");
 }
 
 document.getElementsByClassName("position__apply-button")[0].addEventListener("click", function(){

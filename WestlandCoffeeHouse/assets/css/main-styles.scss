@@ -719,7 +719,7 @@ table {
 
 .position__apply-button { 
     display: inline-block;
-    width: 110px;
+    width: 111px;
     padding: 15px 10px;
     border-radius: 10px;
     font-size: 18px;
@@ -729,11 +729,13 @@ table {
     cursor: pointer;
 }
 
-.position__application-form { 
+.careers-container { padding-top: 25px; }
+
+.careers__application-form { 
     display: none; 
 }
 
-.position__application-form.show { 
+.careers__application-form.show { 
     display: block; 
 }
 
