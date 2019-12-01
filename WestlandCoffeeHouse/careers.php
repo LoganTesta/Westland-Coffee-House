@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = "";
     $UserEmail = "";
     $UserSubject = "";
-    $UserCoverLetter = "";
     $UserResume = "";
+    $UserCoverLetter = "";
     
     $HiringForPosition = "";
     
@@ -101,6 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $UserName = "";
             $UserEmail = "";
             $UserSubject = "";
+            $UserResume = "";
             $UserCoverLetter = "";
         } else if ($SuccessfulSubmission === false) {
             $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
@@ -110,8 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserName = "";
     $UserEmail = "";
     $UserSubject = "";
-    $UserCoverLetter = "";
     $UserResume = "";
+    $UserCoverLetter = "";
 }
 
     if (isset($_POST['submitButton0'])) {
