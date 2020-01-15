@@ -1,5 +1,6 @@
-<?php declare(strict_types=1);
- ob_start();
+<?php
+declare(strict_types=1);
+ob_start();
 session_start();
 
 $ValidationResponse = "";
@@ -11,41 +12,40 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserComments = htmlspecialchars(strip_tags(trim($_POST['userComments'])));
 
     $SendEmailTo = "logan.testa@outlook.com";
-    
+
     /* Validation time */
     $PassedValidation = true;
-    
+
     $ValidUserName = true;
     if (Trim($UserName) === "") {
         $ValidUserName = false;
     }
-    if($ValidUserName === false){
+    if ($ValidUserName === false) {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please enter a Name.</p>";
     }
-    
-    
+
+
     $ValidUserEmail = true;
-    if(Trim($UserEmail) === "") {
+    if (Trim($UserEmail) === "") {
         $ValidUserEmail = false;
     }
     /* More advanced e-mail validation */
     if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
         $ValidUserEmail = false;
     }
-    
-    if($ValidUserEmail === false) {
+
+    if ($ValidUserEmail === false) {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please enter a valid Email.</p>";
     }
-    
-    
+
+
     $ValidUserComments = true;
     if (Trim($UserComments) === "") {
         $ValidUserComments = false;
-     
     }
-    if($ValidUserComments === false) {
+    if ($ValidUserComments === false) {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please write your Message.</p>";
     }
@@ -116,9 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     <div class="col-sma-6 contact-us-container">
                         <h4 class="contact-westland">Write Us Here:</h4>
-                        <?php if (!empty($ValidationResponse)) {
-                            echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>";
-                        } ?>
+                        <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
                         <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                             <div class="input-container">
                                 <label for="userName"><strong>Name *</strong></label>
@@ -149,9 +147,44 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <?php include 'assets/include/javascript-content.php'; ?>
         <script type="text/javascript" src="assets/javascript/contact-form-validation.js?mod=10072019V2"></script>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                setCurrentPage(4);
-            });
+                            document.addEventListener("DOMContentLoaded", function () {
+                                setCurrentPage(4);
+                            });
+        </script>
+        <script type="text/javascript">
+            //Use AJAX to update part of the page without reloading the whole page.
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                updateServerResponse(event);
+            }, false);
+
+            function updateServerResponse(event) {
+                event.preventDefault();
+                let xhttp = new XMLHttpRequest();
+
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        let parser = new DOMParser();
+                        let ajaxDocument = parser.parseFromString(this.responseText, "text/html");
+
+                        let message = ajaxDocument.getElementsByClassName("form-transmission-results")[0];
+
+                        document.getElementsByClassName("form-transmission-results")[0].innerHTML = "" + message.innerHTML + "";
+                        document.getElementsByClassName("form-transmission-results")[0].classList.add("show");
+                    }
+                };
+
+                let userName = document.getElementById("userName").value;
+                let userEmail = document.getElementById("userEmail").value;
+                let userSubject = document.getElementById("userSubject").value;
+                let userComments = document.getElementById("userComments").value;
+
+                let formInfo = "userName=" + userName + "&userEmail=" + userEmail + "&userSubject=" + userSubject + "&userComments=" + userComments;
+
+
+                xhttp.open("POST", "contact-us.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send(formInfo);
+            }
         </script>
     </body>
 </html>
