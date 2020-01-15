@@ -178,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse0 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm0" class="application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                    <form id="careersForm0" class="application-form" method="post" onsubmit="return validateCareersForm('0');" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                         <h4 class="application-form__title">Barista Application</h4>
                                         <div class="content-row no-padding">                                          
                                             <div class="input-container col-sma-6">
@@ -229,7 +229,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         echo "<div class='form-transmission-results'>" . $ValidationResponse1 . "</div>";
                                     }
                                     ?>
-                                    <form id="careersForm1" class="application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                    <form id="careersForm1" class="application-form" method="post" onsubmit="return validateCareersForm('1');" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                         <h4 class="application-form__title">Barista Lead Application</h4>
                                         <div class="content-row no-padding">    
                                             <div class="input-container col-sma-6">

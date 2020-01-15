@@ -542,7 +542,8 @@ table {
     background: url('../images/busy-coffee-order-area.jpg') 50% 0%/cover no-repeat;
     margin-bottom: 0px;
 }
-
+.form-transmission-results { display: none; }
+.form-transmission-results.show { display: block; }
 .form-transmission-results p { font-size: 16px; font-weight: bold; color: #000000; }
 
 /*Location page**/
