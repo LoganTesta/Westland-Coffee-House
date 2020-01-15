@@ -9,10 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserEmail = "";
     $UserSubject = "";
     $UserResume = "";
+    $UserPositionApplyingFor = "";
     $UserCoverLetter = "";
-    
-    $HiringForPosition = "";
-    
+       
     $ValidationResponse = "";
     
     if (isset($_POST['submitButton'])) {
@@ -20,11 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $UserEmail = htmlspecialchars(strip_tags(trim($_POST['userEmail'])));
         $UserSubject = htmlspecialchars(strip_tags(trim($_POST['userSubject'])));
         $UserResume = htmlspecialchars(strip_tags(trim($_POST['userResume'])));
+        $UserPositionApplyingFor = htmlspecialchars(strip_tags(trim($_POST['userPositionApplyingFor'])));
         $UserCoverLetter = htmlspecialchars(strip_tags(trim($_POST['userCoverLetter'])));
-        $HiringForPosition = "Barista";
     } 
-
-
 
     $SendEmailTo = "logan.testa@outlook.com";
 
@@ -54,6 +51,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $PassedValidation = false;
         $ValidationResponse .= "<p>Please enter a valid Email.</p>";
     }
+    
+    
+    $ValidUserPositionApplyingFor = true;
+    if (Trim($UserPositionApplyingFor) === "") {
+        $ValidUserPositionApplyingFor = false;
+    }
+    if ($ValidUserPositionApplyingFor === false) {
+        $PassedValidation = false;
+        $ValidationResponse .= "<p>Please write the position you are applying for.</p>";
+    }
 
     
     $ValidUserCoverLetter = true;
@@ -72,11 +79,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($PassedValidation) {
         /* Create the e-mail body. */
-        $Body = "Application for " . $HiringForPosition;
+        $Body = "Application for " . $UserPositionApplyingFor;
         $Body .= "User Name: " . $UserName . "\n";
         $Body .= "User Email: " . $UserEmail . "\n";
         $Body .= "Subject: " . $UserSubject . "\n";
         $Body .= "Resume: " . $UserResume . "\n";
+        $Body .= "Position: " . $UserPositionApplyingFor . "\n";
         $Body .= "User Cover Letter: " . $UserCoverLetter . "\n";
 
         /* Send the e-mail. */
@@ -86,13 +94,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
             $EmailSubject = "";
         }
-        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $HiringForPosition . " Application from " . $UserName . $EmailSubject, $Body, "From: <$UserEmail>");
+        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $UserPositionApplyingFor . " Application from " . $UserName . $EmailSubject, $Body, "From: <$UserEmail>");
         if ($SuccessfulSubmission) {
             $ValidationResponse .= "<p>Thank you for applying to work with us, " . $UserName . ".  Your application was successfully sent!</p>";
             $UserName = "";
             $UserEmail = "";
             $UserSubject = "";
             $UserResume = "";
+            $UserPositionApplyingFor = "";
             $UserCoverLetter = "";
         } else if ($SuccessfulSubmission === false) {
             $ValidationResponse .= "<p>Submission failed. Please try again.</p>";
@@ -103,6 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $UserEmail = "";
     $UserSubject = "";
     $UserResume = "";
+    $UserPositionApplyingFor = "";
     $UserCoverLetter = "";
 }
 
@@ -192,6 +202,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         <textarea id="userResume" name="userResume" rows="6" placeholder="Please paste your resume here."><?php echo $UserResume; ?></textarea>                          
                                     </div> 
                                     <div class="input-container">
+                                        <label for="userPositionApplyingFor"><strong>Position *</strong></label>
+                                        <textarea id="userPositionApplyingFor" name="userPositionApplyingFor" rows="6" placeholder="Please write the position you are applying for here."><?php echo $UserPositionApplyingFor; ?></textarea>                          
+                                    </div> 
+                                    <div class="input-container">
                                         <label for="userCoverLetter"><strong>Cover Letter *</strong></label>
                                         <textarea id="userCoverLetter" name="userCoverLetter" rows="6" placeholder="Please write your cover letter here.  Thanks." required="required"><?php echo $UserCoverLetter; ?></textarea>                          
                                     </div>                           
@@ -248,12 +262,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 let userEmail = document.getElementById("userEmail").value;
                 let userSubject = document.getElementById("userSubject").value;
                 let userResume = document.getElementById("userResume").value;
+                let userPositionApplyingFor = document.getElementById("userPositionApplyingFor").value;
                 let userCoverLetter = document.getElementById("userCoverLetter").value;
       
                 let submitButton = document.getElementById("submitButton").value;
 
                 let formInfo = "userName=" + userName + "&userEmail=" + userEmail + "&userSubject=" + userSubject + "&userResume=" + userResume + 
-                        "&userCoverLetter=" + userCoverLetter + "&submitButton=" + submitButton;
+                        "&userPositionApplyingFor=" + userPositionApplyingFor + "&userCoverLetter=" + userCoverLetter + "&submitButton=" + submitButton;
 
 
                 xhttp.open("POST", "careers.php", true);

@@ -10,14 +10,16 @@ function validateCareersForm() {
         let formNameString = "careersForm";
         let userNameString = "userName";
         let userEmailString = "userEmail";
-        let userResumeString = "userResume";
         let userSubjectString = "userSubject";
+        let userResumeString = "userResume";
+        let userPositionApplyingForString = "userPositionApplyingFor";
         let userCoverLetterString = "userCoverLetter";
                      
         let userName = document.forms[formNameString][userNameString].value.trim();
         let userEmail = document.forms[formNameString][userEmailString].value.trim();
         let userSubject = document.forms[formNameString][userSubjectString].value.trim();
         let userResume = document.forms[formNameString][userResumeString].value.trim();
+        let userPositionApplyingFor = document.forms[formNameString][userPositionApplyingForString].value.trim();
         let userCoverLetter = document.forms[formNameString][userCoverLetterString].value.trim();
         let validForm = true;
 
@@ -59,6 +61,19 @@ function validateCareersForm() {
         } else {
             validForm = false;
             document.forms[formNameString][userEmailString].classList.add("required-field-needed");
+        }
+
+
+        let validUserPositionApplyingFor = true;
+        if (userPositionApplyingFor === null || userPositionApplyingFor === "") {
+            validUserPositionApplyingFor = false;
+        }
+
+        if (validUserPositionApplyingFor) {
+            document.forms[formNameString][userPositionApplyingForString].classList.remove("required-field-needed");
+        } else {
+            validForm = false;
+            document.forms[formNameString][userPositionApplyingForString].classList.add("required-field-needed");
         }
 
 
@@ -113,6 +128,8 @@ userSubject.addEventListener("change", function() { validateCareersForm(); }, "f
 let userResume = document.getElementById("userResume");
 userResume.addEventListener("change", function() { validateCareersForm(); }, "false");
 
+let userPositionApplyingFor = document.getElementById("userPositionApplyingFor");
+userPositionApplyingFor.addEventListener("change", function() { validateCareersForm(); }, "false");
+
 let userCoverLetter = document.getElementById("userCoverLetter");
 userCoverLetter.addEventListener("change", function() { validateCareersForm(); }, "false");
-
