@@ -182,16 +182,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         <h4 class="application-form__title">Barista Application</h4>
                                         <div class="content-row no-padding">                                          
                                             <div class="input-container col-sma-6">
-                                                <label for="userName"><strong>Name *</strong></label>
+                                                <label for="userName0"><strong>Name *</strong></label>
                                                 <input type="text" id="userName0" name="userName0" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
                                             </div>
                                             <div class="input-container col-sma-6">
-                                                <label for="userEmail"><strong>Email *</strong></label>
+                                                <label for="userEmail0"><strong>Email *</strong></label>
                                                 <input type="email" id="userEmail0" name="userEmail0" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
                                             </div>
                                         </div>
                                         <div class="input-container">
-                                            <label for="userSubject"><strong>Subject</strong></label>
+                                            <label for="userSubject0"><strong>Subject</strong></label>
                                             <input type="text" id="userSubject0" name="userSubject0" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                                         </div>
                                         <div class="input-container">
@@ -233,16 +233,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                         <h4 class="application-form__title">Barista Lead Application</h4>
                                         <div class="content-row no-padding">    
                                             <div class="input-container col-sma-6">
-                                                <label for="userName"><strong>Name *</strong></label>
+                                                <label for="userName1"><strong>Name *</strong></label>
                                                 <input type="text" id="userName1" name="userName1" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
                                             </div>
                                             <div class="input-container col-sma-6">
-                                                <label for="userEmail"><strong>Email *</strong></label>
+                                                <label for="userEmail1"><strong>Email *</strong></label>
                                                 <input type="email" id="userEmail1" name="userEmail1" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
                                             </div>
                                         </div>
                                         <div class="input-container">
-                                            <label for="userSubject"><strong>Subject</strong></label>
+                                            <label for="userSubject1"><strong>Subject</strong></label>
                                             <input type="text" id="userSubject1" name="userSubject1" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                                         </div>
                                         <div class="input-container">
