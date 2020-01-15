@@ -3,16 +3,16 @@
 let clickedSubmit = false;
 
 
-function validateCareersForm(formNumber) {
+function validateCareersForm() {
 
     if (clickedSubmit) {
         
-        let formNameString = "careersForm" + formNumber;
-        let userNameString = "userName" + formNumber;
-        let userEmailString = "userEmail" + formNumber;
-        let userResumeString = "userResume" + formNumber;
-        let userSubjectString = "userSubject" + formNumber;
-        let userCoverLetterString = "userCoverLetter" + formNumber;
+        let formNameString = "careersForm";
+        let userNameString = "userName";
+        let userEmailString = "userEmail";
+        let userResumeString = "userResume";
+        let userSubjectString = "userSubject";
+        let userCoverLetterString = "userCoverLetter";
                      
         let userName = document.forms[formNameString][userNameString].value.trim();
         let userEmail = document.forms[formNameString][userEmailString].value.trim();
@@ -92,65 +92,27 @@ function validateCareersForm(formNumber) {
 
 function setClickedSubmitTrue() {
     let elementWithFocus = document.activeElement;
-    if (submitButton0 === elementWithFocus) {
+    if (submitButton === elementWithFocus) {
         clickedSubmit = true;
-    } else if (submitButton1 === elementWithFocus) {
-        clickedSubmit = true;
-    }
+    } 
 }
 
-let submitButton0 = document.getElementById("submitButton0");
-submitButton0.addEventListener("click", setClickedSubmitTrue, "false");
-submitButton0.addEventListener("click", function (){ validateCareersForm(0); }, "false");
+let submitButton = document.getElementById("submitButton");
+submitButton.addEventListener("click", setClickedSubmitTrue, "false");
+submitButton.addEventListener("click", function (){ validateCareersForm(); }, "false");
 
-let userName0 = document.getElementById("userName0");
-userName0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userName = document.getElementById("userName");
+userName.addEventListener("change", function() { validateCareersForm(); }, "false");
 
-let userEmail0 = document.getElementById("userEmail0");
-userEmail0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userEmail = document.getElementById("userEmail");
+userEmail.addEventListener("change", function() { validateCareersForm(); }, "false");
 
-let userSubject0 = document.getElementById("userSubject0");
-userSubject0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userSubject = document.getElementById("userSubject");
+userSubject.addEventListener("change", function() { validateCareersForm(); }, "false");
 
-let userResume0 = document.getElementById("userResume0");
-userResume0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userResume = document.getElementById("userResume");
+userResume.addEventListener("change", function() { validateCareersForm(); }, "false");
 
-let userCoverLetter0 = document.getElementById("userCoverLetter0");
-userCoverLetter0.addEventListener("change", function() { validateCareersForm(0); }, "false");
+let userCoverLetter = document.getElementById("userCoverLetter");
+userCoverLetter.addEventListener("change", function() { validateCareersForm(); }, "false");
 
-
-
-
-let submitButton1 = document.getElementById("submitButton1");
-submitButton1.addEventListener("click", setClickedSubmitTrue, "false");
-submitButton1.addEventListener("click", function (){ validateCareersForm(1); }, "false");
-
-let userName1 = document.getElementById("userName1");
-userName1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
-let userSubject1 = document.getElementById("userSubject1");
-userSubject1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
-let userEmail1 = document.getElementById("userEmail1");
-userEmail1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
-let userResume1 = document.getElementById("userResume1");
-userResume1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
-let userCoverLetter1 = document.getElementById("userCoverLetter1");
-userCoverLetter1.addEventListener("change", function() { validateCareersForm(1); }, "false");
-
-
-
-
-function toggleApplication(applicationNumber){
-    document.getElementsByClassName("application-form")[applicationNumber].classList.toggle("show");
-}
-
-document.getElementsByClassName("position__apply-button")[0].addEventListener("click", function(){
-    toggleApplication(0);
-}, false);
-
-document.getElementsByClassName("position__apply-button")[1].addEventListener("click", function(){
-    toggleApplication(1);
-}, false);

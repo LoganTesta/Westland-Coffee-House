@@ -719,27 +719,7 @@ table {
     background: url('../images/one-of-our-baristas.jpg') 50% 0%/cover no-repeat;     
 }
 
-.position__apply-button { 
-    display: inline-block;
-    width: 111px;
-    padding: 15px 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: $firstStyleColor;
-    cursor: pointer;
-}
-
-.careers-container { padding-top: 25px; }
-
-.application-form { 
-    display: none; 
-}
-
-.application-form.show { 
-    display: block; 
-}
+.careers-container { padding-top: 25px; padding-bottom: 20px; }
 
 .application-form__title { text-align: center; }
 
