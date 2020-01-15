@@ -180,8 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 </div> 
                             </div>
                             <div class="careers-container">
-                                <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
-                                <form id="careersForm" class="application-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                <form id="careersForm" class="application-form careers-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                     <h4 class="application-form__title">Join Our Team!</h4>
                                     <div class="content-row no-padding">                                          
                                         <div class="input-container col-sma-6">
@@ -203,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     </div> 
                                     <div class="input-container">
                                         <label for="userPositionApplyingFor"><strong>Position *</strong></label>
-                                        <textarea id="userPositionApplyingFor" name="userPositionApplyingFor" rows="6" placeholder="Please write the position you are applying for here."><?php echo $UserPositionApplyingFor; ?></textarea>                          
+                                        <input type="text" id="userPositionApplyingFor" name="userPositionApplyingFor" value="<?php echo $UserPositionApplyingFor; ?>" placeholder="Enter Position You are Applying for Here" required="required">                         
                                     </div> 
                                     <div class="input-container">
                                         <label for="userCoverLetter"><strong>Cover Letter *</strong></label>
@@ -214,6 +213,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     </div>
                                     <div class="javascript-validation-results-contact-us"></div>
                                 </form>
+                                <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
                             </div>
                             <p><strong>Make delicious beverages and Westland Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!  
                                     We look forward to hearing from you!</strong></p>
