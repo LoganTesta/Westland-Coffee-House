@@ -2,25 +2,15 @@
 
 let clickedSubmit = false;
 
-
 function validateCareersForm() {
 
-    if (clickedSubmit) {
-        
-        let formNameString = "careersForm";
-        let userNameString = "userName";
-        let userEmailString = "userEmail";
-        let userSubjectString = "userSubject";
-        let userResumeString = "userResume";
-        let userPositionApplyingForString = "userPositionApplyingFor";
-        let userCoverLetterString = "userCoverLetter";
-                     
-        let userName = document.forms[formNameString][userNameString].value.trim();
-        let userEmail = document.forms[formNameString][userEmailString].value.trim();
-        let userSubject = document.forms[formNameString][userSubjectString].value.trim();
-        let userResume = document.forms[formNameString][userResumeString].value.trim();
-        let userPositionApplyingFor = document.forms[formNameString][userPositionApplyingForString].value.trim();
-        let userCoverLetter = document.forms[formNameString][userCoverLetterString].value.trim();
+    if (clickedSubmit) {                
+        let userName = document.forms["careersForm"]["userName"].value.trim();
+        let userEmail = document.forms["careersForm"]["userEmail"].value.trim();
+        let userSubject = document.forms["careersForm"]["userSubject"].value.trim();
+        let userResume = document.forms["careersForm"]["userResume"].value.trim();
+        let userPositionApplyingFor = document.forms["careersForm"]["userPositionApplyingFor"].value.trim();
+        let userCoverLetter = document.forms["careersForm"]["userCoverLetter"].value.trim();
         let validForm = true;
 
 
@@ -35,10 +25,10 @@ function validateCareersForm() {
         }
 
         if (validName) {
-            document.forms[formNameString][userNameString].classList.remove("required-field-needed");
+            document.forms["careersForm"]["userName"].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms[formNameString][userNameString].classList.add("required-field-needed");
+            document.forms["careersForm"]["userName"].classList.add("required-field-needed");
         }
 
 
@@ -57,10 +47,10 @@ function validateCareersForm() {
         }
 
         if (validEmail) {
-            document.forms[formNameString][userEmailString].classList.remove("required-field-needed");
+            document.forms["careersForm"]["userEmail"].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms[formNameString][userEmailString].classList.add("required-field-needed");
+            document.forms["careersForm"]["userEmail"].classList.add("required-field-needed");
         }
 
 
@@ -70,10 +60,10 @@ function validateCareersForm() {
         }
 
         if (validUserPositionApplyingFor) {
-            document.forms[formNameString][userPositionApplyingForString].classList.remove("required-field-needed");
+            document.forms["careersForm"]["userPositionApplyingFor"].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms[formNameString][userPositionApplyingForString].classList.add("required-field-needed");
+            document.forms["careersForm"]["userPositionApplyingFor"].classList.add("required-field-needed");
         }
 
 
@@ -83,10 +73,10 @@ function validateCareersForm() {
         }
 
         if (validCoverLetter) {
-            document.forms[formNameString][userCoverLetterString].classList.remove("required-field-needed");
+            document.forms["careersForm"]["userCoverLetter"].classList.remove("required-field-needed");
         } else {
             validForm = false;
-            document.forms[formNameString][userCoverLetterString].classList.add("required-field-needed");
+            document.forms["careersForm"]["userCoverLetter"].classList.add("required-field-needed");
         }
 
 
@@ -102,7 +92,6 @@ function validateCareersForm() {
     } else {
         return false;
     }
-
 }
 
 function setClickedSubmitTrue() {
