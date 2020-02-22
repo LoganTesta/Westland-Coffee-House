@@ -266,8 +266,10 @@ nav {
 #mobileNav a {
 
     color: #f9f9f9; 
+    background-color: $firstStyleColor;
     &:link, &:visited {  
         color: #f9f9f9; 
+        background-color: $firstStyleColor;
     }
     &:hover { 
         color: $firstStyleColorLighten;
@@ -294,7 +296,7 @@ nav {
 
 #dropdownContent {
     padding: 0; 
-    background-color: none;
+    background-color: $firstStyleColor;
     transition: 0.8s all ease-in;
     li {
         display: block;
@@ -308,7 +310,7 @@ nav {
 #dropdownContent.show {
     padding: 15px; 
     background-color: $firstStyleColor;
-    background-image: linear-gradient($firstStyleColor, $firstStyleColorLighter30, $firstStyleColor);
+    transition: 0.8s all ease-in;
     li {
         height: 21px;
         margin-bottom: 20px;
@@ -318,7 +320,6 @@ nav {
             margin-bottom: 0;
         } 
     }
-    transition: 0.8s all ease-in;
 }
 
 .content {
