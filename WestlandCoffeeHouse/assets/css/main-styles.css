@@ -562,8 +562,7 @@ table {
 
 .item-image {
   height: 220px;
-  transition: transform 0.8s ease-in;
-  cursor: pointer; }
+  transition: transform 0.8s ease-in; }
 
 .item-image:hover {
   transform: scale(1.08);
