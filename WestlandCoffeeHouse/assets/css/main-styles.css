@@ -416,6 +416,8 @@ header {
 
 nav {
   color: #6f4e37; }
+  nav ul {
+    font-size: 0; }
   nav a {
     font-size: 18px;
     font-weight: bold; }

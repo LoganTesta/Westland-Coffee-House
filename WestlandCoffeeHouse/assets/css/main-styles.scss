@@ -258,6 +258,9 @@ header {
 
 nav { 
     color: $firstStyleColor; 
+    ul {
+        font-size: 0;
+    }
     a {
         font-size: 18px; 
         font-weight: bold; 
