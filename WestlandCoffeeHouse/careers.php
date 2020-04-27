@@ -80,12 +80,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($PassedValidation) {
         /* Create the e-mail body. */
         $Body = "Application for " . $UserPositionApplyingFor;
-        $Body .= "User Name: " . $UserName . "\n";
-        $Body .= "User Email: " . $UserEmail . "\n";
-        $Body .= "Subject: " . $UserSubject . "\n";
-        $Body .= "Resume: " . $UserResume . "\n";
-        $Body .= "Position: " . $UserPositionApplyingFor . "\n";
-        $Body .= "User Cover Letter: " . $UserCoverLetter . "\n";
+        $Body .= "<strong>User Name:</strong> " . $UserName . "\n";
+        $Body .= "<strong>User Email:</strong> " . $UserEmail . "\n";
+        $Body .= "<strong>Subject:</strong> " . $UserSubject . "\n";
+        $Body .= "<strong>Resume:</strong> " . $UserResume . "\n";
+        $Body .= "<strong>Position:</strong> " . $UserPositionApplyingFor . "\n";
+        $Body .= "<strong>User Cover Letter:</strong> " . $UserCoverLetter . "\n";
 
         /* Send the e-mail. */
         $EmailSubject = "";
