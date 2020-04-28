@@ -78,14 +78,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($PassedValidation) {
+        /* Set the headers */
+        $Headers = "";
+        $Headers .= "From: <$UserEmail>\r\n";
+        $Headers .= "MIME-Version: 1.0\r\n";
+        $Headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+        
         /* Create the e-mail body. */
         $Body = "Application for " . $UserPositionApplyingFor;
-        $Body .= "<strong>User Name:</strong> " . $UserName . "\n";
-        $Body .= "<strong>User Email:</strong> " . $UserEmail . "\n";
-        $Body .= "<strong>Subject:</strong> " . $UserSubject . "\n";
-        $Body .= "<strong>Resume:</strong> " . $UserResume . "\n";
-        $Body .= "<strong>Position:</strong> " . $UserPositionApplyingFor . "\n";
-        $Body .= "<strong>User Cover Letter:</strong> " . $UserCoverLetter . "\n";
+        $Body .= "<strong>User Name:</strong> " . $UserName . "<br />";
+        $Body .= "<strong>User Email:</strong> " . $UserEmail . "<br />";
+        $Body .= "<strong>Subject:</strong> " . $UserSubject . "<br />";
+        $Body .= "<strong>Resume:</strong> " . $UserResume . "<br />";
+        $Body .= "<strong>Position:</strong> " . $UserPositionApplyingFor . "<br />";
+        $Body .= "<strong>User Cover Letter:</strong> " . $UserCoverLetter . "<br />";
 
         /* Send the e-mail. */
         $EmailSubject = "";
@@ -94,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
             $EmailSubject = "";
         }
-        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $UserPositionApplyingFor . " Application from " . $UserName . $EmailSubject, $Body, "From: <$UserEmail>");
+        $SuccessfulSubmission = mail($SendEmailTo, "Westland Coffee House: " . $UserPositionApplyingFor . " Application from " . $UserName . $EmailSubject, $Body, $Headers);
         if ($SuccessfulSubmission) {
             $ValidationResponse .= "<p>Thank you for applying to work with us, " . $UserName . ".  Your application was successfully sent!</p>";
             $UserName = "";
