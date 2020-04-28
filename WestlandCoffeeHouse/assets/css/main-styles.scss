@@ -269,7 +269,6 @@ nav {
     }   
 }
 #mobileNav a {
-
     color: #f9f9f9; 
     background-color: $firstStyleColor;
     &:link, &:visited {  
@@ -317,9 +316,9 @@ nav {
     background-color: $firstStyleColor;
     transition: 0.8s all ease-in;
     li {
+        opacity: 1;
         height: 21px;
         margin-bottom: 20px;
-        opacity: 1;
         transition: 0.8s all ease-in;
         &:last-of-type {
             margin-bottom: 0;
@@ -653,9 +652,9 @@ table {
 
 .submit-button { 
     padding: 10px 15px;
-    background-color: $firstStyleColorLighter60; 
     border: 2px solid #333333;
     border-radius: 15px;
+    background-color: $firstStyleColorLighter60; 
     cursor: pointer;
     transition: 0.8s;
 }
@@ -1073,7 +1072,6 @@ table {
         .event-name { width: 30%; }
         .date-time { width: 30%; }
         .event-info { width: 40%; }
-
     }
 
     .contact-westland {
