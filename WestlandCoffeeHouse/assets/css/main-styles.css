@@ -477,10 +477,11 @@ footer {
   font-size: 28px;
   background: url("../images/coffee-shop-exterior.jpg") 0% 100%/cover no-repeat; }
   footer .footer-background {
-    padding: 30px 20px;
     color: #333333;
     background-color: rgba(209, 182, 163, 0.85);
     text-align: center; }
+    footer .footer-background .footer__additional-wrapper {
+      padding: 30px 20px; }
   footer .footer-to-top a, footer .footer-copyright, footer .footer-hours *, footer .location-footer * {
     font-size: 18px; }
   footer a, footer a:link, footer a:visited {
@@ -911,7 +912,7 @@ table {
 
   /* The main border around the entire document */
   /* *** Beginning of Major divs *** */
-  .body-wrapper .inner-wrapper {
+  .inner-wrapper {
     width: 1200px; }
 
   header {

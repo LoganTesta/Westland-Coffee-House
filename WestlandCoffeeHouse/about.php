@@ -20,23 +20,25 @@
                 </div>
             </header>
             <?php include 'assets/include/navigation-content.php'; ?>
-            <div class="content">
-                <div class="content-row inner-wrapper">
-                    <div class="col-sma-6">
-                        <h3>About Westland Coffee House</h3>
-                        <p>We are friendly and locally owned!</p>
-                        <h4>Our Coffee Shop's Story</h4>
-                        <p>We were founded in 2002 with the goal of being the best place to hang out and grab quality coffee, beverages, and food
-                            with friends and family.</p>
-                        <p>Since the third year our customer visits have grown dramatically and we are now a popular coffee and fine food destination.  
-                            People come in from everything from morning coffee to studying or holding meetings to social events and gatherings.  We also
-                            regularly host community events like game nights, mini background concerts, and art shows, and work with local charities as 
-                            well.</p>
-                        <p>Come pay us a visit and we'll make sure you have a good beverage and a good time!</p>
-                    </div>
-                    <div class="col-sma-6">
-                        <div class="visitors-bg-image one"></div>
-                        <div class="visitors-bg-image three"></div>
+            <div class="inner-wrapper">
+                <div class="content">
+                    <div class="content-row">
+                        <div class="col-sma-6">
+                            <h3>About Westland Coffee House</h3>
+                            <p>We are friendly and locally owned!</p>
+                            <h4>Our Coffee Shop's Story</h4>
+                            <p>We were founded in 2002 with the goal of being the best place to hang out and grab quality coffee, beverages, and food
+                                with friends and family.</p>
+                            <p>Since the third year our customer visits have grown dramatically and we are now a popular coffee and fine food destination.  
+                                People come in from everything from morning coffee to studying or holding meetings to social events and gatherings.  We also
+                                regularly host community events like game nights, mini background concerts, and art shows, and work with local charities as 
+                                well.</p>
+                            <p>Come pay us a visit and we'll make sure you have a good beverage and a good time!</p>
+                        </div>
+                        <div class="col-sma-6">
+                            <div class="visitors-bg-image one"></div>
+                            <div class="visitors-bg-image three"></div>
+                        </div>
                     </div>
                 </div>
             </div>

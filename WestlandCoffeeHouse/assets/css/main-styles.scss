@@ -339,10 +339,12 @@ footer {
     font-size: 28px;
     background: url('../images/coffee-shop-exterior.jpg') 0% 100%/cover no-repeat;
     .footer-background {
-        padding: 30px 20px;
         color: #333333;
         background-color: $firstStyleColorLighter60SemiOpacity;
         text-align: center;
+        .footer__additional-wrapper {
+            padding: 30px 20px;
+        }
     }
     .footer-to-top a, .footer-copyright, .footer-hours *, .location-footer * {
         font-size: 18px;
@@ -910,10 +912,8 @@ table {
 
     /* The main border around the entire document */
     /* *** Beginning of Major divs *** */
-    .body-wrapper {
-        .inner-wrapper {
-            width: 1200px;
-        }
+    .inner-wrapper {
+        width: 1200px;
     }
 
     header { 
