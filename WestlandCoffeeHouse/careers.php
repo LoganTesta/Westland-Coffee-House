@@ -147,90 +147,92 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
             </header>
             <?php include 'assets/include/navigation-content.php'; ?>
-            <div class="content">
-                <div class="content-row inner-wrapper">
-                    <div class="col-sma-8">
-                        <h3>Careers</h3>
-                        <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
-                        <div class="positions-open-container">
-                            <div class="positions-title-container">
-                                <h3>Positions Open</h3>
-                            </div>        
-                            <div class="position-container">
-                                <div class="position-title">
-                                    <h4>Barista</h4>
+            <div class="inner-wrapper">
+                <div class="content">
+                    <div class="content-row">
+                        <div class="col-sma-8">
+                            <h3>Careers</h3>
+                            <p>Come Work With Us at the Chillest Coffee Shop in Town!</p>
+                            <div class="positions-open-container">
+                                <div class="positions-title-container">
+                                    <h3>Positions Open</h3>
+                                </div>        
+                                <div class="position-container">
+                                    <div class="position-title">
+                                        <h4>Barista</h4>
+                                    </div>
+                                    <div class="position-text-container">
+                                        <div class="item-image-container position-image-container">
+                                            <div class="item-image position-image position-image-one"></div>
+                                        </div>                                 
+                                        <p>Part or Full Time.  Provide excellent customer service.
+                                            Make delicious beverages and Westland 
+                                            Coffee House THE best coffee store in the Portland area.</p>
+                                        <p>Come on in and pick an application, or select the 'Apply' button!</p>
+                                        <div class="clear-both"></div>
+                                    </div>  
                                 </div>
-                                <div class="position-text-container">
-                                    <div class="item-image-container position-image-container">
-                                        <div class="item-image position-image position-image-one"></div>
-                                    </div>                                 
-                                    <p>Part or Full Time.  Provide excellent customer service.
-                                        Make delicious beverages and Westland 
-                                        Coffee House THE best coffee store in the Portland area.</p>
-                                    <p>Come on in and pick an application, or select the 'Apply' button!</p>
-                                    <div class="clear-both"></div>
-                                </div>  
-                            </div>
-                            <div class="position-container">
-                                <div class="position-title">
-                                    <h4>Barista Lead</h4>
+                                <div class="position-container">
+                                    <div class="position-title">
+                                        <h4>Barista Lead</h4>
+                                    </div>
+                                    <div class="position-text-container">
+                                        <div class="item-image-container position-image-container">
+                                            <div class="item-image position-image position-image-two"></div>
+                                        </div>                                 
+                                        <p>Part or Full Time.  Provide excellent customer service, train new baristas on brewing and prep techniques and customer service, general barista
+                                            duties, some supervisory duties as needed.  Reports to the Store Managers.</p>
+                                        <p>Come on in and pick an application, or select the 'Apply' button!</p>
+                                        <div class="clear-both"></div>
+                                    </div> 
                                 </div>
-                                <div class="position-text-container">
-                                    <div class="item-image-container position-image-container">
-                                        <div class="item-image position-image position-image-two"></div>
-                                    </div>                                 
-                                    <p>Part or Full Time.  Provide excellent customer service, train new baristas on brewing and prep techniques and customer service, general barista
-                                        duties, some supervisory duties as needed.  Reports to the Store Managers.</p>
-                                      <p>Come on in and pick an application, or select the 'Apply' button!</p>
-                                    <div class="clear-both"></div>
-                                </div> 
-                            </div>
-                            <div class="careers-container">
-                                <form id="careersForm" class="application-form careers-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                    <h4 class="application-form__title">Join Our Team!</h4>
-                                    <div class="content-row no-padding">                                          
-                                        <div class="input-container col-sma-6">
-                                            <label for="userName"><strong>Name *</strong></label>
-                                            <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                <div class="careers-container">
+                                    <form id="careersForm" class="application-form careers-form" method="post" onsubmit="return validateCareersForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                        <h4 class="application-form__title">Join Our Team!</h4>
+                                        <div class="content-row no-padding">                                          
+                                            <div class="input-container col-sma-6">
+                                                <label for="userName"><strong>Name *</strong></label>
+                                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                            </div>
+                                            <div class="input-container col-sma-6">
+                                                <label for="userEmail"><strong>Email *</strong></label>
+                                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                            </div>
                                         </div>
-                                        <div class="input-container col-sma-6">
-                                            <label for="userEmail"><strong>Email *</strong></label>
-                                            <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                        <div class="input-container">
+                                            <label for="userSubject"><strong>Subject</strong></label>
+                                            <input type="text" id="userSubject" name="userSubject" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
                                         </div>
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="userSubject"><strong>Subject</strong></label>
-                                        <input type="text" id="userSubject" name="userSubject" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
-                                    </div>
-                                    <div class="input-container">
-                                        <label for="userResume"><strong>Resume</strong></label>
-                                        <textarea id="userResume" name="userResume" rows="6" placeholder="Please paste your resume here."><?php echo $UserResume; ?></textarea>                          
-                                    </div> 
-                                    <div class="input-container">
-                                        <label for="userPositionApplyingFor"><strong>Position *</strong></label>
-                                        <input type="text" id="userPositionApplyingFor" name="userPositionApplyingFor" value="<?php echo $UserPositionApplyingFor; ?>" placeholder="Enter Position You are Applying for Here" required="required">                         
-                                    </div> 
-                                    <div class="input-container">
-                                        <label for="userCoverLetter"><strong>Cover Letter *</strong></label>
-                                        <textarea id="userCoverLetter" name="userCoverLetter" rows="6" placeholder="Please write your cover letter here.  Thanks." required="required"><?php echo $UserCoverLetter; ?></textarea>                          
-                                    </div>                           
-                                    <div class="input-container submit">
-                                        <button id="submitButton" name="submitButton" class="submit-button" type="submit">Send Application!</button>                          
-                                    </div>
-                                    <div class="javascript-validation-results-contact-us"></div>
-                                </form>
-                                <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
+                                        <div class="input-container">
+                                            <label for="userResume"><strong>Resume</strong></label>
+                                            <textarea id="userResume" name="userResume" rows="6" placeholder="Please paste your resume here."><?php echo $UserResume; ?></textarea>                          
+                                        </div> 
+                                        <div class="input-container">
+                                            <label for="userPositionApplyingFor"><strong>Position *</strong></label>
+                                            <input type="text" id="userPositionApplyingFor" name="userPositionApplyingFor" value="<?php echo $UserPositionApplyingFor; ?>" placeholder="Enter Position You are Applying for Here" required="required">                         
+                                        </div> 
+                                        <div class="input-container">
+                                            <label for="userCoverLetter"><strong>Cover Letter *</strong></label>
+                                            <textarea id="userCoverLetter" name="userCoverLetter" rows="6" placeholder="Please write your cover letter here.  Thanks." required="required"><?php echo $UserCoverLetter; ?></textarea>                          
+                                        </div>                           
+                                        <div class="input-container submit">
+                                            <button id="submitButton" name="submitButton" class="submit-button" type="submit">Send Application!</button>                          
+                                        </div>
+                                        <div class="javascript-validation-results-contact-us"></div>
+                                    </form>
+                                    <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
+                                </div>
+                                <p><strong>Make delicious beverages and Westland Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!  
+                                        We look forward to hearing from you!</strong></p>
                             </div>
-                            <p><strong>Make delicious beverages and Westland Coffee House THE best coffee store in the Portland area.  Come on in and pick an application!  
-                                    We look forward to hearing from you!</strong></p>
                         </div>
-                    </div>
-                    <div class="col-sma-4 careers-featured">
-                        <h4>"Come Join the Westland Team!"</h4>
-                        <div class="barista one">
+                        <div class="col-sma-4 careers-featured">
+                            <h4>"Come Join the Westland Team!"</h4>
+                            <div class="barista one">
+                            </div>
                         </div>
+                        <div class="clear-both"></div>
                     </div>
-                    <div class="clear-both"></div>
                 </div>
             </div>
             <?php include 'assets/include/footer-content.php'; ?>

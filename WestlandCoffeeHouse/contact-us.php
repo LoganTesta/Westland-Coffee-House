@@ -109,40 +109,42 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
             </header>
             <?php include 'assets/include/navigation-content.php'; ?>
-            <div class="content">
-                <div class="content-row inner-wrapper">
-                    <div class="col-sma-6">
-                        <h3 class="write-us">Write Us!  You might even get a Free Coffee!</h3>
-                        <p>Contact us with questions, comments, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
-                            and suggestions from our community!</p>
-                        <div class="visitors-bg-image two"></div>
-                    </div>
+            <div class="inner-wrapper">
+                <div class="content">
+                    <div class="content-row">
+                        <div class="col-sma-6">
+                            <h3 class="write-us">Write Us!  You might even get a Free Coffee!</h3>
+                            <p>Contact us with questions, comments, event requests, or to learn more about our coffee shop.  We always enjoy reading comments 
+                                and suggestions from our community!</p>
+                            <div class="visitors-bg-image two"></div>
+                        </div>
 
-                    <div class="col-sma-6 contact-us-container">
-                        <h4 class="contact-westland">Write Us Here:</h4>
-                        <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
-                        <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                            <div class="input-container">
-                                <label for="userName"><strong>Name *</strong></label>
-                                <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
-                            </div>
-                            <div class="input-container">
-                                <label for="userEmail"><strong>Email *</strong></label>
-                                <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
-                            </div>
-                            <div class="input-container">
-                                <label for="userSubject"><strong>Subject</strong></label>
-                                <input type="text" id="userSubject" name="userSubject" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
-                            </div>
-                            <div class="input-container">
-                                <label for="userComments"><strong>Message *</strong></label>
-                                <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
-                            </div>                           
-                            <div class="input-container submit">
-                                <button id="contactButton" class="submit-button" type="submit">Contact Us!</button>                          
-                            </div>
-                            <div class="javascript-validation-results-contact-us"></div>
-                        </form>
+                        <div class="col-sma-6 contact-us-container">
+                            <h4 class="contact-westland">Write Us Here:</h4>
+                            <?php echo "<div class='form-transmission-results'>" . $ValidationResponse . "</div>"; ?>
+                            <form id="contactForm" method="post" onsubmit="return validateContactForm();" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                <div class="input-container">
+                                    <label for="userName"><strong>Name *</strong></label>
+                                    <input type="text" id="userName" name="userName" value="<?php echo $UserName; ?>" placeholder="Enter Name Here" required="required">    
+                                </div>
+                                <div class="input-container">
+                                    <label for="userEmail"><strong>Email *</strong></label>
+                                    <input type="email" id="userEmail" name="userEmail" value="<?php echo $UserEmail; ?>" placeholder="Enter Email Here" required="required"> 
+                                </div>
+                                <div class="input-container">
+                                    <label for="userSubject"><strong>Subject</strong></label>
+                                    <input type="text" id="userSubject" name="userSubject" value="<?php echo $UserSubject; ?>" placeholder="Enter Subject Here">    
+                                </div>
+                                <div class="input-container">
+                                    <label for="userComments"><strong>Message *</strong></label>
+                                    <textarea id="userComments" name="userComments" rows="6" placeholder="Please write your message here.  Thanks." required="required"><?php echo $UserComments; ?></textarea>                          
+                                </div>                           
+                                <div class="input-container submit">
+                                    <button id="contactButton" class="submit-button" type="submit">Contact Us!</button>                          
+                                </div>
+                                <div class="javascript-validation-results-contact-us"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -21,13 +21,15 @@
                 </div>
             </header>
             <?php include 'assets/include/navigation-content.php'; ?>
-            <div class="content">
-                <div class="content-row inner-wrapper">
-                    <div class="col-sma-6">
-                        <h3>Server Error</h3>
-                        <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
-                    </div>
-                    <div class="col-sma-6">
+            <div class="inner-wrapper">
+                <div class="content">
+                    <div class="content-row">
+                        <div class="col-sma-6">
+                            <h3>Server Error</h3>
+                            <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
+                        </div>
+                        <div class="col-sma-6">
+                        </div>
                     </div>
                 </div>
             </div>

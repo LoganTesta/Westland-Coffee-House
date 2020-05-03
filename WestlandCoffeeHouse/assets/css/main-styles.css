@@ -975,7 +975,7 @@ table {
     background: url("../images/coffee-shop-exterior.jpg") 50% 100%/cover no-repeat; }
 
   .content {
-    padding: 50px 20px; }
+    padding: 50px 10px; }
 
   table th {
     font-size: 22px; }
@@ -1064,9 +1064,6 @@ table {
   .form-transmission-results p {
     font-size: 18px; } }
 @media only screen and (min-width: 1600px) {
-  .inner-wrapper {
-    width: 1540px; }
-
   .title-container {
     width: 242px; }
     .title-container #mainTitle a {
