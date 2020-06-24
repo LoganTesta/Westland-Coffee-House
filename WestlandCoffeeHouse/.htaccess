@@ -1,0 +1,8 @@
+DirectoryIndex  index.php
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.westlandcoffeehouse.com/$1 [R,L] #Redirect to https
+
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
