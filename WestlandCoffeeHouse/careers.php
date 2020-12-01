@@ -238,15 +238,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <?php include 'assets/include/footer-content.php'; ?>
         </div>
         <?php include 'assets/include/javascript-content.php'; ?>
-        <script type="text/javascript" src="assets/javascript/careers-form-validation.js?mod=12012019"></script>
+        <script type="text/javascript" src="assets/javascript/careers-form-validation.js?mod=12012020"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 setCurrentPage(5);
             });
         </script>
-                <script type="text/javascript">
+        <script type="text/javascript">
             //Use AJAX to update part of the page without reloading the whole page.
-            document.getElementById("careersForm").addEventListener("submit", function (event) {
+            document.getElementById("careersForm").addEventListener("submit", function(event) {
                 updateServerResponse(event);
             }, false);
 
@@ -254,7 +254,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 event.preventDefault();
                 let xhttp = new XMLHttpRequest();
 
-                xhttp.onreadystatechange = function () {
+                xhttp.onreadystatechange = function() {
                     if (this.readyState === 4 && this.status === 200) {
                         let parser = new DOMParser();
                         let ajaxDocument = parser.parseFromString(this.responseText, "text/html");
