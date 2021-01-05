@@ -5,8 +5,7 @@
                 <div class="footer-to-top">
                     <a class="footer-to-top__to-top"href="#logo">To TOP</a>
                 </div>
-                <div class="footer-copyright">
-                    &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>
+                <div class="footer-copyright">Copyright &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>
                 </div>
                 <div class="social-container">
                     <div class="social-logo facebook">
