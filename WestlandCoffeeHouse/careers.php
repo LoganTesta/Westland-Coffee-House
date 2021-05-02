@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $Headers .= "Content-Type: text/html; charset=UTF-8\r\n";
         
         /* Create the e-mail body. */
-        $Body = "Application for " . $UserPositionApplyingFor;
+        $Body = "<strong>Application for</strong> " . $UserPositionApplyingFor . "<br />";
         $Body .= "<strong>User Name:</strong> " . $UserName . "<br />";
         $Body .= "<strong>User Email:</strong> " . $UserEmail . "<br />";
         $Body .= "<strong>Subject:</strong> " . $UserSubject . "<br />";
