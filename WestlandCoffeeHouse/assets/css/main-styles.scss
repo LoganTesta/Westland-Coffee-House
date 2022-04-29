@@ -422,7 +422,6 @@ input, textarea {
         margin-bottom: 8px;
     }
     input {
-
         width: 100%;
     }
     textarea {
@@ -526,12 +525,15 @@ table {
 .item-image.one {
     background: url("../images/menu/house-coffee.jpg") 50% 0%/cover no-repeat;
 }
+
 .item-image.six {
     background: url("../images/menu/mocha.jpg") 50% 0%/cover no-repeat;
 }
+
 .item-image.seven {
     background: url("../images/menu/green-tea-latte.jpg") 50% 0%/cover no-repeat;
 }
+
 .item-image.twenty {
     background: url("../images/menu/cake-slice.jpg") 50% 0%/cover no-repeat;
 }
@@ -738,7 +740,6 @@ table {
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px){
-    
     h2 { 
         font-size: 20px;
     }
