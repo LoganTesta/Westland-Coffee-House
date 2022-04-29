@@ -326,18 +326,18 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
   padding: 0; }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   text-align: center; }
 
 h3 {
-  font-size: 22px;
+  font-size: 18px;
   padding: 0 0 15px 0;
   text-align: center; }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #28344a; }
 
 h2, h3 {
@@ -381,32 +381,34 @@ header {
   background: url("../images/coffee-shop-background.jpg") 0% 0%/cover no-repeat; }
 
 .title-container {
+  position: relative;
+  top: -40px;
   text-align: center; }
   .title-container #mainTitle a {
-    position: relative;
     display: inline-block;
-    font-size: 28px;
+    font-size: 21px;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     color: #6f4e37;
     text-shadow: 0.5px 1px #d1b6a3; }
 
 .subtitle-container {
-  display: inline-block;
-  width: 76%;
+  position: relative;
+  top: -30px;
+  display: block;
+  width: 192px;
   height: auto;
   padding: 10px 12px;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
   background-color: rgba(54, 93, 46, 0.8); }
 
 #logo {
   position: static;
-  width: 40px;
+  width: 32px;
   padding-top: 5px;
-  margin-left: 15px; }
+  margin-left: 10px; }
 
 #mobileNav {
   display: block; }
@@ -441,10 +443,10 @@ nav {
 
 #dropdownButton {
   position: absolute;
-  top: 25px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
+  top: 17px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
   background: url("../images/hamburger-nav.png") 50% 0%/cover no-repeat;
   cursor: pointer; }
 
@@ -782,23 +784,23 @@ table {
 
 /* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
-  /* The main border around the entire document */
+  h2 {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 19px; }
+
   .title-container {
     position: relative;
-    top: -55px;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center; }
     .title-container #mainTitle a {
-      font-size: 32px; }
+      font-size: 28px; }
 
   .subtitle-container {
-    position: relative;
-    top: -60px;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%; }
+    width: 200px; }
 
   .item-image-container {
     width: 60%;
@@ -840,7 +842,7 @@ table {
 
   .title-container {
     position: relative;
-    top: -55px;
+    top: -45px;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -852,11 +854,10 @@ table {
     display: block;
     position: relative;
     top: -30px;
-    width: auto;
+    width: 220px;
     max-width: 335px;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 0; }
+    margin-right: auto; }
 
   .item-image-container {
     width: 100%;
