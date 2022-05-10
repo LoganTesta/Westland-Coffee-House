@@ -443,12 +443,49 @@ nav {
 
 #dropdownButton {
   position: absolute;
-  top: 17px;
+  top: 19px;
   right: 10px;
   width: 26px;
   height: 26px;
-  background: url("../images/hamburger-nav.png") 50% 0%/cover no-repeat;
   cursor: pointer; }
+
+.dropdown-part-1 {
+  border-bottom: 3px solid #6f4e37;
+  margin-bottom: 6px;
+  transition: 0.4s ease-in; }
+
+.dropdown-part-2 {
+  border-bottom: 3px solid #6f4e37;
+  margin-bottom: 6px;
+  transition: 0.4s ease-in; }
+
+.dropdown-part-3 {
+  border-bottom: 3px solid #6f4e37;
+  transition: 0.4s ease-in; }
+
+#mobileNav.show {
+  padding: 15px;
+  background-color: #6f4e37;
+  transition: 0.8s all ease-in; }
+  #mobileNav.show li {
+    opacity: 1;
+    height: 21px;
+    margin-bottom: 20px;
+    transition: 0.8s all ease-in; }
+    #mobileNav.show li:last-of-type {
+      margin-bottom: 0; }
+
+#mobileNav.show .dropdown-part-1 {
+  transform: translateY(9px) rotate(45deg);
+  transition: 0.4s ease-in; }
+
+#mobileNav.show .dropdown-part-2 {
+  opacity: 0;
+  transition: 0.4s ease-in; }
+
+#mobileNav.show .dropdown-part-3 {
+  transform: translateY(-9px) rotate(-45deg);
+  transition: 0.4s ease-in; }
 
 #dropdownContent {
   padding: 0;
@@ -460,18 +497,6 @@ nav {
     padding-bottom: 0px;
     opacity: 0;
     transition: 0.8s all ease-in; }
-
-#dropdownContent.show {
-  padding: 15px;
-  background-color: #6f4e37;
-  transition: 0.8s all ease-in; }
-  #dropdownContent.show li {
-    opacity: 1;
-    height: 21px;
-    margin-bottom: 20px;
-    transition: 0.8s all ease-in; }
-    #dropdownContent.show li:last-of-type {
-      margin-bottom: 0; }
 
 .content h3 {
   color: #6f4e37; }
