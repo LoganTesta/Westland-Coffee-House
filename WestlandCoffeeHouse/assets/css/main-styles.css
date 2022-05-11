@@ -411,7 +411,10 @@ header {
   margin-left: 10px; }
 
 #mobileNav {
-  display: block; }
+  display: block;
+  padding: 0;
+  background-color: #6f4e37;
+  transition: 0.8s all ease-in; }
 
 #desktopNav {
   display: none; }
@@ -465,7 +468,6 @@ nav {
 
 #mobileNav.show {
   padding: 15px;
-  background-color: #6f4e37;
   transition: 0.8s all ease-in; }
   #mobileNav.show li {
     opacity: 1;
@@ -489,12 +491,11 @@ nav {
 
 #dropdownContent {
   padding: 0;
-  background-color: #6f4e37;
   transition: 0.8s all ease-in; }
   #dropdownContent li {
     display: block;
     height: 0;
-    padding-bottom: 0px;
+    margin-bottom: 0px;
     opacity: 0;
     transition: 0.8s all ease-in; }
 
