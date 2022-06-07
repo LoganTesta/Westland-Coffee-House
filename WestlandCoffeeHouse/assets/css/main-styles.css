@@ -808,7 +808,6 @@ table {
 .application-form__title {
   text-align: center; }
 
-/* CSS Media Queries: small-mid to mid devices, 500-1199px.  Laptop/desktop: 800px+.*/
 @media only screen and (min-width: 500px) {
   h2 {
     font-size: 20px; }
