@@ -282,6 +282,13 @@ nav {
     a {
         font-size: 18px; 
         font-weight: bold; 
+        transition: 0.2s;
+        &:hover {
+            transition: 0.2s;
+        }
+        &.current-page:hover {
+            transition: 0.2s;
+        }
     }   
 }
 
@@ -295,20 +302,24 @@ nav {
     &:hover { 
         color: $firstStyleColorLighter60;
     }
+    &.current-page {
+        border-bottom: 3px solid #ffffff;
+    }
+    &.current-page:hover { 
+        border-bottom: 3px solid $firstStyleColorLighter60;
+    }
 }
 
 #desktopNav a {
-    transition: 0.2s;
+
     &:link, &:visited {  
         color: $firstStyleColor; 
     }
     &:hover { 
-        color: $firstStyleColorLighter40;
-         transition: 0.2s;
+        color: $firstStyleColorLighter40;   
     }
     &.current-page:hover { 
         border-bottom: 3px solid $firstStyleColorLighter40;
-        transition: 0.2s;
     }
 }
 

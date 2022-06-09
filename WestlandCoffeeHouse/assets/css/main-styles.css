@@ -428,7 +428,12 @@ nav {
     font-size: 0; }
   nav a {
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: 0.2s; }
+    nav a:hover {
+      transition: 0.2s; }
+    nav a.current-page:hover {
+      transition: 0.2s; }
 
 #mobileNav a {
   color: #f9f9f9;
@@ -438,17 +443,17 @@ nav {
     background-color: #6f4e37; }
   #mobileNav a:hover {
     color: #d1b6a3; }
+  #mobileNav a.current-page {
+    border-bottom: 3px solid #ffffff; }
+  #mobileNav a.current-page:hover {
+    border-bottom: 3px solid #d1b6a3; }
 
-#desktopNav a {
-  transition: 0.2s; }
-  #desktopNav a:link, #desktopNav a:visited {
-    color: #6f4e37; }
-  #desktopNav a:hover {
-    color: #bb9275;
-    transition: 0.2s; }
-  #desktopNav a.current-page:hover {
-    border-bottom: 3px solid #bb9275;
-    transition: 0.2s; }
+#desktopNav a:link, #desktopNav a:visited {
+  color: #6f4e37; }
+#desktopNav a:hover {
+  color: #bb9275; }
+#desktopNav a.current-page:hover {
+  border-bottom: 3px solid #bb9275; }
 
 #dropdownButton {
   position: absolute;
