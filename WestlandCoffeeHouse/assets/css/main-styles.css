@@ -325,6 +325,9 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 .no-padding {
   padding: 0; }
 
+.current-page {
+  border-bottom: 3px solid #6f4e37; }
+
 h2 {
   font-size: 18px;
   font-weight: bold;
@@ -419,9 +422,6 @@ header {
 #desktopNav {
   display: none; }
 
-.current-page {
-  text-decoration: underline; }
-
 nav {
   color: #6f4e37; }
   nav ul {
@@ -443,6 +443,8 @@ nav {
   color: #6f4e37; }
 #desktopNav a:hover {
   color: #bb9275; }
+#desktopNav a.current-page:hover {
+  border-bottom: 3px solid #bb9275; }
 
 #dropdownButton {
   position: absolute;

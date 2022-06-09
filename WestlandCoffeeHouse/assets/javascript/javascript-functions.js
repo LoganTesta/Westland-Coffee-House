@@ -1,7 +1,7 @@
 
 function setCurrentPage(linkNumber) {
     let navBarMobile = document.getElementById("mobileNav");
-    let navBarMobileItems = navBarMobile.getElementsByClassName("nav__nav-link");
+    let navBarMobileItems = navBarMobile.getElementsByClassName("nav-link");
  
     for (let i = 0; i < navBarMobileItems.length; i++) {
         navBarMobileItems[i].className.replace(" current-page", "");

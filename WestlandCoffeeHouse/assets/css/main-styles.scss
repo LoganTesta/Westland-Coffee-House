@@ -197,6 +197,7 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 .bulleted-list { list-style-type: disc; }
 .center-text { text-align: center; }
 .no-padding { padding: 0; }
+.current-page { border-bottom: 3px solid #6f4e37; }
 
 h2 { font-size: 18px; font-weight: bold; color: #ffffff; text-align: center; }
 h3 { font-size: 18px; padding: 0 0 15px 0; text-align: center; }
@@ -272,9 +273,6 @@ header {
     display: none; 
 }
 
-.current-page { 
-    text-decoration: underline; 
-}
 
 nav { 
     color: $firstStyleColor; 
@@ -306,6 +304,7 @@ nav {
     &:hover { 
         color: $firstStyleColorLighter40;
     }
+    &.current-page:hover { border-bottom: 3px solid $firstStyleColorLighter40; }
 }
 
 #dropdownButton {
