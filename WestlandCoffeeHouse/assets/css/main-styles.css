@@ -439,12 +439,16 @@ nav {
   #mobileNav a:hover {
     color: #d1b6a3; }
 
-#desktopNav a:link, #desktopNav a:visited {
-  color: #6f4e37; }
-#desktopNav a:hover {
-  color: #bb9275; }
-#desktopNav a.current-page:hover {
-  border-bottom: 3px solid #bb9275; }
+#desktopNav a {
+  transition: 0.2s; }
+  #desktopNav a:link, #desktopNav a:visited {
+    color: #6f4e37; }
+  #desktopNav a:hover {
+    color: #bb9275;
+    transition: 0.2s; }
+  #desktopNav a.current-page:hover {
+    border-bottom: 3px solid #bb9275;
+    transition: 0.2s; }
 
 #dropdownButton {
   position: absolute;

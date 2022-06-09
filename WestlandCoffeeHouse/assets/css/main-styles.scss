@@ -298,13 +298,18 @@ nav {
 }
 
 #desktopNav a {
+    transition: 0.2s;
     &:link, &:visited {  
         color: $firstStyleColor; 
     }
     &:hover { 
         color: $firstStyleColorLighter40;
+         transition: 0.2s;
     }
-    &.current-page:hover { border-bottom: 3px solid $firstStyleColorLighter40; }
+    &.current-page:hover { 
+        border-bottom: 3px solid $firstStyleColorLighter40;
+        transition: 0.2s;
+    }
 }
 
 #dropdownButton {
