@@ -643,7 +643,7 @@ table {
   transition: transform 0.8s; }
 
 .item-image.index-one {
-  background: url("../images/index/roasted-coffee.jpg") 50% 0%/cover no-repeat; }
+  background: url("../images/index/roasted-coffee.jpg") 50% 50%/cover no-repeat; }
 
 .item-image.index-two {
   background: url("../images/index/mocha-on-plate.jpg") 50% 0%/cover no-repeat; }
@@ -999,7 +999,7 @@ table {
   #desktopNav {
     display: block;
     position: absolute;
-    top: -396px;
+    top: -305px;
     right: 0; }
 
   nav {
@@ -1034,7 +1034,7 @@ table {
     margin-right: 0; }
 
   .item-image {
-    height: 300px; }
+    height: 240px; }
 
   .visitors-bg-image {
     height: 400px; }
@@ -1113,6 +1113,12 @@ table {
 
   header {
     height: 400px;
-    background: url("../images/coffee-shop-background.jpg") 50% 5%/cover no-repeat; } }
+    background: url("../images/coffee-shop-background.jpg") 50% 5%/cover no-repeat; }
+
+  #desktopNav {
+    top: -396px; }
+
+  .item-image {
+    height: 300px; } }
 
 /*# sourceMappingURL=main-styles.css.map */

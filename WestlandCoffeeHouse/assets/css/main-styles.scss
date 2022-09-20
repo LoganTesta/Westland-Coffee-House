@@ -568,7 +568,7 @@ table {
 }
 
 .item-image.index-one {
-    background: url('../images/index/roasted-coffee.jpg') 50% 0%/cover no-repeat;
+    background: url('../images/index/roasted-coffee.jpg') 50% 50%/cover no-repeat;
 }
 
 .item-image.index-two {
@@ -1025,7 +1025,7 @@ table {
     nav { padding: 0 15px;}
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -396px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -305px; right: 0; }
 
     nav {
         padding: 15px 15px;
@@ -1034,6 +1034,7 @@ table {
             a, a:link, a:visited { font-size: 22px; }
         }
     }
+    
     footer {
         background: url('../images/coffee-shop-exterior.jpg') 50% 100%/cover no-repeat;
     }
@@ -1063,7 +1064,7 @@ table {
     }
 
     .item-image {
-        height: 300px;
+        height: 240px;
     }
 
     .visitors-bg-image {
@@ -1185,4 +1186,11 @@ table {
         height: 400px;
         background: url('../images/coffee-shop-background.jpg') 50% 5%/cover no-repeat;
     }
+    
+    #desktopNav { top: -396px; }
+    
+    .item-image {
+        height: 300px;
+    }
+    
 }
