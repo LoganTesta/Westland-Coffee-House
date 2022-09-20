@@ -568,7 +568,7 @@ table {
 }
 
 .item-image.index-one {
-    background: url('../images/index/roasted-coffee.jpg') 50% 50%/cover no-repeat;
+    background: url('../images/index/roasted-coffee.jpg') 50% 0%/cover no-repeat;
 }
 
 .item-image.index-two {
@@ -1066,6 +1066,10 @@ table {
     .item-image {
         height: 240px;
     }
+    
+    .item-image.index-one {
+        background: url('../images/index/roasted-coffee.jpg') 50% 20%/cover no-repeat;
+    }
 
     .visitors-bg-image {
         height: 400px;
@@ -1191,6 +1195,10 @@ table {
     
     .item-image {
         height: 300px;
+    }
+    
+    .item-image.index-one {
+        background: url('../images/index/roasted-coffee.jpg') 50% 0%/cover no-repeat;
     }
     
 }
