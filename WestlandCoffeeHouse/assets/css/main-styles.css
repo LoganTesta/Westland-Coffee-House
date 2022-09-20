@@ -380,7 +380,7 @@ input:focus, textarea:focus {
 
 header {
   width: 100%;
-  min-height: 226px;
+  height: 226px;
   background: url("../images/coffee-shop-background.jpg") 0% 0%/cover no-repeat; }
 
 .title-container {
@@ -861,7 +861,7 @@ table {
 @media only screen and (min-width: 700px) {
   header {
     width: 100%;
-    min-height: 310px;
+    height: 310px;
     background: url("../images/coffee-shop-background.jpg") 50% 0%/cover no-repeat; }
 
   h2 {
@@ -956,8 +956,7 @@ table {
     width: 1200px; }
 
   header {
-    padding-bottom: 190px;
-    background: url("../images/coffee-shop-background.jpg") 0% 24%/auto no-repeat; }
+    background: url("../images/coffee-shop-background.jpg") 0% 62%/auto no-repeat; }
 
   .title-container {
     position: static;
@@ -1113,7 +1112,7 @@ table {
     top: 240px; }
 
   header {
-    padding-bottom: 169px;
+    height: 400px;
     background: url("../images/coffee-shop-background.jpg") 50% 5%/cover no-repeat; } }
 
 /*# sourceMappingURL=main-styles.css.map */
