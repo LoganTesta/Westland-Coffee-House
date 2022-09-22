@@ -861,17 +861,17 @@ table {
 @media only screen and (min-width: 700px) {
   header {
     width: 100%;
-    height: 310px;
+    height: 220px;
     background: url("../images/coffee-shop-background.jpg") 50% 0%/cover no-repeat; }
 
   h2 {
-    font-size: 25px; }
+    font-size: 21px; }
 
   h3 {
-    font-size: 23px; }
+    font-size: 21px; }
 
   h4 {
-    font-size: 21px; }
+    font-size: 20px; }
 
   table th, table td {
     padding: 12px 0px; }
@@ -884,7 +884,7 @@ table {
     margin-right: 15%;
     text-align: center; }
     .title-container #mainTitle a {
-      font-size: 42px; }
+      font-size: 38px; }
 
   .subtitle-container {
     display: block;
@@ -934,17 +934,14 @@ table {
   header {
     background: url("../images/coffee-shop-background.jpg") 50% 10%/cover no-repeat; }
 
-  .item-image {
-    height: 280px; }
-
   .visitors-bg-image {
     height: 300px; } }
 @media only screen and (min-width: 1200px) {
   h2 {
-    font-size: 26px; }
+    font-size: 22px; }
 
   h3 {
-    font-size: 26px;
+    font-size: 22px;
     text-align: left; }
 
   h4 {
@@ -956,7 +953,8 @@ table {
     width: 1200px; }
 
   header {
-    background: url("../images/coffee-shop-background.jpg") 0% 62%/auto no-repeat; }
+    height: 240px;
+    background: url("../images/coffee-shop-background.jpg") 0% 42%/auto no-repeat; }
 
   .title-container {
     position: static;
@@ -968,8 +966,6 @@ table {
     .title-container #mainTitle {
       width: 100%;
       max-width: 210px; }
-      .title-container #mainTitle a {
-        font-size: 50px; }
 
   #logo {
     position: absolute;
@@ -983,7 +979,7 @@ table {
   .subtitle-container {
     display: inline-block;
     position: absolute;
-    top: 220px;
+    top: 164px;
     left: 160px;
     width: auto;
     margin-left: 0;
@@ -999,7 +995,7 @@ table {
   #desktopNav {
     display: block;
     position: absolute;
-    top: -305px;
+    top: -235px;
     right: 0; }
 
   nav {
@@ -1106,6 +1102,12 @@ table {
   .form-transmission-results p {
     font-size: 18px; } }
 @media only screen and (min-width: 1600px) {
+  h2 {
+    font-size: 26px; }
+
+  h3 {
+    font-size: 26px; }
+
   .title-container {
     width: 242px; }
     .title-container #mainTitle a {

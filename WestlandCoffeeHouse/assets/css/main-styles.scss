@@ -854,20 +854,20 @@ table {
 @media only screen and (min-width: 700px){
     header { 
         width: 100%; 
-        height: 310px;
+        height: 220px;
         background: url('../images/coffee-shop-background.jpg') 50% 0%/cover no-repeat;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 21px;
     } 
 
     h3 {
-        font-size: 23px;
+        font-size: 21px;
     }
 
     h4 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     table {
@@ -883,7 +883,7 @@ table {
         text-align: center;
         #mainTitle {
             a { 
-                font-size: 42px; 
+                font-size: 38px; 
             }
         }
     }
@@ -952,10 +952,6 @@ table {
         background: url('../images/coffee-shop-background.jpg') 50% 10%/cover no-repeat;
     }
 
-    .item-image {
-        height: 280px;
-    }
-
     .visitors-bg-image {
         height: 300px;
     }
@@ -965,11 +961,11 @@ table {
 @media only screen and (min-width: 1200px){
 
     h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 22px;
         text-align: left;
     }
     h4 {
@@ -983,7 +979,8 @@ table {
     }
 
     header { 
-        background: url('../images/coffee-shop-background.jpg') 0% 62%/auto no-repeat;
+        height: 240px;
+        background: url('../images/coffee-shop-background.jpg') 0% 42%/auto no-repeat;
     }
 
     .title-container { 
@@ -996,11 +993,9 @@ table {
         #mainTitle {
             width: 100%;
             max-width: 210px;
-            a { 
-                font-size: 50px; 
-            }
         }
     }
+    
     #logo {
         position: absolute;
         top: 20px; 
@@ -1013,7 +1008,7 @@ table {
     .subtitle-container {
         display: inline-block;
         position: absolute;
-        top: 220px;
+        top: 164px;
         left: 160px;
         width: auto;
         margin-left: 0;
@@ -1025,7 +1020,7 @@ table {
     nav { padding: 0 15px;}
 
     #mobileNav { display: none; }
-    #desktopNav { display: block; position: absolute; top: -305px; right: 0; }
+    #desktopNav { display: block; position: absolute; top: -235px; right: 0; }
 
     nav {
         padding: 15px 15px;
@@ -1173,6 +1168,16 @@ table {
 
 
 @media only screen and (min-width: 1600px){
+    
+    h2 { 
+        font-size: 26px; 
+    }
+    
+    h3 { 
+        font-size: 26px;
+    }
+    
+    
     .title-container {
         width: 242px;
         #mainTitle {
