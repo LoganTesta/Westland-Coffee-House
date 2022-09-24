@@ -1008,7 +1008,7 @@ table {
     .subtitle-container {
         display: inline-block;
         position: absolute;
-        top: 164px;
+        top: 160px;
         left: 160px;
         width: auto;
         margin-left: 0;
@@ -1025,8 +1025,9 @@ table {
     nav {
         padding: 15px 15px;
         li { 
-            display: inline-block; padding-right: 40px;
-            a, a:link, a:visited { font-size: 22px; }
+            display: inline-block; 
+            padding-right: 38px;
+            a, a:link, a:visited { font-size: 21px; }
         }
     }
     
@@ -1197,6 +1198,13 @@ table {
     }
     
     #desktopNav { top: -396px; }
+    
+    nav {
+        li { 
+            padding-right: 40px;
+            a, a:link, a:visited { font-size: 22px; }
+        }
+    }
     
     .item-image {
         height: 300px;
