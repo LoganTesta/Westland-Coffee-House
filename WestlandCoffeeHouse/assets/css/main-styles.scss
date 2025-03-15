@@ -205,6 +205,7 @@ h4 { font-size: 18px; color: $thirdStyleColor; }
 h2, h3 { font-weight: bold; }
 a, a:link, a:visited { color: $secondStyleColor; }
 a:hover { color: $thirdStyleColor; }
+a:focus-visible { outline: 2px solid $firstStyleColor; }
 input, textarea { border: 1px solid #000000; border-radius: 10px; padding: 10px 10px 10px 10px; }
 input::placeholder, textarea::placeholder { color: $secondStyleColorLighten; opacity: 1; /* For Firefox */ }
 
@@ -262,6 +263,10 @@ header {
     margin-left: 10px; 
 }
 
+.logo__link {
+    display: block;
+}
+
 #mobileNav { 
     display: block;
     padding: 0;
@@ -288,6 +293,9 @@ nav {
         }
         &.current-page:hover {
             transition: 0.2s;
+        }
+        &:focus-visible {
+            transition: none;
         }
     }   
 }
