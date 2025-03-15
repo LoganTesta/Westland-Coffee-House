@@ -7,7 +7,7 @@
     <div id="dropdownContent">
         <ul class="nav-list">
             <li><a class="nav-link" href="about.php">About</a></li>
-            <li><a class="nav-link" href="locations-and-hours.php">Location</a></li>
+            <li><a class="nav-link" href="location-and-hours.php">Location</a></li>
             <li><a class="nav-link" href="menu.php">Menu</a></li>
             <li><a class="nav-link" href="events.php">Events</a></li>
             <li><a class="nav-link" href="contact-us.php">Contact Us</a></li>
@@ -19,7 +19,7 @@
     <nav id="desktopNav">
         <ul class="nav-list">
             <li><a class="nav-link" href="about.php">About</a></li>
-            <li><a class="nav-link" href="locations-and-hours.php">Location</a></li>
+            <li><a class="nav-link" href="location-and-hours.php">Location</a></li>
             <li><a class="nav-link" href="menu.php">Menu</a></li>
             <li><a class="nav-link" href="events.php">Events</a></li>
             <li><a class="nav-link" href="contact-us.php">Contact Us</a></li>
