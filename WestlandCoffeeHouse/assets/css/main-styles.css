@@ -613,6 +613,13 @@ table {
 .item-image-container {
   overflow: hidden; }
 
+.item-image-container__link {
+  display: block;
+  border-radius: 5px; }
+
+.item-image-container__link:focus-visible {
+  outline: 3px solid #6f4e37; }
+
 .item-image {
   height: 220px;
   transition: transform 0.8s ease-in; }

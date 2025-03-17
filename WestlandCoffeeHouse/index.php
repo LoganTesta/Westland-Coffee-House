@@ -39,11 +39,13 @@
                                         </div>
                                     </div>
                                     <div class="col-sma-5">
-                                        <div class="item-image-container">
-                                            <a href="about.php">
-                                                <div class="item-image index-one"><span class="sr-only">About</span></div>
-                                            </a>
-                                        </div>
+                                       <a class="item-image-container__link" href="about.php">
+                                            <div class="item-image-container">
+                                                <div class="item-image index-one">
+                                                    <span class="sr-only">About</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="content-row index-section">
@@ -65,11 +67,13 @@
                                         </div>
                                     </div>
                                     <div class="col-sma-5 float-right-above-a-breakpoint">
-                                        <div class="item-image-container">
-                                            <a href="menu.php">
-                                                <div class="item-image index-two"><span class="sr-only">Menu</span></div>
-                                            </a>
-                                        </div>
+                                        <a class="item-image-container__link" href="menu.php">
+                                            <div class="item-image-container">
+                                                <div class="item-image index-two">
+                                                    <span class="sr-only">Menu</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="content-row index-section">
@@ -85,11 +89,13 @@
                                         </div>
                                     </div>
                                     <div class="col-sma-5">
-                                        <div class="item-image-container">
-                                            <a href="location-and-hours.php">
-                                                <div class="item-image index-three"><span class="sr-only">Location and Hours</span></div>
-                                            </a>
-                                        </div>
+                                        <a class="item-image-container__link" href="location-and-hours.php">
+                                            <div class="item-image-container">
+                                                <div class="item-image index-three">
+                                                    <span class="sr-only">Location and Hours</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
