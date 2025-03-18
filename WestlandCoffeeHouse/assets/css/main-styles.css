@@ -352,7 +352,8 @@ a, a:link, a:visited {
 a:hover {
   color: #28344a; }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid #6f4e37; }
 
 input, textarea {
@@ -373,7 +374,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 ::-ms-input-placeholder {
   color: #61a753; }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus,
+input:focus-visible,
+textarea:focus-visible {
   box-shadow: 0px 0px 3px 3px rgba(54, 93, 46, 0.6);
   transition: 0.2s; }
 
@@ -556,6 +560,8 @@ footer {
     footer .social-container .social-logo {
       display: inline-block;
       padding: 0 15px; }
+      footer .social-container .social-logo .social-logo__link:focus-visible {
+        display: block; }
       footer .social-container .social-logo .social-icon {
         transition: 0.4s all; }
       footer .social-container .social-logo .social-icon:hover {
@@ -776,11 +782,11 @@ table {
   border-radius: 15px;
   background-color: #d1b6a3;
   cursor: pointer;
-  transition: 0.8s; }
+  transition: background-color 0.8s; }
 
 .submit-button:hover {
   background-color: #ddc8ba;
-  transition: 0.8s; }
+  transition: background-color 0.8s; }
 
 /*Careers page */
 .careers-featured h4 {

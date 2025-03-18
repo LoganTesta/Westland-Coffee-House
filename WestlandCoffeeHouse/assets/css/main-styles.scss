@@ -205,7 +205,8 @@ h4 { font-size: 18px; color: $thirdStyleColor; }
 h2, h3 { font-weight: bold; }
 a, a:link, a:visited { color: $secondStyleColor; }
 a:hover { color: $thirdStyleColor; }
-a:focus-visible { outline: 2px solid $firstStyleColor; }
+a:focus-visible,
+button:focus-visible { outline: 2px solid $firstStyleColor; }
 input, textarea { border: 1px solid #000000; border-radius: 10px; padding: 10px 10px 10px 10px; }
 input::placeholder, textarea::placeholder { color: $secondStyleColorLighten; opacity: 1; /* For Firefox */ }
 
@@ -213,7 +214,10 @@ input::placeholder, textarea::placeholder { color: $secondStyleColorLighten; opa
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: $secondStyleColorLighten; }
 /*For Edge */
 ::-ms-input-placeholder { color: $secondStyleColorLighten; }
-input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(54, 93, 46, 0.6); transition: 0.2s; }
+input:focus, 
+textarea:focus,
+input:focus-visible,
+textarea:focus-visible { box-shadow: 0px 0px 3px 3px rgba(54, 93, 46, 0.6); transition: 0.2s; }
 
 .subheader-divider {
     border-bottom: 2px solid $thirdStyleColor;
@@ -449,6 +453,9 @@ footer {
         .social-logo {
             display: inline-block;
             padding: 0 15px;
+            .social-logo__link:focus-visible {
+                display: block;
+            }
             .social-icon {
                 transition: 0.4s all;
             }
@@ -741,12 +748,12 @@ table {
     border-radius: 15px;
     background-color: $firstStyleColorLighter60; 
     cursor: pointer;
-    transition: 0.8s;
+    transition: background-color 0.8s;
 }
 
 .submit-button:hover {
     background-color: $firstStyleColorLighter70;
-    transition: 0.8s;
+    transition: background-color 0.8s;
 }
 
 

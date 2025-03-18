@@ -9,14 +9,14 @@
                 </div>
                 <div class="social-container">
                     <div class="social-logo facebook">
-                        <a href=""><i class="fab fa-facebook-f fa-2x social-icon"><span class="sr-only">Facebook</span></i>
+                        <a href="" class="social-logo__link"><i class="fab fa-facebook-f fa-2x social-icon"><span class="sr-only">Facebook</span></i>
                         </a>
                     </div>
                     <div class="social-logo instagram">
-                        <a href=""><i class="fab fa-instagram fa-2x social-icon"><span class="sr-only">Instagram</span></i></a>
+                        <a href="" class="social-logo__link"><i class="fab fa-instagram fa-2x social-icon"><span class="sr-only">Instagram</span></i></a>
                     </div>
                     <div class="social-logo twitter">
-                        <a href=""><i class="fab fa-twitter fa-2x social-icon"><span class="sr-only">Twitter</span></i></a>
+                        <a href="" class="social-logo__link"><i class="fab fa-twitter fa-2x social-icon"><span class="sr-only">Twitter</span></i></a>
                     </div>
                 </div>
 
