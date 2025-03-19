@@ -455,6 +455,8 @@ nav {
     background-color: #6f4e37; }
   #mobileNav a:hover {
     color: #d1b6a3; }
+  #mobileNav a:focus-visible {
+    border: 2px solid #ffffff; }
   #mobileNav a.current-page {
     border-bottom: 3px solid #ffffff; }
   #mobileNav a.current-page:hover {

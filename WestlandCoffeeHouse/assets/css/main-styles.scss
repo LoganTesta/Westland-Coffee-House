@@ -314,6 +314,9 @@ nav {
     &:hover { 
         color: $firstStyleColorLighter60;
     }
+    &:focus-visible {
+        border: 2px solid #ffffff;
+    }
     &.current-page {
         border-bottom: 3px solid #ffffff;
     }

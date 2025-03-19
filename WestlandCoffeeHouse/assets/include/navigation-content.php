@@ -1,9 +1,9 @@
 <nav id="mobileNav">
-    <div id="dropdownButton">
+    <button id="dropdownButton">
         <div class="dropdown-part-1"></div>
         <div class="dropdown-part-2"></div>
         <div class="dropdown-part-3"></div>
-    </div>
+    </button>
     <div id="dropdownContent">
         <ul class="nav-list">
             <li><a class="nav-link" href="about.php">About</a></li>
