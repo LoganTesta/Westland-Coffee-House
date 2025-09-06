@@ -35,7 +35,7 @@
                                             <p>We have the finest coffee and are reputed to be one of the best places 
                                                 in Portland to grab coffee and gather.</p>
                                             <p>Plenty of seating inside and outdoors!</p>
-                                            <p>Located in downtown SW Portland at 33322 SW 10th Avenue Portland, Oregon 97205.</p>
+                                            <address>Located in downtown SW Portland at 33322 SW 10th Avenue Portland, Oregon 97205.</address>
                                         </div>
                                     </div>
                                     <div class="col-sma-5">

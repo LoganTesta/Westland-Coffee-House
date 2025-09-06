@@ -28,10 +28,10 @@
                         <div class="day">Sunday</div><div class="hours">8:00AM-Midnight</div>
                     </div>
                 </div>
-                <div class="location-footer">
+                <address class="location-footer">
                     <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
                     <p>503-823-2222</p>
-                </div>
+                </address>
             </div>
         </div>
     </div>

@@ -68,7 +68,7 @@
                         <div class="col-sma-6">
                             <div class="location-section">
                                 <h3 class="location-header">Location</h3>
-                                <p>33322 SW 10th Avenue Portland, Oregon 97205</p>
+                                <address>33322 SW 10th Avenue Portland, Oregon 97205</address>
                                 <img src="assets/images/westland-coffee-house-location.png" alt="Westland Coffee House Location" />
                                 <div id="map"></div>
                             </div>

@@ -366,6 +366,11 @@ input::placeholder, textarea::placeholder {
   opacity: 1;
   /* For Firefox */ }
 
+address {
+  font-style: normal;
+  padding-bottom: 16px;
+  line-height: 22.4px; }
+
 /*For IE 10-11 */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #61a753; }
