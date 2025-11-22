@@ -42,7 +42,7 @@
                                        <a class="item-image-container__link" href="about.php">
                                             <div class="item-image-container">
                                                 <div class="item-image index-one">
-                                                    <span class="sr-only">About</span>
+                                                    <span class="hidden-sr-only">About</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -70,7 +70,7 @@
                                         <a class="item-image-container__link" href="menu.php">
                                             <div class="item-image-container">
                                                 <div class="item-image index-two">
-                                                    <span class="sr-only">Menu</span>
+                                                    <span class="hidden-sr-only">Menu</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -92,7 +92,7 @@
                                         <a class="item-image-container__link" href="location-and-hours.php">
                                             <div class="item-image-container">
                                                 <div class="item-image index-three">
-                                                    <span class="sr-only">Location and Hours</span>
+                                                    <span class="hidden-sr-only">Location and Hours</span>
                                                 </div>
                                             </div>
                                         </a>

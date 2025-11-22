@@ -271,11 +271,15 @@ input:focus, textarea:focus, select:focus {
   justify-content: center; }
 
 /* General Resuable Classes */
-.sr-only {
+.hidden-sr-only {
   display: block;
-  width: 0;
-  height: 0;
-  opacity: 0; }
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: 0; }
 
 .width-100-percent {
   width: 100%; }
