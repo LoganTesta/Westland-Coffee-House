@@ -204,7 +204,8 @@ h4 {
 ul {
   list-style-type: none; }
 
-p {
+p,
+address {
   padding-bottom: 16px;
   line-height: 22.4px; }
 
@@ -216,6 +217,9 @@ img {
   font-size: 0px; }
 
 /*Don't allow images to go offscreen horizontally */
+address {
+  font-style: normal; }
+
 a:link, a:visited {
   color: #000000; }
 
