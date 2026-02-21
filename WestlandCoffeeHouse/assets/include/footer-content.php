@@ -3,9 +3,10 @@
         <div class="inner-wrapper">
             <div class="footer__additional-wrapper">
                 <div class="footer-to-top">
-                    <a class="footer-to-top__to-top"href="#logo">To TOP</a>
+                    <a class="footer-to-top__to-top" href="#logo">To TOP</a>
                 </div>
-                <div class="footer-copyright">Copyright &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>
+                <div class="footer-copyright">
+                    <p>Copyright &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>
                 </div>
                 <div class="social-container">
                     <div class="social-logo facebook">
@@ -19,7 +20,6 @@
                         <a href="" class="social-logo__link"><i class="fab fa-twitter fa-2x social-icon"><span class="hidden-sr-only">Twitter</span></i></a>
                     </div>
                 </div>
-
                 <div class="footer-hours">
                     <div class="day-hours">
                         <div class="day">Monday-Saturday</div><div class="hours">6:00AM-Midnight</div>
