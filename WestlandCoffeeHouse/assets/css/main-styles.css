@@ -492,16 +492,19 @@ nav {
   cursor: pointer; }
 
 .dropdown-part-1 {
+  display: block;
   border-bottom: 3px solid #6f4e37;
   margin-bottom: 6px;
   transition: 0.4s ease-in; }
 
 .dropdown-part-2 {
+  display: block;
   border-bottom: 3px solid #6f4e37;
   margin-bottom: 6px;
   transition: 0.4s ease-in; }
 
 .dropdown-part-3 {
+  display: block;
   border-bottom: 3px solid #6f4e37;
   transition: 0.4s ease-in; }
 

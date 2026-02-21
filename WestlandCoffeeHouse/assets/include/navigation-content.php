@@ -1,8 +1,8 @@
 <nav id="mobileNav">
     <button id="dropdownButton" aria-label="dropdown button">
-        <div class="dropdown-part-1"></div>
-        <div class="dropdown-part-2"></div>
-        <div class="dropdown-part-3"></div>
+        <span class="dropdown-part-1"></span>
+        <span class="dropdown-part-2"></span>
+        <span class="dropdown-part-3"></span>
     </button>
     <div id="dropdownContent">
         <ul class="nav-list">
