@@ -29,8 +29,10 @@
                                 <h3 class="coffee-shop-hours-header">Coffee Shop Hours</h3>
                                 <table class="hours-table">
                                     <thead>
-                                    <th class="hours-col-1"><strong>Day</strong></th>
-                                    <th class="hours-col-2"><strong>Hours</strong></th>
+                                        <tr>
+                                            <th class="hours-col-1"><strong>Day</strong></th>
+                                            <th class="hours-col-2"><strong>Hours</strong></th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
