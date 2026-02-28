@@ -39,7 +39,7 @@
                                     </thead>
                                     <tbody>
                                         <tr class="table-subheader">
-                                            <td colspan="4"><h4>Beverages/Coffee</h4></td>
+                                            <td colspan="3"><h4>Beverages/Coffee</h4></td>
                                         </tr>
                                         <tr>
                                             <td>House Coffee</td>
@@ -99,7 +99,7 @@
                                             <td>Assortment of teas, including mint, green, chai, and more.</td>
                                         </tr>
                                         <tr class="table-subheader">
-                                            <td colspan="4"><h4>Food</h4></td>
+                                            <td colspan="3"><h4>Food</h4></td>
                                         </tr>
                                         <tr>
                                             <td>Bagel with cream cheese</td>
