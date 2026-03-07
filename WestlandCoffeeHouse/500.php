@@ -26,7 +26,7 @@
                     <div class="content-row">
                         <div class="col-sma-6">
                             <h3>Server Error</h3>
-                            <p>We're sorry, that page doesn't seem to exist.  Please navigate to one of our navbar links. Thanks!</p>
+                            <p>We're sorry, there has been a server error.  Please navigate to one of the navbar links.  Thanks!</p>
                         </div>
                         <div class="col-sma-6">
                         </div>
