@@ -11,7 +11,7 @@
     </head>
     <body class="page-location-and-hours">
         <div class="body-wrapper">
-            <header>
+            <header id="head">
                 <div class="inner-wrapper">
                     <?php include 'assets/include/logo.php'; ?>
                     <?php include 'assets/include/header-content.php'; ?>

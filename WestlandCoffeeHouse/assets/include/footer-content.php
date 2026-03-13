@@ -3,7 +3,7 @@
         <div class="inner-wrapper">
             <div class="footer__additional-wrapper">
                 <div class="footer-to-top">
-                    <a class="footer-to-top__to-top" href="#logo">To TOP</a>
+                    <a class="footer-to-top__to-top" href="#head">To TOP</a>
                 </div>
                 <div class="footer-copyright">
                     <p>Copyright &copy; <?php echo date("Y"); ?> Westland Coffee House. All Rights Reserved.</p>

@@ -188,6 +188,10 @@ $thirdStyleColorPartialOpacity: rgba(40, 52, 74, 0.6);
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */ 
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body-wrapper {
 
 }

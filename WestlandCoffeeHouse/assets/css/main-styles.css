@@ -321,6 +321,9 @@ input:focus, textarea:focus, select:focus {
 /* light coffee brown with semi-transparents */
 /* Note: Used SCSS RGBA to make footer semi-transparent, add a darker shade of the first color to h4s, and a darker shade of the second color 
 for placeholder text. */
+html {
+  scroll-behavior: smooth; }
+
 html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, button, label, input, textarea, tr, td, th, h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif; }
 
